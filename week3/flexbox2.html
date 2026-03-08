@@ -7,9 +7,10 @@
     <title>Positivus Home</title>
     <style>
         body {
-            margin: 30px 80px;
+            margin: 30px 120px;
             font-family: Arial, sans-serif;
-            font-size: 18px;
+            font-size: 20px;
+            line-height: 32px;
         }
 
         div.header {
@@ -34,17 +35,39 @@
         div.quote {
             border: black solid 1px;
             border-radius: 10px;
-            padding: 15px;
+            padding: 15px 30px;
         }
 
         div.hero_section {
             display: flex;
             align-items: center;
             justify-content: space-between;
+            margin: 50px 0px;
         }
 
         div.intro {
-            max-width: 30%;
+            max-width: 40%;
+        }
+
+        h1.title {
+            font-size: 60px;
+            line-height: 88px;
+        }
+
+        button.consultation {
+            color: white;
+            background-color: black;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+
+        div.companies_logo {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            filter: grayscale(100%);
         }
     </style>
 </head>
@@ -66,11 +89,20 @@
     </div>
     <div class="hero_section">
         <div class="intro">
-            <h1>Navigating the digital landscape for success</h1>
+            <h1 class="title">Navigating the digital landscape for success</h1>
             <p>Our digital marketing agency helps businesses grow and succeed online through a range of services
                 including SEO, PPC, social media marketing, and content creation.</p>
+            <p><button class="consultation">Book a consultation</button></p>
         </div>
-        <img src="images/hero_img.svg" alt="Illustration of a speaker" width="50%">
+        <img src="images/hero_img.svg" alt="Illustration of a speaker" width="45%">
+    </div>
+    <div class="companies_logo">
+        <img src="images/logo_amazon.svg" alt="Amazon Logo" width="8%">
+        <img src="images/logo_dribbble.svg" alt="Dribbble Logo" width="8%">
+        <img src="images/logo_hubspot.svg" alt="HubSpot Logo" width="8%">
+        <img src="images/logo_notion.svg" alt="Notion Logo" width="8%">
+        <img src="images/logo_netflix.svg" alt="Netflix Logo" width="8%">
+        <img src="images/logo_zoom.svg" alt="Zoom Logo" width="8%">
     </div>
 
 </body>
