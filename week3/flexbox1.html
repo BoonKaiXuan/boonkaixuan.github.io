@@ -9,31 +9,62 @@
         body {
             background-color: #F6F5EF;
             font-family: Arial, Helvetica, sans-serif, sans-serif;
+            margin: 50px;
+        }
+
+        h2 {
+            font-size: 24px;
+            margin-bottom: 12px;
         }
 
         p {
-            color: rgb(81, 81, 81);
+            color: rgb(100, 100, 99);
+            font-size: 14px;
+            line-height: 26px;
+        }
+
+        img {
+            border-radius: 5px;
         }
 
         div.services {
             display: flex;
             align-items: center;
             justify-content: space-between;
+            gap: 30px;
+            margin: auto;
+            max-width: 1024px;
+
         }
 
         div.residential {
             background-color: white;
             border-radius: 10px;
+            padding: 20px 20px 30px;
+        }
+
+        div.resi_content {
+            padding: 4px 12px;
         }
 
         div.commercial {
             background-color: white;
             border-radius: 10px;
+            padding: 20px 20px 40px;
+        }
+
+        div.commercial_content {
+            padding: 4px 12px;
         }
 
         div.infrastructure {
             background-color: white;
             border-radius: 10px;
+            padding: 20px 20px 40px;
+        }
+
+        div.infra_content {
+            padding: 4px 12px;
         }
     </style>
 </head>
@@ -41,32 +72,37 @@
 <body>
     <div class="services">
         <div class="residential">
-            <div class="img_residential">
+            <img src="images/residential.jpg" alt="Photo of residential buildings" width="100%">
+            <div class="resi_content">
+                <h2>
+                    Residential projects
+                </h2>
+                <p>
+                    We build sustainable and modern homes for comfortable living.
+                </p>
             </div>
-            <h2>
-                Residential projects
-            </h2>
-            <p>
-                We build sustainable and modern homes for comfortable living.
-            </p>
         </div>
         <div class="commercial">
-            <div class="img_commercial"></div>
-            <h2>
-                Commercial spaces
-            </h2>
-            <p>
-                We create efficient, inspiring workspaces for businesses of all sizes.
-            </p>
+            <img src="images/commercial.jpg" alt="Photo of a workspace corner" width="100%">
+            <div class="commercial_content">
+                <h2>
+                    Commercial spaces
+                </h2>
+                <p>
+                    We create efficient, inspiring workspaces for businesses of all sizes.
+                </p>
+            </div>
         </div>
         <div class="infrastructure">
-            <div class="img_infrastructure"></div>
-            <h2>
-                Infrastructure works
-            </h2>
-            <p>
-                We develop strong, reliable infrastructure for growing communities.
-            </p>
+            <img src="images/infrastructure.jpg" alt="Photo of infrastructure" width="100%">
+            <div class="infra_content">
+                <h2>
+                    Infrastructure works
+                </h2>
+                <p>
+                    We develop strong, reliable infrastructure for growing communities.
+                </p>
+            </div>
         </div>
     </div>
 </body>
