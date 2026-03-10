@@ -6,15 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Week3 Exe2 - Positivus Home</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+
         body {
             margin: 30px 120px;
-            font-family: Arial, sans-serif;
-            font-size: 20px;
-            color: #000000;
-            line-height: 32px;
+            font-family: "Space Grotesk", sans-serif;
+            font-size: 18px;
+            line-height: 1.4;
         }
 
-        div.header {
+        div.navigation_bar {
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -33,9 +34,10 @@
             gap: 50px;
         }
 
+
         div.quote {
             border: black solid 1px;
-            border-radius: 14px;
+            border-radius: 10px;
             padding: 12px 30px;
         }
 
@@ -43,16 +45,20 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
-            margin: 50px 0px;
+            margin-top: 50px;
+            margin-bottom: 50px;
         }
 
-        div.intro {
-            max-width: 40%;
+        div.hero_intro {
+            width: 40%;
+        }
+
+        div.hero_img {
+            width: 50%;
         }
 
         h1.title {
-            font-size: 60px;
-            line-height: 88px;
+            font-size: 56px;
         }
 
         button.consultation {
@@ -62,21 +68,28 @@
             border: none;
             border-radius: 14px;
             margin-top: 20px;
+            font-family: inherit;
+            font-size: inherit;
+            /*to use the parent font-family*/
         }
 
         div.companies_logo {
             display: flex;
             align-items: center;
             justify-content: space-between;
-            filter: grayscale(100%);
+            gap: 30px;
+        }
+
+        div.logo_list {
+            filter: grayscale(1);
         }
     </style>
 </head>
 
 <body>
-    <div class="header">
+    <div class="navigation_bar">
         <div class="logo">
-            <img src="images/positivus_logo.svg" alt="Positivus Logo" width="35px">
+            <img src="images/positivus_logo.svg" alt="Positivus Logo" width="35">
             <h1>Positivus</h1>
         </div>
         <div class="menu_container">
@@ -89,21 +102,21 @@
         </div>
     </div>
     <div class="hero_section">
-        <div class="intro">
+        <div class="hero_intro">
             <h1 class="title">Navigating the digital landscape for success</h1>
             <p>Our digital marketing agency helps businesses grow and succeed online through a range of services
                 including SEO, PPC, social media marketing, and content creation.</p>
             <p><button class="consultation">Book a consultation</button></p>
         </div>
-        <img src="images/hero_img.svg" alt="Illustration of a speaker" width="45%">
+        <div class="hero_img"><img src="images/hero_img.svg" alt="Illustration of a speaker" width="100%"></div>
     </div>
     <div class="companies_logo">
-        <img src="images/logo_amazon.svg" alt="Amazon Logo" width="8%">
-        <img src="images/logo_dribbble.svg" alt="Dribbble Logo" width="8%">
-        <img src="images/logo_hubspot.svg" alt="HubSpot Logo" width="8%">
-        <img src="images/logo_notion.svg" alt="Notion Logo" width="8%">
-        <img src="images/logo_netflix.svg" alt="Netflix Logo" width="8%">
-        <img src="images/logo_zoom.svg" alt="Zoom Logo" width="8%">
+        <div class="logo_list"><img src="images/logo_amazon.svg" alt="Amazon Logo" width="100%"></div>
+        <div class="logo_list"><img src="images/logo_dribbble.svg" alt="Dribbble Logo" width="100%"></div>
+        <div class="logo_list"><img src="images/logo_hubspot.svg" alt="HubSpot Logo" width="100%"></div>
+        <div class="logo_list"><img src="images/logo_notion.svg" alt="Notion Logo" width="100%"></div>
+        <div class="logo_list"><img src="images/logo_netflix.svg" alt="Netflix Logo" width="100%"></div>
+        <div class="logo_list"><img src="images/logo_zoom.svg" alt="Zoom Logo" width="100%"></div>
     </div>
 
 </body>
