@@ -8,32 +8,42 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
 
+        #container {
+            max-width: 1520px;
+            margin: auto;
+        }
+
         body {
-            margin: 30px 120px;
+            margin: 10px 100px 20px;
             font-family: "Space Grotesk", sans-serif;
-            font-size: 18px;
+            font-size: 16px;
             line-height: 1.4;
         }
 
-        .navigation_bar {
+        .header {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            gap: 50px;
         }
 
         .logo {
             display: flex;
             align-items: center;
             gap: 8px;
+            width: 20%;
         }
 
-        .menu_container {
+        .navbar {
             display: flex;
             align-items: center;
             gap: 50px;
+            width: 70%;
+            justify-content: flex-end;
         }
 
+        .menu-icon {
+            display: none;
+        }
 
         .quote {
             border: black solid 1px;
@@ -41,83 +51,62 @@
             padding: 12px 30px;
         }
 
-        .hero_section {
+        .banner {
             display: flex;
-            flex-wrap: wrap;
+            align-items: center;
             justify-content: space-between;
             margin-top: 50px;
             margin-bottom: 50px;
         }
 
-        .hero_title {
+        .banner_intro {
             width: 40%;
-            order: 1;
         }
 
-        .hero_intro {
-            width: 40%;
-            order: 3;
-        }
-
-        .hero_img {
-            width: 50%;
-            order: 2;
-        }
-
-        h1.title {
+        .banner_intro h1 {
             font-size: 56px;
         }
 
-        .companies_logo {
+        .banner_img_vertical {
+            display: none;
+        }
+
+        .banner_img {
+            width: 45%;
+        }
+
+        .partners_logos {
             display: flex;
             align-items: center;
             justify-content: space-between;
             gap: 30px;
         }
 
-        .logo_list {
+        .logo_item {
             filter: grayscale(1);
         }
 
-        .services {
-            margin-top: 100px;
-            margin-bottom: 100px;
-        }
-
         .services_heading {
+            margin-top: 100px;
+            margin-bottom: 60px;
             display: flex;
+            align-items: flex-start;
             gap: 20px;
-            align-items: stretch;
+            width: 70%;
 
         }
 
-        .services h2 {
-            margin: 0px;
-        }
-
-        .services p {
-            margin: 0px;
-        }
-
-        .services_title {
+        .services_heading h2 span {
             background-color: #B9FF66;
             border-radius: 7px;
             padding: 0px 5px;
-            display: flex;
-            align-items: center;
-        }
-
-        .services_intro {
-            max-width: 580px;
+            font-size: 32px;
         }
 
         .services_list {
             display: flex;
             justify-content: space-between;
-            flex-wrap: wrap;
-            margin-top: 60px;
-            gap: 30px;
-
+            margin-top: 30px;
         }
 
         .list_item {
@@ -128,71 +117,87 @@
             display: flex;
             justify-content: space-between;
             filter: drop-shadow(0px 5px #191A23);
-            min-height: 200px;
+            height: 220px;
         }
 
         .list_text {
-            width: 40%;
+            width: 45%;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
         }
 
         .list_illus {
-            width: 40%;
+            width: 45%;
             display: flex;
             align-items: center;
-
         }
 
-        .list_title h3 span {
+        .list_illus_inline {
+            display: none;
+        }
+
+        .list_text h3 {
+            font-size: 24px;
             margin-top: 0px;
-            border-radius: 7px;
+            margin-bottom: 0px;
             font-weight: 600;
+            width: 170px;
+        }
+
+        .list_text h3 span {
+            border-radius: 7px;
             padding: 2px 0px;
         }
 
-        .group-a {
+        .grp-grey {
             background-color: #F3F3F3;
         }
 
-        .group-a h3 span {
+        .grp-grey h3 span {
             background-color: #B9FF66;
         }
 
-        .group-b {
+        .grp-green {
             background-color: #B9FF66;
         }
 
-        .group-b h3 span {
-            background-color: #F3F3F3;
-        }
-
-        .group-c {
+        .grp-black {
             background-color: #191A23;
         }
 
-        .group-c h3 span {
+        .grp-green h3 span,
+        .grp-black h3 span {
             background-color: #F3F3F3;
         }
 
-        .group-c p {
+        h3.analytics span {
+            background-color: #B9FF66;
+        }
+
+        .grp-black .learn-more {
             color: #F3F3F3;
         }
 
-        .list_more {
+        .learn-more {
             display: flex;
             gap: 10px;
             align-items: center;
         }
 
+        .learn-more p {
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+
         .get-proposal {
             background-color: #F3F3F3;
             border-radius: 30px;
-            padding: 15px 50px;
+            padding: 20px 50px;
             display: flex;
             align-items: center;
-            gap: 300px;
+            gap: 20%;
+            margin-top: 80px;
         }
 
         .proposal_intro {
@@ -219,94 +224,109 @@
             /*to use the parent font-family*/
         }
 
-
-
-        @media screen and (min-width:1050px) {
-            .menu_icon {
-                display: none;
-            }
-        }
-
-        @media screen and (max-width:1050px) and (min-width:905px) {
+        @media screen and (max-width:1280px) {
             body {
-                margin: 10px 50px;
+                margin-left: 50px;
+                margin-right: 50px;
             }
 
-            .menu_container {
+            .navbar {
                 display: none;
             }
 
-            .hero_section {
+            .menu-icon {
+                display: block;
+            }
+
+            .banner {
                 margin-top: 0px;
             }
 
-            .services_list {
-                flex-direction: column;
-                align-items: center;
-                flex-wrap: nowrap;
-                padding: 0px 50px;
+            .services_heading {
+                width: 85%;
             }
 
-            .list_item {
+            .services_list {
+                gap: 30px;
+            }
+
+            .list_text {
                 width: 100%;
             }
+
+            .list_footer {
+                display: flex;
+                align-items: flex-end;
+                justify-content: space-between;
+            }
+
+            .list_illus_inline {
+                display: block;
+            }
+
+            .list_illus_inline img {
+                height: 140px;
+            }
+
+            .list_illus {
+                display: none;
+            }
+
+            .learn-more p {
+                display: none;
+            }
+
         }
 
         @media screen and (max-width:905px) {
 
-            body {
-                margin: 10px 50px;
-            }
-
-            .menu_container {
-                display: none;
-            }
-
-            .hero_section {
+            .banner {
                 flex-direction: column;
-                margin-top: 0px;
             }
 
-            .hero_title {
+            .banner_intro {
                 width: 100%;
             }
 
-            .hero_intro {
-                width: 100%;
-                justify-content: center;
+            .banner_img_vertical {
+                display: block;
             }
 
-            .hero_img {
-                width: 100%;
+            .banner_img {
+                display: none;
             }
 
             button.primary {
                 width: 100%;
             }
 
-            .companies_logo {
+            .partners_logos {
                 flex-wrap: wrap;
             }
 
             .services_heading {
                 flex-direction: column;
-                align-items: center;
+                width: 100%;
                 text-align: center;
+                gap: 0px;
+            }
+
+            .services_heading h2 {
+                width: 100%;
             }
 
             .services_list {
                 flex-direction: column;
-                align-items: center;
-                flex-wrap: nowrap;
-                padding: 0px 50px;
             }
 
             .list_item {
                 width: 100%;
+                box-sizing: border-box;
+                height: 280px;
             }
 
-            .learn-more {
-                display: none;
+            h3.analytics span {
+                background-color: #F3F3F3;
             }
 
             .get-proposal {
@@ -326,69 +346,92 @@
 </head>
 
 <body>
-    <div class="navigation_bar">
-        <div class="logo">
-            <img src="images/positivus/positivus_logo.svg" alt="Positivus Logo" width="35">
-            <h1>Positivus</h1>
-        </div>
-        <div class="menu_container">
-            <div class="menu_item">About us</div>
-            <div class="menu_item">Services</div>
-            <div class="menu_item">Use Cases</div>
-            <div class="menu_item">Pricing</div>
-            <div class="menu_item">Blog</div>
-            <div class="quote">Request a Quote</div>
-        </div>
-        <div class="menu_icon">
-            <img src="images/positivus/menu_icon.svg" alt="Menu Icon" width="24">
-        </div>
-    </div>
-    <div class="hero_section">
-        <div class="hero_title">
-            <h1>Navigating the digital landscape for success</h1>
-        </div>
-        <div class="hero_intro">
-            <p>Our digital marketing agency helps businesses grow and succeed online through a range of services
-                including SEO, PPC, social media marketing, and content creation.</p>
-            <p><button class="primary">Book a consultation</button></p>
-        </div>
-        <div class="hero_img"><img src="images/positivus/speaker_img.svg" alt="Illustration of a speaker" width="100%">
-        </div>
-    </div>
-    <div class="companies_logo">
-        <div class="logo_list"><img src="images/positivus/logo_amazon.svg" alt="Amazon Logo" width="100%"></div>
-        <div class="logo_list"><img src="images/positivus/logo_dribbble.svg" alt="Dribbble Logo" width="100%">
-        </div>
-        <div class="logo_list"><img src="images/positivus/logo_hubspot.svg" alt="HubSpot Logo" width="100%">
-        </div>
-        <div class="logo_list"><img src="images/positivus/logo_notion.svg" alt="Notion Logo" width="100%"></div>
-        <div class="logo_list"><img src="images/positivus/logo_netflix.svg" alt="Netflix Logo" width="100%">
-        </div>
-        <div class="logo_list"><img src="images/positivus/logo_zoom.svg" alt="Zoom Logo" width="100%"></div>
-    </div>
-    <div class="services">
-        <div class="services_heading">
-            <div class="services_title">
-                <h2>Services</h2>
+    <div id="container">
+        <div class="header">
+            <div class="logo">
+                <img src="images/positivus/positivus_logo.svg" alt="Positivus Logo" width="35">
+                <h1>Positivus</h1>
             </div>
-            <div class="services_intro">
-                <p>At our digital marketing agency, we offer a range of services to help businesses grow and succeed
-                    online.
-                    These services include:</p>
+            <div class="navbar">
+                <div class="navbar_item">About us</div>
+                <div class="navbar_item">Services</div>
+                <div class="navbar_item">Use Cases</div>
+                <div class="navbar_item">Pricing</div>
+                <div class="navbar_item">Blog</div>
+                <div class="navbar_item quote">Request a Quote</div>
+            </div>
+            <div class="menu-icon">
+                <img src="images/positivus/menu_icon.svg" alt="Menu Icon" width="24">
             </div>
         </div>
-        <div class="services_list">
-            <div class="list_item group-a">
-                <div class="list_text">
-                    <div class="list_title">
-                        <h3><span>Search engine optimization</span></h3>
+
+        <div class="banner">
+            <div class="banner_intro">
+                <div>
+                    <h1>Navigating the digital landscape for success
+                    </h1>
+                </div>
+                <div class="banner_img_vertical">
+                    <img src="images/positivus/speaker_img.svg" alt="Illustration of a speaker" width="100%">
+                </div>
+                <div>
+                    <p>Our digital marketing agency helps businesses grow and succeed online through a range of services
+                        including SEO, PPC, social media marketing, and content creation.
+                    </p>
+                    <div>
+                        <button class="primary">Book a consultation</button>
                     </div>
-                    <div class="list_more">
-                        <div>
-                            <img src="images/positivus/more_icon_green.svg" alt="Learn more icon" width="36">
-                        </div>
+                </div>
+            </div>
+            <div class="banner_img">
+                <img src="images/positivus/speaker_img.svg" alt="Illustration of a speaker" width="100%">
+            </div>
+        </div>
+
+        <div class="partners_logos">
+            <div class="logo_item">
+                <img src="images/positivus/logo_amazon.svg" alt="Amazon Logo" width="100%">
+            </div>
+            <div class="logo_item">
+                <img src="images/positivus/logo_dribbble.svg" alt="Dribbble Logo" width="100%">
+            </div>
+            <div class="logo_item">
+                <img src="images/positivus/logo_hubspot.svg" alt="HubSpot Logo" width="100%">
+            </div>
+            <div class="logo_item">
+                <img src="images/positivus/logo_notion.svg" alt="Notion Logo" width="100%">
+            </div>
+            <div class="logo_item">
+                <img src="images/positivus/logo_netflix.svg" alt="Netflix Logo" width="100%">
+            </div>
+            <div class="logo_item">
+                <img src="images/positivus/logo_zoom.svg" alt="Zoom Logo" width="100%">
+            </div>
+        </div>
+
+        <div class="services_heading">
+            <h2><span>Services</span>
+            </h2>
+            <p>At our digital marketing agency, we offer a range of services to help businesses grow and succeed
+                online.
+                These services include:
+            </p>
+        </div>
+
+        <div class="services_list">
+            <div class="list_item grp-grey">
+                <div class="list_text">
+                    <div>
+                        <h3><span>Search engine</span> <span>optimization</span></h3>
+                    </div>
+                    <div class="list_footer">
                         <div class="learn-more">
+                            <img src="images/positivus/more_icon_green.svg" alt="Learn more icon" width="36">
                             <p>Learn more</p>
+                        </div>
+                        <div class="list_illus_inline">
+                            <img src="images/positivus/illus_search-engine.svg" alt="Illustration of a magnifying glass"
+                                width="100%">
                         </div>
                     </div>
                 </div>
@@ -396,19 +439,21 @@
                     <img src="images/positivus/illus_search-engine.svg" alt="Illustration of a magnifying glass"
                         width="100%">
                 </div>
-
             </div>
-            <div class="list_item group-b">
+
+            <div class="list_item grp-green">
                 <div class="list_text">
-                    <div class="list_title">
-                        <h3><span>Pay-per-click advertising</span></h3>
+                    <div>
+                        <h3><span>Pay-per-click</span> <span>advertising</span></h3>
                     </div>
-                    <div class="list_more">
-                        <div>
-                            <img src="images/positivus/more_icon_green.svg" alt="Learn more icon" width="36">
-                        </div>
+                    <div class="list_footer">
                         <div class="learn-more">
+                            <img src="images/positivus/more_icon_green.svg" alt="Learn more icon" width="36">
                             <p>Learn more</p>
+                        </div>
+                        <div class="list_illus_inline">
+                            <img src="images/positivus/illus_pay-per-click.svg" alt="Illustration of a cursor and a tab"
+                                width="100%">
                         </div>
                     </div>
                 </div>
@@ -418,17 +463,21 @@
                 </div>
 
             </div>
-            <div class="list_item group-c">
+        </div>
+        <div class="services_list">
+            <div class="list_item grp-black">
                 <div class="list_text">
-                    <div class="list_title">
-                        <h3><span>Social Media Marketing</span></h3>
+                    <div>
+                        <h3><span>Social Media</span> <span>Marketing</span></h3>
                     </div>
-                    <div class="list_more">
-                        <div>
-                            <img src="images/positivus/more_icon_bnw.svg" alt="Learn more icon" width="36">
-                        </div>
+                    <div class="list_footer">
                         <div class="learn-more">
+                            <img src="images/positivus/more_icon_bnw.svg" alt="Learn more icon" width="36">
                             <p>Learn more</p>
+                        </div>
+                        <div class="list_illus_inline">
+                            <img src="images/positivus/illus_sm-marketing.svg"
+                                alt="Illustration of a smiling face on a tab" width="100%">
                         </div>
                     </div>
                 </div>
@@ -436,19 +485,21 @@
                     <img src="images/positivus/illus_sm-marketing.svg" alt="Illustration of a smiling face on a tab"
                         width="100%">
                 </div>
-
             </div>
-            <div class="list_item group-a">
+
+            <div class="list_item grp-grey">
                 <div class="list_text">
-                    <div class="list_title">
-                        <h3><span>Email Marketing</span></h3>
+                    <div>
+                        <h3><span>Email</span> <span>Marketing</span></h3>
                     </div>
-                    <div class="list_more">
-                        <div>
-                            <img src="images/positivus/more_icon_green.svg" alt="Learn more icon" width="36">
-                        </div>
+                    <div class="list_footer">
                         <div class="learn-more">
+                            <img src="images/positivus/more_icon_green.svg" alt="Learn more icon" width="36">
                             <p>Learn more</p>
+                        </div>
+                        <div class="list_illus_inline">
+                            <img src="images/positivus/illus_email-marketing.svg"
+                                alt="Illustration of two ovals sending messages" width="100%">
                         </div>
                     </div>
                 </div>
@@ -458,17 +509,21 @@
                 </div>
 
             </div>
-            <div class="list_item group-b">
+        </div>
+        <div class="services_list">
+            <div class="list_item grp-green">
                 <div class="list_text">
-                    <div class="list_title">
-                        <h3><span>Content Creation</span></h3>
+                    <div>
+                        <h3><span>Content</span> <span>Creation</span></h3>
                     </div>
-                    <div class="list_more">
-                        <div>
-                            <img src="images/positivus/more_icon_green.svg" alt="Learn more icon" width="36">
-                        </div>
+                    <div class="list_footer">
                         <div class="learn-more">
+                            <img src="images/positivus/more_icon_green.svg" alt="Learn more icon" width="36">
                             <p>Learn more</p>
+                        </div>
+                        <div class="list_illus_inline">
+                            <img src="images/positivus/illus_content-creation.svg" alt="Illustration of many tabs"
+                                width="100%">
                         </div>
                     </div>
                 </div>
@@ -476,17 +531,20 @@
                     <img src="images/positivus/illus_content-creation.svg" alt="Illustration of many tabs" width="100%">
                 </div>
             </div>
-            <div class="list_item group-c">
+
+            <div class="list_item grp-black">
                 <div class="list_text">
-                    <div class="list_title">
-                        <h3><span>Analytics and Tracking</span></h3>
+                    <div>
+                        <h3 class="analytics"><span>Analytics and</span> <span>Tracking</span></h3>
                     </div>
-                    <div class="list_more">
-                        <div>
-                            <img src="images/positivus/more_icon_bnw.svg" alt="Learn more icon" width="36">
-                        </div>
+                    <div class="list_footer">
                         <div class="learn-more">
+                            <img src="images/positivus/more_icon_bnw.svg" alt="Learn more icon" width="36">
                             <p>Learn more</p>
+                        </div>
+                        <div class="list_illus_inline">
+                            <img src="images/positivus/illus_analytics.svg" alt="Illustration of a magnifying glass"
+                                width="100%">
                         </div>
                     </div>
                 </div>
@@ -497,16 +555,17 @@
 
             </div>
         </div>
-    </div>
-    <div class="get-proposal">
-        <div class="proposal_intro">
-            <h2>Let's make things happen</h2>
-            <p>Contact us today to learn more about how our digital marketing services can help your business grow
-                and succeed online.</p>
-            <button class="primary">Get your free proposal</button>
-        </div>
-        <div class="proposal_illus">
-            <img src="images/positivus/illus_get-free-proposal.svg" alt="Illustration of a black face" width="100%">
+
+        <div class="get-proposal">
+            <div class="proposal_intro">
+                <h2>Let's make things happen</h2>
+                <p>Contact us today to learn more about how our digital marketing services can help your business grow
+                    and succeed online.</p>
+                <button class="primary">Get your free proposal</button>
+            </div>
+            <div class="proposal_illus">
+                <img src="images/positivus/illus_get-free-proposal.svg" alt="Illustration of a black face" width="100%">
+            </div>
         </div>
     </div>
 </body>
