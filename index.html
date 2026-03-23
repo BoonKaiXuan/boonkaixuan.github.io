@@ -8,6 +8,11 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
+        #container {
+            max-width: 1520px;
+            margin: auto;
+        }
+
         body {
             font-family: "Montserrat", sans-serif;
             color: #181818;
@@ -48,7 +53,7 @@
         }
 
         .content {
-            background-image: url(images/index/bg.jpg);
+            background-image: url(images/bg.jpg);
             background-size: cover;
             background-position: bottom;
         }
@@ -61,7 +66,6 @@
             padding: 20px 30px;
         }
 
-
         .bio {
             margin-top: 40px;
         }
@@ -72,16 +76,15 @@
 
         .asgm {
             display: flex;
-            align-items: stretch;
             padding: 50px 30px 80px;
             justify-content: space-between;
             gap: 20px;
             flex-wrap: wrap;
-            max-width: 100%;
         }
 
-        .asgm-week {
+        .asgm_week {
             width: 25%;
+            min-height: 185px;
             padding: 20px 40px;
             background-color: #f8fafc75;
             border-radius: 20px;
@@ -100,10 +103,6 @@
             border-bottom: solid 1px #181818;
         }
 
-        .week-number h3 {
-            display: inline;
-        }
-
         .footer {
             background-color: #9AA6B2;
             color: #f8fafc;
@@ -111,12 +110,12 @@
             padding: 30px 30px;
             display: flex;
             flex-direction: column;
-            justify-content: center;
             align-items: center;
+            gap: 20px;
         }
 
-        @media screen and (max-width:1195px) and (min-width:975px) {
-            .asgm-week {
+        @media screen and (max-width:1195px) {
+            .asgm_week {
                 width: 40%;
             }
         }
@@ -124,137 +123,136 @@
         @media screen and (max-width:975px) {
             .asgm {
                 flex-direction: column;
-                flex-wrap: nowrap;
-                justify-content: center;
             }
 
-            .asgm-week {
-                width: 100%;
-                box-sizing: border-box;
+            .asgm_week {
+                width: calc(100% - 80px);
+                /*to exclude padding*/
             }
         }
     </style>
 </head>
 
 <body>
-    <div class="header">
-        <div clas="logo">
-            <img src="images/index/logo.svg" alt="My logo" height="42">
-        </div>
-        <div class="s-media">
-            <div class="media-link">
-                <a href="https://www.facebook.com/alice.boon.39" target="_blank"><img src="images/index/icon_fb.png"
-                        alt="Facebook icon" width="24"></a>
+    <div id="container">
+        <div class="header">
+            <div class="logo">
+                <a href="https://boonkaixuan.github.io/index.html">
+                    <img src="images/logo.svg" alt="My logo" height="42">
+                </a>
             </div>
-            <div class="media-link">
-                <a href="https://www.instagram.com/_aliiceeeeeeee_/" target="_blank"><img src="images/index/icon_ig.png"
-                        alt="Instagram icon" width="24"></a>
-            </div>
-            <div class="media-link">
-                <a href="https://www.linkedin.com/in/kai-xuan-boon-479178202/" target="_blank"><img
-                        src="images/index/icon_linkedin.png" alt="Linkedin icon" width="24"></a>
-            </div>
-        </div>
-    </div>
-    <div class="content">
-        <div class="profile">
-            <div class="avatar">
-                <img src="images/index/profile.jpg" alt="My profile picture" width="128">
-            </div>
-            <div class="name">
-                <h1>Boon Kai Xuan (Alice)</h1>
-            </div>
-            <div class="subject">
-                <h2>Web Publishing</h2>
-            </div>
-            <div class="bio">
-                <p>Hello! I'm Alice, a student at Dasein Academy of Art. I love art and design, chocolate (I'm a
-                    chocoholic), watching movies, reading and
-                    exploring nature. Welcome to my personal page!</p>
-            </div>
-        </div>
-        <div class="asgm">
-            <div class="asgm-week">
-                <div class="week-number">
-                    <img src="images/index/icon_calendar.png" alt="Calendar icon" width="24">
-                    <h3>Week 1</h3>
+            <div class="s-media">
+                <div class="media-link">
+                    <a href="https://www.facebook.com/alice.boon.39" target="_blank"><img src="images/icon_fb.png"
+                            alt="Facebook icon" width="24"></a>
                 </div>
-                <div class="asgm_lists">
-                    <p>
-                        <a href="https://boonkaixuan.github.io/week1/exe1.html" target="_blank">Exercise 1</a>
-                    </p>
-                    <p>
-                        <a href="https://boonkaixuan.github.io/week1/exe2.html" target="_blank">Exercise 2</a>
-                    </p>
+                <div class="media-link">
+                    <a href="https://www.instagram.com/_aliiceeeeeeee_/" target="_blank"><img src="images/icon_ig.png"
+                            alt="Instagram icon" width="24"></a>
                 </div>
-            </div>
-            <div class="asgm-week">
-                <div class="week-number">
-                    <img src="images/index/icon_calendar.png" alt="Calendar icon" width="24">
-                    <h3>Week 2</h3>
-                </div>
-                <div class="asgm_lists">
-                    <p>
-                        <a href="https://boonkaixuan.github.io/week2/button.html" target="_blank">Exercise 1</a>
-                    </p>
-                    <p>
-                        <a href="https://boonkaixuan.github.io/week2/self-intro.html" target="_blank">Exercise 2</a>
-                    </p>
-                    <p>
-                        <a href="https://boonkaixuan.github.io/week2/artist.html" target="_blank">Exercise 3</a>
-                    </p>
-                </div>
-            </div>
-            <div class="asgm-week">
-                <div class="week-number">
-                    <img src="images/index/icon_calendar.png" alt="Calendar icon" width="24">
-                    <h3>Week 3</h3>
-                </div>
-                <div class="asgm_lists">
-                    <p>
-                        <a href="https://boonkaixuan.github.io/week3/flexbox1.html" target="_blank">Exercise 1</a>
-                    </p>
-                    <p>
-                        <a href="https://boonkaixuan.github.io/week3/flexbox2.html" target="_blank">Exercise 2</a>
-                    </p>
-                </div>
-            </div>
-            <div class="asgm-week week4">
-                <div class="week-number">
-                    <img src="images/index/icon_calendar.png" alt="Calendar icon" width="24">
-                    <h3>Week 4</h3>
-                </div>
-                <div class="asgm_lists">
-                    <p>
-                        <a href="https://boonkaixuan.github.io/week4/menu.html" target="_blank">Exercise 1</a>
-                    </p>
-                    <p>
-                        <a href="https://boonkaixuan.github.io/week4/home.html" target="_blank">Exercise 2</a>
-                    </p>
-                    <p>
-                        <a href="https://boonkaixuan.github.io/week4/index.html" target="_blank">Exercise 3</a>
-                    </p>
+                <div class="media-link">
+                    <a href="https://www.linkedin.com/in/kai-xuan-boon-479178202/" target="_blank"><img
+                            src="images/icon_linkedin.png" alt="Linkedin icon" width="24"></a>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="footer">
-        <div class="s-media">
-            <div class="media-link">
-                <a href="https://www.facebook.com/alice.boon.39" target="_blank"><img src="images/index/icon_fb.png"
-                        alt="Facebook icon" width="24"></a>
+        <div class="content">
+            <div class="profile">
+                <div class="avatar">
+                    <img src="images/profile.jpg" alt="My profile picture" width="128">
+                </div>
+                <div class="username">
+                    <h1>Boon Kai Xuan (Alice)</h1>
+                </div>
+                <div class="subject">
+                    <h2>Web Publishing</h2>
+                </div>
+                <div class="bio">
+                    <p>Hello! I'm Alice, a student at Dasein Academy of Art. I love art and design, chocolate (I'm a
+                        chocoholic), watching movies, reading and
+                        exploring nature. Welcome to my personal page!</p>
+                </div>
             </div>
-            <div class="media-link">
-                <a href="https://www.instagram.com/_aliiceeeeeeee_/" target="_blank"><img src="images/index/icon_ig.png"
-                        alt="Instagram icon" width="24"></a>
-            </div>
-            <div class="media-link">
-                <a href="https://www.linkedin.com/in/kai-xuan-boon-479178202/" target="_blank"><img
-                        src="images/index/icon_linkedin.png" alt="Linkedin icon" width="24"></a>
+            <div class="asgm">
+                <div class="asgm_week">
+                    <div class="week-number">
+                        <img src="images/icon_calendar.png" alt="Calendar icon" width="24">
+                        <h3>Week 1</h3>
+                    </div>
+                    <div>
+                        <p>
+                            <a href="https://boonkaixuan.github.io/week1/exe1.html" target="_blank">Exercise 1</a>
+                        </p>
+                        <p>
+                            <a href="https://boonkaixuan.github.io/week1/exe2.html" target="_blank">Exercise 2</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="asgm_week">
+                    <div class="week-number">
+                        <img src="images/icon_calendar.png" alt="Calendar icon" width="24">
+                        <h3>Week 2</h3>
+                    </div>
+                    <div>
+                        <p>
+                            <a href="https://boonkaixuan.github.io/week2/button.html" target="_blank">Exercise 1</a>
+                        </p>
+                        <p>
+                            <a href="https://boonkaixuan.github.io/week2/self-intro.html" target="_blank">Exercise 2</a>
+                        </p>
+                        <p>
+                            <a href="https://boonkaixuan.github.io/week2/artist.html" target="_blank">Exercise 3</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="asgm_week">
+                    <div class="week-number">
+                        <img src="images/icon_calendar.png" alt="Calendar icon" width="24">
+                        <h3>Week 3</h3>
+                    </div>
+                    <div>
+                        <p>
+                            <a href="https://boonkaixuan.github.io/week3/flexbox1.html" target="_blank">Exercise 1</a>
+                        </p>
+                        <p>
+                            <a href="https://boonkaixuan.github.io/week3/flexbox2.html" target="_blank">Exercise 2</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="asgm_week week4">
+                    <div class="week-number">
+                        <img src="images/icon_calendar.png" alt="Calendar icon" width="24">
+                        <h3>Week 4</h3>
+                    </div>
+                    <div>
+                        <p>
+                            <a href="https://boonkaixuan.github.io/week4/menu.html" target="_blank">Exercise 1</a>
+                        </p>
+                        <p>
+                            <a href="https://boonkaixuan.github.io/week4/home.html" target="_blank">Exercise 2</a>
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="disclaimer">
-            <p>@ 2026 Boon Kai Xuan. All rights reserved.</p>
+        <div class="footer">
+            <div class="s-media">
+                <div class="media-link">
+                    <a href="https://www.facebook.com/alice.boon.39" target="_blank"><img src="images/icon_fb.png"
+                            alt="Facebook icon" width="24"></a>
+                </div>
+                <div class="media-link">
+                    <a href="https://www.instagram.com/_aliiceeeeeeee_/" target="_blank"><img src="images/icon_ig.png"
+                            alt="Instagram icon" width="24"></a>
+                </div>
+                <div class="media-link">
+                    <a href="https://www.linkedin.com/in/kai-xuan-boon-479178202/" target="_blank"><img
+                            src="images/icon_linkedin.png" alt="Linkedin icon" width="24"></a>
+                </div>
+            </div>
+            <div class="disclaimer">
+                @ 2026 Boon Kai Xuan. All rights reserved.
+            </div>
         </div>
     </div>
 
