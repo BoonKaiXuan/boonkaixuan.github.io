@@ -1,0 +1,284 @@
+    .banner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    .banner_intro {
+        width: 40%;
+    }
+
+    .banner_intro h1 {
+        font-size: 56px;
+    }
+
+    .banner_img_vertical {
+        display: none;
+    }
+
+    .banner_img {
+        width: 45%;
+    }
+
+    .partners_logos {
+        display: flex;
+        align-items: center;
+        gap: 50px;
+    }
+
+    .logo_item {
+        filter: grayscale(1);
+        width: calc(16.67% - 41.67px);
+    }
+
+    .services_heading {
+        margin-top: 100px;
+        margin-bottom: 60px;
+        display: flex;
+        align-items: flex-start;
+        gap: 20px;
+        width: 70%;
+
+    }
+
+    .services_heading h2 span {
+        background-color: #B9FF66;
+        border-radius: 7px;
+        padding: 0px 5px;
+        font-size: 32px;
+    }
+
+    .services_list {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 30px;
+    }
+
+    .list_item {
+        width: 40%;
+        border-radius: 30px;
+        border: #191A23 solid 1px;
+        padding: 30px 50px;
+        display: flex;
+        justify-content: space-between;
+        filter: drop-shadow(0px 5px #191A23);
+        height: 220px;
+    }
+
+    .list_text {
+        width: 45%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .list_illus {
+        width: 45%;
+        display: flex;
+        align-items: center;
+    }
+
+    .list_illus_inline {
+        display: none;
+    }
+
+    .list_text h3 {
+        font-size: 24px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        font-weight: 600;
+        width: 170px;
+    }
+
+    .list_text h3 span {
+        border-radius: 7px;
+        padding: 2px 0px;
+    }
+
+    .grp-grey {
+        background-color: #F3F3F3;
+    }
+
+    .grp-grey h3 span {
+        background-color: #B9FF66;
+    }
+
+    .grp-green {
+        background-color: #B9FF66;
+    }
+
+    .grp-black {
+        background-color: #191A23;
+    }
+
+    .grp-green h3 span,
+    .grp-black h3 span {
+        background-color: #F3F3F3;
+    }
+
+    h3.analytics span {
+        background-color: #B9FF66;
+    }
+
+    .grp-black .learn-more {
+        color: #F3F3F3;
+    }
+
+    .learn-more {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+    }
+
+    .learn-more p {
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+
+    .get-proposal {
+        background-color: #F3F3F3;
+        border-radius: 30px;
+        padding: 20px 50px;
+        display: flex;
+        align-items: center;
+        gap: 20%;
+        margin-top: 80px;
+    }
+
+    .proposal_intro {
+        width: 40%;
+    }
+
+    .proposal_intro h2 {
+        margin-top: 0px;
+    }
+
+    .proposal_illus {
+        width: 25%;
+    }
+
+    @media screen and (max-width:1280px) {
+        body {
+            margin-left: 50px;
+            margin-right: 50px;
+        }
+
+        .navbar {
+            display: none;
+        }
+
+        .menu-icon {
+            display: block;
+        }
+
+        .banner {
+            margin-top: 0px;
+        }
+
+        .services_heading {
+            width: 85%;
+        }
+
+        .services_list {
+            gap: 30px;
+        }
+
+        .list_text {
+            width: 100%;
+        }
+
+        .list_footer {
+            display: flex;
+            align-items: flex-end;
+            justify-content: space-between;
+        }
+
+        .list_illus_inline {
+            display: block;
+        }
+
+        .list_illus_inline img {
+            height: 140px;
+        }
+
+        .list_illus {
+            display: none;
+        }
+
+        .learn-more p {
+            display: none;
+        }
+
+    }
+
+    @media screen and (max-width:905px) {
+
+        body {
+            margin-left: 25px;
+            margin-right: 25px;
+        }
+
+        .banner {
+            flex-direction: column;
+        }
+
+        .banner_intro {
+            width: 100%;
+        }
+
+        .banner_img_vertical {
+            display: block;
+        }
+
+        .banner_img {
+            display: none;
+        }
+
+        button.primary {
+            width: 100%;
+        }
+
+        .partners_logos {
+            flex-wrap: wrap;
+        }
+
+        .services_heading {
+            flex-direction: column;
+            width: 100%;
+            text-align: center;
+            gap: 0px;
+        }
+
+        .services_heading h2 {
+            width: 100%;
+        }
+
+        .services_list {
+            flex-direction: column;
+        }
+
+        .list_item {
+            width: 100%;
+            box-sizing: border-box;
+            height: 280px;
+            padding: 30px 40px;
+        }
+
+        h3.analytics span {
+            background-color: #F3F3F3;
+        }
+
+        .get-proposal {
+            padding: 50px 40px;
+        }
+
+        .proposal_illus {
+            display: none;
+        }
+
+        .proposal_intro {
+            width: 100%;
+        }
+    }
