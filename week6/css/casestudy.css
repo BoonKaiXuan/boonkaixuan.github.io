@@ -1,0 +1,92 @@
+.case-studies {
+    display: flex;
+    padding: 70px 0px;
+}
+
+.case_list {
+    width: 33.33%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 0px 60px;
+    border-right: solid 1px var(--color_grey);
+}
+
+.case_list_last {
+    border: none;
+}
+
+.case_more {
+    color: var(--color_green);
+    display: flex;
+    gap: 10px;
+}
+
+.working-process_step {
+    padding: 41px 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.working-process_topbar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.working-process_topbar_left {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.wp_topbar_active {
+    padding-bottom: 20px;
+    border-bottom: solid 1px var(--color_black);
+}
+
+.step-sequence {
+    font-size: 44px;
+    font-weight: 600;
+}
+
+.team_members {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.member {
+    width: 32%;
+    padding: 40px 35px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.member_topbar {
+    display: flex;
+    border-bottom: solid 1px var(--color_black);
+    padding-bottom: 20px;
+}
+
+.member_topbar_left {
+    width: 35%;
+}
+
+.member_topbar_right {
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.member_linkedin {
+    text-align: right;
+}
+
+.btn_team {
+    text-align: right;
+}
