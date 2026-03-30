@@ -43,7 +43,7 @@
            h2,
            h3,
            h4 {
-               font-weight: 600;
+               font-weight: 500;
            }
 
            h2 {
@@ -60,14 +60,17 @@
 
            /*Reusable Components*/
 
-           button.primary {
-               color: var(--text_light);
-               background-color: var(--color_black);
+           button.base {
+               font-family: var(--font-base);
+               font-size: inherit;
                padding: 20px 35px;
                border-radius: var(--radius_btn);
                min-width: 269px;
-               font-family: var(--font-base);
-               font-size: inherit;
+           }
+
+           button.primary {
+               color: var(--text_light);
+               background-color: var(--color_black);
            }
 
            .card {
@@ -131,10 +134,11 @@
                gap: 25px;
            }
 
-           .section_title h2 span {
+           span {
                background-color: #B9FF66;
+               color: black;
                border-radius: 7px;
-               padding: 0px 5px;
+               padding: 0px 7px;
            }
 
            .footer {
@@ -143,20 +147,70 @@
                border-top-left-radius: var(--radius_card);
                border-top-right-radius: var(--radius_card);
                padding: 60px 55px 60px 50px;
+               margin-top: 60px;
            }
 
            .footer_navbar {
                display: flex;
                justify-content: space-between;
+               margin-bottom: 50px;
+               align-items: center;
            }
 
            .footer_navbar_items {
                display: flex;
-               gap: 30px;
+               gap: 40px;
                text-decoration: underline;
            }
 
            .s-medias {
-               gap: 10px;
-               align-items: center;
+               display: flex;
+               gap: 15px;
+           }
+
+           .footer_contact {
+               display: flex;
+               justify-content: space-between;
+               padding-bottom: 50px;
+               border-bottom: solid 1px white;
+           }
+
+           .footer_contact_left {
+               width: 30%;
+           }
+
+           .footer_contact_left h4 span {
+               background-color: var(--color_green);
+           }
+
+           .footer_contact_right {
+               width: 60%;
+               background-color: #292A32;
+               border-radius: var(--radius_btn);
+               padding: 58px 40px;
+               display: flex;
+               justify-content: space-between;
+           }
+
+           button.email {
+               width: 48%;
+               background-color: transparent;
+               color: var(--text_light);
+               border: 1px solid white;
+               text-align: left;
+           }
+
+           button.subscribe {
+               width: 48%;
+               background-color: var(--color_green);
+           }
+
+           .acknowledgement {
+               display: flex;
+               gap: 50px;
+               margin-top: 50px;
+           }
+
+           .privacy-policy {
+               text-decoration: underline;
            }
