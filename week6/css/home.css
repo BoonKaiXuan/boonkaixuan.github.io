@@ -8,10 +8,9 @@
 
     .banner_intro {
         width: 40%;
-    }
-
-    .banner_intro h1 {
-        font-size: 56px;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
     }
 
     .banner_img_vertical {
@@ -33,97 +32,39 @@
         width: calc(16.67% - 41.67px);
     }
 
-    .services_heading {
-        margin-top: 100px;
-        margin-bottom: 60px;
-        display: flex;
-        align-items: flex-start;
-        gap: 20px;
-        width: 70%;
-
-    }
-
-    .services_heading h2 span {
-        background-color: #B9FF66;
-        border-radius: 7px;
-        padding: 0px 5px;
-        font-size: 32px;
-    }
-
-    .services_list {
+    .services_lists {
         display: flex;
         justify-content: space-between;
         margin-top: 30px;
     }
 
-    .list_item {
-        width: 40%;
-        border-radius: 30px;
-        border: #191A23 solid 1px;
-        padding: 30px 50px;
+    .services_item {
+        width: 48%;
+        padding: 50px;
         display: flex;
         justify-content: space-between;
-        filter: drop-shadow(0px 5px #191A23);
-        height: 220px;
+        min-height: 310px;
     }
 
-    .list_text {
+    .services_item h3 {
+        line-height: 1.2;
+    }
+
+    .services_item_left {
         width: 45%;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
     }
 
-    .list_illus {
-        width: 45%;
+    .services_item_right {
+        width: 48%;
         display: flex;
         align-items: center;
     }
 
-    .list_illus_inline {
+    .services_illus_vertical {
         display: none;
-    }
-
-    .list_text h3 {
-        font-size: 24px;
-        margin-top: 0px;
-        margin-bottom: 0px;
-        font-weight: 600;
-        width: 170px;
-    }
-
-    .list_text h3 span {
-        border-radius: 7px;
-        padding: 2px 0px;
-    }
-
-    .grp-grey {
-        background-color: #F3F3F3;
-    }
-
-    .grp-grey h3 span {
-        background-color: #B9FF66;
-    }
-
-    .grp-green {
-        background-color: #B9FF66;
-    }
-
-    .grp-black {
-        background-color: #191A23;
-    }
-
-    .grp-green h3 span,
-    .grp-black h3 span {
-        background-color: #F3F3F3;
-    }
-
-    h3.analytics span {
-        background-color: #B9FF66;
-    }
-
-    .grp-black .learn-more {
-        color: #F3F3F3;
     }
 
     .learn-more {
@@ -132,34 +73,37 @@
         align-items: center;
     }
 
-    .learn-more p {
-        margin-top: 0px;
-        margin-bottom: 0px;
-    }
-
     .get-proposal {
-        background-color: #F3F3F3;
-        border-radius: 30px;
+        border: none;
+        filter: none;
         padding: 20px 50px;
         display: flex;
         align-items: center;
-        gap: 20%;
+        gap: 10%;
         margin-top: 80px;
     }
 
     .proposal_intro {
-        width: 40%;
-    }
-
-    .proposal_intro h2 {
-        margin-top: 0px;
+        width: 50%;
     }
 
     .proposal_illus {
         width: 25%;
     }
 
-    @media screen and (max-width:1280px) {
+    @media screen and (max-width:1324px) {
+
+        .services_item_left {
+            width: 50%;
+        }
+
+        .services_item_right {
+            width: 45%;
+        }
+    }
+
+    @media screen and (max-width:1292px) {
+
         body {
             margin-left: 50px;
             margin-right: 50px;
@@ -172,53 +116,60 @@
         .menu-icon {
             display: block;
         }
+    }
 
-        .banner {
-            margin-top: 0px;
+    @media screen and (max-width:1136px) {
+
+        .services_illus_vertical {
+            display: block;
+            width: 48%;
         }
 
-        .services_heading {
-            width: 85%;
+        .services_item_right {
+            display: none;
         }
 
-        .services_list {
-            gap: 30px;
-        }
-
-        .list_text {
+        .services_item_left {
             width: 100%;
         }
 
-        .list_footer {
+        .services_more {
             display: flex;
             align-items: flex-end;
             justify-content: space-between;
         }
+    }
 
-        .list_illus_inline {
-            display: block;
+    @media screen and (max-width:1015px) {
+
+        .partners_logos {
+            flex-wrap: wrap;
+            column-gap: 100px;
+            row-gap: 30px;
         }
 
-        .list_illus_inline img {
-            height: 140px;
-        }
-
-        .list_illus {
-            display: none;
+        .logo_item {
+            width: calc(33.33% - 66.67px);
         }
 
         .learn-more p {
             display: none;
         }
 
+        .get-proposal {
+            padding: 50px;
+        }
+
+        .proposal_illus {
+            display: none;
+        }
+
+        .proposal_intro {
+            width: 100%;
+        }
     }
 
     @media screen and (max-width:905px) {
-
-        body {
-            margin-left: 25px;
-            margin-right: 25px;
-        }
 
         .banner {
             flex-direction: column;
@@ -230,6 +181,7 @@
 
         .banner_img_vertical {
             display: block;
+            text-align: center;
         }
 
         .banner_img {
@@ -240,45 +192,48 @@
             width: 100%;
         }
 
-        .partners_logos {
-            flex-wrap: wrap;
-        }
-
-        .services_heading {
+        .services {
             flex-direction: column;
             width: 100%;
             text-align: center;
             gap: 0px;
         }
 
-        .services_heading h2 {
-            width: 100%;
+        .services h2 {
+            margin-bottom: 20px;
         }
 
-        .services_list {
+        .services_lists {
             flex-direction: column;
+            gap: 30px;
         }
 
-        .list_item {
+        .services_item {
             width: 100%;
-            box-sizing: border-box;
-            height: 280px;
-            padding: 30px 40px;
+            padding: 50px;
+        }
+
+        .services_illus_vertical {
+            width: 50%;
+        }
+
+        .learn-more p {
+            display: block;
         }
 
         h3.analytics span {
-            background-color: #F3F3F3;
+            background-color: var(--color_grey);
         }
 
-        .get-proposal {
-            padding: 50px 40px;
+    }
+
+    @media screen and (max-width:650px) {
+
+        .logo_item {
+            width: calc(50% - 50px);
         }
 
-        .proposal_illus {
+        .learn-more p {
             display: none;
-        }
-
-        .proposal_intro {
-            width: 100%;
         }
     }

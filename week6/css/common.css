@@ -15,7 +15,7 @@
            }
 
            body {
-               margin: 10px 100px 20px;
+               margin: 30px 100px;
            }
 
            /*Root Variables*/
@@ -46,6 +46,10 @@
                font-weight: 500;
            }
 
+           h1 {
+               font-size: 56px;
+           }
+
            h2 {
                font-size: 32px;
            }
@@ -60,17 +64,17 @@
 
            /*Reusable Components*/
 
-           button.base {
+           button {
                font-family: var(--font-base);
                font-size: inherit;
                padding: 20px 35px;
                border-radius: var(--radius_btn);
-               min-width: 269px;
            }
 
            button.primary {
                color: var(--text_light);
                background-color: var(--color_black);
+               min-width: 269px;
            }
 
            .card {
@@ -106,7 +110,6 @@
                display: flex;
                align-items: center;
                gap: 8px;
-               width: 20%;
            }
 
            .navbar {
@@ -121,24 +124,31 @@
                display: none;
            }
 
-           .quote {
+           .quote button {
                border: var(--color_black) solid 1px;
-               border-radius: var(--radius_btn);
-               padding: 12px 30px;
+               background-color: transparent;
            }
 
            .section_title {
                margin-top: 100px;
                margin-bottom: 60px;
                display: flex;
-               gap: 25px;
+               gap: 20px;
+               width: 70%
            }
 
            span {
-               background-color: #B9FF66;
                color: black;
                border-radius: 7px;
                padding: 0px 7px;
+           }
+
+           span.green {
+               background-color: var(--color_green);
+           }
+
+           span.white {
+               background-color: white;
            }
 
            .footer {
@@ -146,7 +156,7 @@
                color: var(--text_light);
                border-top-left-radius: var(--radius_card);
                border-top-right-radius: var(--radius_card);
-               padding: 60px 55px 60px 50px;
+               padding: 60px 50px;
                margin-top: 60px;
            }
 
@@ -176,11 +186,7 @@
            }
 
            .footer_contact_left {
-               width: 30%;
-           }
-
-           .footer_contact_left h4 span {
-               background-color: var(--color_green);
+               width: 35%;
            }
 
            .footer_contact_right {
@@ -190,6 +196,10 @@
                padding: 58px 40px;
                display: flex;
                justify-content: space-between;
+           }
+
+           .s-medias_vertical {
+               display: none;
            }
 
            button.email {
@@ -213,4 +223,81 @@
 
            .privacy-policy {
                text-decoration: underline;
+           }
+
+           @media screen and (max-width:1080px) {
+
+               .section_title {
+                   width: 85%;
+               }
+
+               .footer_navbar,
+               .footer_navbar_items,
+               .footer_contact,
+               .acknowledgement {
+                   flex-direction: column;
+                   text-align: center;
+               }
+
+               .footer_navbar {
+                   gap: 30px;
+               }
+
+               .footer_navbar_items {
+                   text-decoration: none;
+                   gap: 20px;
+               }
+
+               .s-medias {
+                   display: none;
+               }
+
+               .s-medias_vertical {
+                   display: flex;
+                   justify-content: center;
+                   gap: 20px;
+               }
+
+               .footer_contact_left,
+               .footer_contact_right {
+                   width: 100%;
+               }
+
+               .footer_contact {
+                   padding-bottom: 30px;
+                   gap: 30px;
+               }
+
+               .acknowledgement {
+                   gap: 20px;
+               }
+           }
+
+           @media screen and (max-width:905px) {
+
+               body {
+                   margin-left: 25px;
+                   margin-right: 25px;
+               }
+
+               h1 {
+                   font-size: 42px;
+               }
+
+               .footer_contact_right {
+                   flex-direction: column;
+                   gap: 20px;
+               }
+
+               .footer_contact_right button {
+                   width: 100%;
+               }
+           }
+
+           @media screen and (max-width:650px) {
+
+               .footer {
+                   padding: 60px 25px;
+
+               }
            }
