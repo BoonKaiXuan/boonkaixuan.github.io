@@ -1,6 +1,8 @@
 .case-studies {
     display: flex;
     padding: 70px 0px;
+    filter: none;
+    border: none;
 }
 
 .case_list {
@@ -47,6 +49,10 @@
     border-bottom: solid 1px var(--color_black);
 }
 
+.icon_plus {
+    display: none;
+}
+
 .step-sequence {
     font-size: 44px;
     font-weight: 600;
@@ -54,12 +60,13 @@
 
 .team_members {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
     margin-bottom: 30px;
 }
 
 .member {
-    width: 32%;
+    width: calc(33.33% - 20px);
     padding: 40px 35px;
     display: flex;
     flex-direction: column;
@@ -70,6 +77,7 @@
     display: flex;
     border-bottom: solid 1px var(--color_black);
     padding-bottom: 20px;
+    gap: 5px;
 }
 
 .member_topbar_left {
@@ -89,4 +97,125 @@
 
 .btn_team {
     text-align: right;
+}
+
+.testimonials,
+.contact {
+    display: none;
+}
+
+@media screen and (max-width:1240px) {
+
+    .member {
+        width: calc(50% - 15px);
+    }
+}
+
+@media screen and (max-width:905px) {
+
+    .case-studies {
+        flex-direction: column;
+        gap: 30px;
+        background-color: transparent;
+        padding: 0px;
+    }
+
+    .case_list {
+        background-color: var(--color_black);
+        width: 100%;
+        border-radius: var(--radius_card);
+        padding: 30px 50px;
+        border: none;
+    }
+
+    .working-process_step {
+        padding: 30px 50px;
+        gap: 0px;
+    }
+
+    .working-process_step h3 {
+        font-size: 22px;
+    }
+
+    .wp_step1 {
+        background-color: var(--color_grey);
+    }
+
+    .wp_step1 .icon_plus {
+        display: block;
+    }
+
+    .wp_step1 .icon_minus,
+    .wp_step1 p {
+        display: none;
+    }
+
+    .wp_topbar_active {
+        border: none;
+        padding-bottom: 0px;
+    }
+
+    .step-sequence {
+        font-size: 32px;
+    }
+
+    .team_members {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .member {
+        width: 100%;
+    }
+
+    .testimonials,
+    .contact {
+        display: block;
+    }
+
+    .testimonials_content {
+        padding: 30px 50px;
+        border: none;
+        filter: none;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .review {
+        padding: 40px;
+        border: 1px solid var(--color_green);
+        border-radius: var(--radius_card);
+    }
+
+    .reviewee {
+        text-align: center;
+    }
+
+    .page-indicator {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .contact_content {
+        border: none;
+        filter: none;
+        padding: 30px 50px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-bottom: 50px;
+    }
+
+    .text-field {
+        padding: 20px 30px;
+        background-color: white;
+        color: rgb(112, 112, 112);
+        border: 1px solid black;
+        border-radius: var(--radius_btn);
+    }
+
+    .field_message {
+        min-height: 200px;
+    }
 }

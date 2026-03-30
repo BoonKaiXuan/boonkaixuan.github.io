@@ -102,22 +102,6 @@
         }
     }
 
-    @media screen and (max-width:1292px) {
-
-        body {
-            margin-left: 50px;
-            margin-right: 50px;
-        }
-
-        .navbar {
-            display: none;
-        }
-
-        .menu-icon {
-            display: block;
-        }
-    }
-
     @media screen and (max-width:1136px) {
 
         .services_illus_vertical {
@@ -186,21 +170,6 @@
 
         .banner_img {
             display: none;
-        }
-
-        button.primary {
-            width: 100%;
-        }
-
-        .services {
-            flex-direction: column;
-            width: 100%;
-            text-align: center;
-            gap: 0px;
-        }
-
-        .services h2 {
-            margin-bottom: 20px;
         }
 
         .services_lists {
