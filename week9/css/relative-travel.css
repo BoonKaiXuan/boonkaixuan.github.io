@@ -117,3 +117,16 @@ section {
     font-weight: bolder;
     margin-bottom: 6px;
 }
+
+@media screen and (max-width:950px) {
+
+    section {
+        flex-direction: column;
+        gap: 40px;
+        margin: 40px 0px;
+    }
+
+    .container {
+        width: 100%;
+    }
+}
