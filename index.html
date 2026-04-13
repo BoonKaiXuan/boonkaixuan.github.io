@@ -13,6 +13,10 @@
             margin: auto;
         }
 
+        * {
+            box-sizing: border-box;
+        }
+
         body {
             font-family: "Montserrat", sans-serif;
             color: #181818;
@@ -77,23 +81,17 @@
         .asgm {
             display: flex;
             padding: 50px 30px 80px;
-            justify-content: space-between;
             gap: 20px;
             flex-wrap: wrap;
         }
 
         .asgm_week {
-            width: 25%;
-            min-height: 185px;
+            width: calc(33.33% - 13.33px);
+            min-height: 225px;
             padding: 20px 40px;
             background-color: #f8fafc75;
             border-radius: 20px;
             text-align: center;
-        }
-
-        .week4,
-        .week7 {
-            width: 100%;
         }
 
         .week-number {
@@ -117,7 +115,7 @@
 
         @media screen and (max-width:1195px) {
             .asgm_week {
-                width: 40%;
+                width: calc(50% - 10px);
             }
         }
 
@@ -127,8 +125,7 @@
             }
 
             .asgm_week {
-                width: calc(100% - 80px);
-                /*to exclude padding*/
+                width: 100%;
             }
         }
     </style>
