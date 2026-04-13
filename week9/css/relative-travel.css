@@ -6,7 +6,7 @@
 
 /*Root Variables*/
 :root {
-    --font-base: Arial, Helvetica, sans-serif;
+    --font-base: Arial, sans-serif;
     --text-dark: rgb(57, 57, 57);
     --text-light-grey: #9E9E9E;
     --color-purple: rgb(159, 121, 230);
@@ -56,9 +56,9 @@ section {
     background-color: var(--card-color);
     display: flex;
     flex-direction: column;
+    width: 90%;
     gap: 15px;
     padding: 30px;
-    width: 90%;
 }
 
 .functions-icons {
