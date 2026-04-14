@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Trocchi&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+}
+
+/* === Root Variables === */
+
+:root {
+
+    /* === Colors === */
+
+    --color-dark-green: #1e3120;
+    --color-mid-green: #273f29;
+    --color-light-green: #3d6f42;
+    --color-mid-grey: #e2e2e2;
+    --color-seashell: #f8f5f2;
+    --color-dark-blue: #212934;
+    --color-white: #ffffff;
+    --color-black: #000000;
+
+
+    /* === Global Font === */
+
+    --color-font-light: var(--color-white);
+    --color-font-dark: var(--color-black);
+    --font-base: "Work Sans", sans-serif;
+    --font-default-size: 17px;
+    --font-heading-serif: "Trocchi", serif;
+    --font-heading-sans-serif: "Work Sans", sans-serif;
+
+
+    /* === Button === */
+
+    --padding-button-small: 13px 29px;
+    --padding-button-large: 17px 40px;
+    --radius-button: 30px;
+
+    /*Button-Green*/
+    --color-button-green-bg-default: var(--color-light-green);
+    --color-button-green-bg-hover: var(--color-dark-green);
+    --color-button-green-font: var(--color-white);
+
+    /*Button-White*/
+    --color-button--white-bg-default: var(--color-white);
+    --color-button-white-bg-hover: var(--color-light-green);
+    --color-button-white-font-default: var(--color-black);
+    --color-button-white-font-hover: var(--color-white);
+
+
+    /* === Link - Header & Footer Menu === */
+
+    --color-opacity-menu-font: 0.6;
+    --font-size-menu: 15px;
+
+    /*Menu-Black*/
+    --color-menu-font-black-default: rgb(var(--color-black), var(--color-opacity-menu-font));
+    --color-menu-font-black-hover: var(--color-black);
+
+    /*Menu-White*/
+    --color-menu-font-white-default: var(--color-white);
+    --color-menu-font-white-hover: rgb(var(--color-white), var(--color-opacity-menu-font));
+
+
+
+    --color-menu-font-green: var(--color-light-green);
+
+    /* == Form Elements === */
+
+    /* == Card === */
+
+
+
+}
