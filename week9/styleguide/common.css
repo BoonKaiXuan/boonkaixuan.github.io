@@ -73,6 +73,7 @@
     --padding-button-large: 17px 40px;
     --padding-card: 20px;
     --padding-text-field: 0px 16px;
+    --padding-default: 40px;
     --gap: 40px;
 }
 
@@ -90,6 +91,7 @@ h1,
 h2 {
     font-family: var(--font-heading);
     line-height: 1.35;
+    margin-bottom: 15px;
 }
 
 h3,
@@ -97,6 +99,7 @@ h4,
 h5,
 h6 {
     font-family: var(--font-base);
+    margin-bottom: 15px;
 }
 
 h1 {
@@ -275,12 +278,12 @@ input[type=text]:focus,
 .row-flex {
     display: flex;
     flex-wrap: wrap;
-    gap: var(--gap);
     align-items: center;
 }
 
-.padding-default {
-    padding: 0px 84px;
+.section {
+    padding: var(--padding-default);
+    margin: 40px 20px;
 }
 
 .column-two {
@@ -295,18 +298,22 @@ input[type=text]:focus,
     width: calc(25%-calc(var(--gap) * 3 / 4));
 }
 
+/* === Icons === */
+
+.icon {
+    padding: 0px 8px;
+}
 
 /* === Navigation Bar === */
 
-.header {
-    font-size: 15px;
-}
-
 .header_topbar {
     min-height: 76.8px;
+    padding: 0px 60px;
+    justify-content: space-between;
 }
 
 .navbar {
+    font-size: 15px;
     min-height: 61px;
     justify-content: center;
 }
@@ -324,12 +331,19 @@ input[type=text]:focus,
     min-height: 63px;
     background-color: var(--color-bg-primary);
     color: var(--color-text-light);
+    gap: 60px;
+    justify-content: center;
+}
+
+.header_utility>div {
+    align-items: center;
 }
 
 .search-bar {
     background-color: #1d2f1f0e;
     border-radius: 24px;
     padding: 0px 15px 0px 45px;
+    min-width: 368px;
 }
 
 /* === Footer === */
