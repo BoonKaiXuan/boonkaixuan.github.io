@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 20px 40px;
+            background-color: rgb(138, 138, 204);
+        }
+
+        .container {
+            padding: 20px;
+            background-color: white;
+            border-radius: 20px;
+        }
+
+        form {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        input,
+        textarea {
+            border-radius: 22.5px;
+            border: rgb(174, 174, 174) 1px solid;
+            padding: 5px 15px;
+        }
+
+        input {
+            margin: 10px 0px;
+            min-height: 45px;
+        }
+
+        textarea {
+            min-height: 80px;
+        }
+
+        input[type=submit] {
+            padding: 10px 30px;
+            background-color: rgb(8, 219, 128);
+        }
+
+        .two-column {
+            width: 48%;
+        }
+
+        textarea {
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Regsitration Form - Middle School</h1>
+        <form>
+            <input type="text" id="fname" name="fname" placeholder="First Name*" class="two-column" required />
+
+            <input type="text" id="lname" name="lname" placeholder="Last Name*" class="two-column" required />
+
+            <input type="date" id="dob" name="dob" placeholder="Date of Birth*" class="two-column" required />
+
+            <input type="email" id="email" name="email" placeholder="Email Address*" class="two-column" required />
+
+            <input type="text" id="home-url" name="home-url" placeholder="Homepage URL" class="two-column">
+
+            <label for="fav-color">
+                Favourite Colors
+            </label>
+            <select id="fav-color" name="fav-color">
+                <option value="none">-</option>
+                <option value="red">Red</option>
+                <option value="blue">Blue</option>
+                <option value="black">Black</option>
+                <option value="green">Green</option>
+                <option value="purple">Purple</option>
+            </select>
+
+            <textarea id="bio" name="bio" placeholder="Bio/Self Introduction">
+
+        </textarea>
+
+            <input type="submit" value="Submit">
+
+        </form>
+    </div>
+</body>
+
+</html>
