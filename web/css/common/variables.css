@@ -17,7 +17,8 @@
     --color-dark-green: #1e3120;
     --color-mid-green: #273f29;
     --color-light-green: #3d6f42;
-    --color-mid-grey: #e2e2e2;
+    --color-light-grey: #e2e2e2;
+    --color-mid-grey: #98a098;
     --color-seashell: #f8f5f2;
     --color-dark-blue: #212934;
     --color-white: #ffffff;
@@ -65,14 +66,44 @@
     --color-menu-font-white-default: var(--color-white);
     --color-menu-font-white-hover: rgb(var(--color-white), var(--color-opacity-menu-font));
 
+    /*Submenu-Black*/
+
 
 
     --color-menu-font-green: var(--color-light-green);
 
     /* == Form Elements === */
 
+    --padding-text-field: 0px 16px;
+    --radius-text-field: 27px;
+    --font-size-text-field: 16px;
+
+    /*Text-field-with-border*/
+    --color-text-field-with-border-bg: var(--color-white);
+    --color-text-field-with-border-borderline-default: rgb(var(--color-black), 0.3) 1px solid;
+    --color-text-field-with-border-borderline-hover: rgb(var(--color-light-green), 0.5) 1px solid;
+    --color-text-field-with-border-borderline-pressed: var(--color-light-green) 1px solid;
+    ----color-text-field-with-border-font-default: rgb(var(--color-black), 0.3) 1px solid;
+    --color-text-field-with-border-font-pressed: var(var(--color-dark-blue));
+
+    /*Text-field-no-border*/
+    --color-text-field-no-border-bg: var(--color-seashell);
+
+
     /* == Card === */
 
+    --padding-card: 20px;
 
+    /*Card-with-border*/
+    --color-card-with-border-bg-default: var(--color-white);
+    --color-card-with-border-borderline-default: var(--color-light-grey) 1px solid;
+    --color-card-with-border-bg-hover: var(--color-seashell);
+    --color-card-with-border-borderline-hover: var(--color-mid-grey) 1px solid;
+    --radius-card-with-border: 5px;
 
+    /*Card-dark-green*/
+    --color-card-dark-green-bg-default: var(--color-dark-green);
+
+    /*Card-mid-green*/
+    --color-card-mid-green-bg-default: var(--color-mid-green);
 }
