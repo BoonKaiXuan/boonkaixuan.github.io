@@ -1,0 +1,27 @@
+/* shipping information*/
+.text-field_with-borderline {
+    padding: var(--padding-text-field);
+    background-color: var(--color-txtfield-with-border-bg);
+    border-radius: var(--radius-text-field);
+    border: var(--color-text-field-with-border-borderline-default);
+    font-size: var(--font-size-text-field);
+    color: var(--color-txtfield-with-border-font-default);
+}
+
+.text-field_with-borderline:hover {
+    border: var(--color-txtfield-with-border-borderline-hover);
+    background: var(--color-txtfield-with-border-bg);
+    color: var(--color-txtfield-with-border-font-pressed);
+}
+
+.text-field_with-borderline-textarea {
+    border: var(--color-txtfield-with-border-borderline-pressed);
+}
+
+/*contact,review,comment,insert your email*/
+.text-field_no-border {
+    padding: var(--padding-text-field);
+    background-color: var(--color-txtfield-no-border-bg);
+    border-radius: var(--radius-text-field);
+    font-size: var(--font-size-text-field);
+}
