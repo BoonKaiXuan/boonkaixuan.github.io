@@ -1,0 +1,26 @@
+.card_with-border {
+    padding: var(--padding-card);
+    background-color: var(--color-card-with-border-bg-default);
+    border: var(--color-card-with-border-borderline-default);
+    border-radius: var(--radius-card-with-border);
+}
+
+.card_with-border:hover {
+    background: var(--color-card-with-border-bg-hover);
+    border: var(--color-card-with-border-borderline-hover);
+}
+
+.card_dark-green {
+    padding: var(--padding-card);
+    background-color: var(--color-card-dark-green-bg-default);
+}
+
+.card_dark-green:hover {
+    filter: var(--card-filter-hover);
+    box-shadow: var(--card-box-shadow-hover);
+}
+
+.card_mid-green {
+    padding: var(--padding-card);
+    background-color: var(--color-card-mid-green-bg-default);
+}
