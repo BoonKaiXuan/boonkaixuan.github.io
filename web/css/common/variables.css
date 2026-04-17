@@ -38,6 +38,12 @@
     --font-body-default-line-height: 1.8;
     --font-heading-serif: "Trocchi", serif;
     --font-heading-sans-serif: "Work Sans", sans-serif;
+    --h1-font-size: 52px;
+    --h2-font-size: 34px;
+    --h3-font-size: 22px;
+    --h4-font-size: 20px;
+    --h5-font-size: 24px;
+    --h6-font-size: 18px;
 
 
     /* === Radius === */
@@ -50,7 +56,9 @@
     /* === Button === */
 
     --padding-button-small: 13px 29px;
+    --font-size-button-small: 14px;
     --padding-button-large: 17px 40px;
+    --font-size-button-large: 18px;
     --radius-button: var(--radius-30);
 
     /*Button-Primary*/
@@ -143,6 +151,23 @@
     --icon-size-s: 14px;
     --icon-size-m: 20px;
     --icon-size-l: 96px;
+
+
+    /* === Label/Badge === */
+    --color-label-bg: var(--color-light-green);
+    --color-label-font: var(--color-white);
+
+    /*Sale Circle Badge*/
+    --size-badge-circle: 50px;
+    --radius-badge-circle: 50%;
+    --font-size-badge-circle: 17px;
+
+    /*Discount Label*/
+    --padding-discount-label: 2px 9px;
+    --radius-discount-label: var(--radius-5);
+    --font-size-discount-label: 14px;
+    --font-weight-discount-label: var(--font-weight-bold);
+    --letter-spacing-discount-label: 2px;
 
 
     /* === Layout === */
