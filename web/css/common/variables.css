@@ -45,10 +45,25 @@
     --h5-font-size: 24px;
     --h6-font-size: 18px;
 
-    ----font-heading-line-height-135: 1.35;
-    ----font-heading-line-height-140: 1.4;
-    ----font-heading-line-height-150: 1.5;
+    --font-line-height-110: 1.1;
+    --font-line-height-135: 1.35;
+    --font-line-height-140: 1.4;
+    --font-line-height-150: 1.5;
+    --font-line-height-170: 1.7;
 
+    --letter-spacing-big: 2px;
+    --letter-spacing-medium: 0.015em;
+
+    /*Class Typo*/
+    --font-size-banner-subheading: 14px;
+
+    --color-font-section-heading: var(--color-dark-green);
+    --color-font-section-subheading: var(--color-light-green);
+
+    --color-font-product-price: var(--color-light-green);
+
+    --font-size-caption: 13px;
+    --font-size-page: 13px;
 
     /* === Radius === */
 
