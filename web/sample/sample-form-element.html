@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form-element</title>
+    <link rel="stylesheet" a href="../css/common/variables.css">
+    <link rel="stylesheet" a href="../css/common/form-element.css">
+</head>
+
+<body>
+    <label for="fname">Your name</label><br>
+    <input class="text-field_no-border" type="text" id="fname" name="fname"><br>
+    <label for="email">Your email</label><br>
+    <input class="text-field_no-border" type="text" id="email" name="email"><br>
+    <label for="subject">Subject</label><br>
+    <input class="text-field_no-border" type="text" id="subject" name="subject"><br>
+    <label for="message">Message</label><br>
+    <textarea class="text-field_no-border" type="text" id="message" name="message"></textarea>
+
+    <div class="form-element-full-width">
+        <input class="text-field_with-borderline" type="text" placeholder="Malaysia">
+        <input class="text-field_with-borderline" type="text" placeholder="Address">
+        <select class="text-field_with-borderline" name="state" id="state">
+            <option value="State" disabled selected>State</option>
+            <option value="Johor">Johor</option>
+            <option value="Kedah">Kedah</option>
+            <option value="Melaka">Melaka</option>
+            <option value="Kelantan">Kelantan</option>
+            <option value="Negeri Sembilan">Negeri Sembilan</option>
+            <option value="Pahang">Pahang</option>
+            <option value="Perak">Perak</option>
+            <option value="Perlis">Perlis</option>
+            <option value="Pulau Pinang">Pulau Pinang</option>
+            <option value="Selangor">Selangor</option>
+            <option value="Terengganu">Terengganu</option>
+            <option value="Sabah">Sabah</option>
+            <option value="Sarawak">Sarawak</option>
+        </select>
+    </div>
+    <div class="form-element-half-width">
+        <input class="text-field_with-borderline" type="text" placeholder="Postcode">
+        <input class="text-field_with-borderline" type="text" placeholder="City">
+    </div>
+
+
+</body>
+
+</html>
