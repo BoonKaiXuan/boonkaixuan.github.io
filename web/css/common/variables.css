@@ -25,11 +25,16 @@
     --color-white: #ffffff;
     --color-black: #000000;
 
+    /*Alpha value*/
+    --color-white-71: #ffffffb5;
+    --color-black-20: rgba(0, 0, 0, 0.2);
+    --color-black-30: rgba(0, 0, 0, 0.3);
+    --color-black-40: rgba(0, 0, 0, 0.4);
+    --color-light-green-50: rgba(61, 111, 66, 0.5);
+
 
     /* === Global Font === */
 
-    --color-font-light: var(--color-white);
-    --color-font-dark: var(--color-black);
     --font-body-base: "Work Sans", sans-serif;
     --font-body-default-size: 17px;
     --font-weight-regular: 400;
@@ -45,9 +50,20 @@
     --h5-font-size: 24px;
     --h6-font-size: 18px;
 
-    ----font-heading-line-height-135: 1.35;
-    ----font-heading-line-height-140: 1.4;
-    ----font-heading-line-height-150: 1.5;
+    --font-line-height-110: 1.1;
+    --font-line-height-135: 1.35;
+    --font-line-height-140: 1.4;
+    --font-line-height-150: 1.5;
+    --font-line-height-170: 1.7;
+
+    --letter-spacing-big: 2px;
+    --letter-spacing-medium: 0.015em;
+
+    /*Class Typo*/
+    --font-size-banner-subheading: 14px;
+    --font-size-caption-page: 13px;
+    --font-size-single-product-title: 28px;
+    --font-size-single-product-subtitle: 20px;
 
 
     /* === Radius === */
@@ -79,16 +95,15 @@
 
     /* === Link - Header & Footer Menu === */
 
-    --opacity-60: 0.6;
     --font-size-menu: 15px;
 
     /*Menu-Dark-Navbar*/
-    --color-menu-font-dark-default: rgb(var(--color-black), var(--opacity-60));
+    --color-menu-font-dark-default: var(--color-black-71);
     --color-menu-font-dark-hover: var(--color-black);
 
     /*Menu-Light-Footer*/
     --color-menu-font-light-default: var(--color-white);
-    --color-menu-font-light-hover: rgb(var(--color-white), var(--opacity-60));
+    --color-menu-font-light-hover: var(--color-white-71);
     --color-menu-font-accent-hover: var(--color-light-green);
 
     /*Menu-with Background color*/
@@ -97,6 +112,11 @@
     --color-menu-with-bg-font-default: var(--color-black);
     --color-menu-with-bg-hover: var(--color-light-green);
     --color-menu-with-bg-font-hover: var(--color-white);
+
+    /*Product Title*/
+    --font-size-product-title: 22px;
+    --color-font-product-title-default: var(--color-black);
+    --color-font-product-title-hover: var(--color-light-green);
 
 
     /* == Form Elements === */
@@ -107,10 +127,10 @@
 
     /*Text-field-with-border*/
     --color-txtfield-with-border-bg: var(--color-white);
-    --color-text-field-with-border-borderline-default: rgb(var(--color-black), 0.3) 1px solid;
-    --color-txtfield-with-border-borderline-hover: rgb(var(--color-light-green), 0.5) 1px solid;
+    --color-text-field-with-border-borderline-default: var(--color-black-30) 1px solid;
+    --color-txtfield-with-border-borderline-hover: var(--color-light-green-50) 1px solid;
     --color-txtfield-with-border-borderline-pressed: var(--color-light-green) 1px solid;
-    --color-txtfield-with-border-font-default: rgb(var(--color-black), 0.3) 1px solid;
+    --color-txtfield-with-border-font-default: var(--color-black-30) 1px solid;
     --color-txtfield-with-border-font-pressed: var(--color-dark-blue);
 
     /*Text-field-with-border - Options*/
@@ -126,7 +146,7 @@
     /* == Card === */
 
     --padding-card: 20px;
-    --card-box-shadow-hover: 0px 15px 30px rgb(var(--color-black), 0.2);
+    --card-box-shadow-hover: 0px 15px 30px var(--color-black-20);
     --card-filter-hover: saturate(105%) brightness(120%);
 
     /*Card-with-border*/
@@ -146,7 +166,7 @@
     /* === Imagery === */
 
     --radius-image: var(--radius-27);
-    --color-gradient-image-overlay-black: linear-gradient(to bottom, rgb(var(--color-black), 0.4), (var(--color-black), 0.2));
+    --color-gradient-image-overlay-black: linear-gradient(to bottom, var(--color-black-40), var(--color-black-20));
 
 
     /* === Icon === */
@@ -176,10 +196,10 @@
 
     /* === Layout === */
 
-    --gap-20: 20px;
-    --gap-40: 40px;
-    --gap-120: 120px;
-    --padding-top-bottom-section: 100px;
-    --padding-left-right-container: 30px;
+    --gap-xs: 4px;
+    --gap-s: 20px;
+    --gap-m: 40px;
+    --gap-l: 100px;
+    --padding-section: 90px 30px;
 
 }
