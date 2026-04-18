@@ -25,6 +25,13 @@
     --color-white: #ffffff;
     --color-black: #000000;
 
+    /*Alpha value*/
+    --color-white-71: #ffffffb5;
+    --color-black-20: rgba(0, 0, 0, 0.2);
+    --color-black-30: rgba(0, 0, 0, 0.3);
+    --color-black-40: rgba(0, 0, 0, 0.4);
+    --color-light-green-50: rgba(61, 111, 66, 0.5);
+
 
     /* === Global Font === */
 
@@ -56,14 +63,8 @@
 
     /*Class Typo*/
     --font-size-banner-subheading: 14px;
+    --font-size-caption-page: 13px;
 
-    --color-font-section-heading: var(--color-dark-green);
-    --color-font-section-subheading: var(--color-light-green);
-
-    --color-font-product-price: var(--color-light-green);
-
-    --font-size-caption: 13px;
-    --font-size-page: 13px;
 
     /* === Radius === */
 
@@ -94,16 +95,15 @@
 
     /* === Link - Header & Footer Menu === */
 
-    --opacity-60: 0.6;
     --font-size-menu: 15px;
 
     /*Menu-Dark-Navbar*/
-    --color-menu-font-dark-default: rgb(var(--color-black), var(--opacity-60));
+    --color-menu-font-dark-default: var(--color-black-71);
     --color-menu-font-dark-hover: var(--color-black);
 
     /*Menu-Light-Footer*/
     --color-menu-font-light-default: var(--color-white);
-    --color-menu-font-light-hover: rgb(var(--color-white), var(--opacity-60));
+    --color-menu-font-light-hover: var(--color-white-71);
     --color-menu-font-accent-hover: var(--color-light-green);
 
     /*Menu-with Background color*/
@@ -122,10 +122,10 @@
 
     /*Text-field-with-border*/
     --color-txtfield-with-border-bg: var(--color-white);
-    --color-text-field-with-border-borderline-default: rgb(var(--color-black), 0.3) 1px solid;
-    --color-txtfield-with-border-borderline-hover: rgb(var(--color-light-green), 0.5) 1px solid;
+    --color-text-field-with-border-borderline-default: var(--color-black-30) 1px solid;
+    --color-txtfield-with-border-borderline-hover: var(--color-light-green-50) 1px solid;
     --color-txtfield-with-border-borderline-pressed: var(--color-light-green) 1px solid;
-    --color-txtfield-with-border-font-default: rgb(var(--color-black), 0.3) 1px solid;
+    --color-txtfield-with-border-font-default: var(--color-black-30) 1px solid;
     --color-txtfield-with-border-font-pressed: var(--color-dark-blue);
 
     /*Text-field-with-border - Options*/
@@ -141,7 +141,7 @@
     /* == Card === */
 
     --padding-card: 20px;
-    --card-box-shadow-hover: 0px 15px 30px rgb(var(--color-black), 0.2);
+    --card-box-shadow-hover: 0px 15px 30px var(--color-black-20);
     --card-filter-hover: saturate(105%) brightness(120%);
 
     /*Card-with-border*/
@@ -161,7 +161,7 @@
     /* === Imagery === */
 
     --radius-image: var(--radius-27);
-    --color-gradient-image-overlay-black: linear-gradient(to bottom, rgb(var(--color-black), 0.4), (var(--color-black), 0.2));
+    --color-gradient-image-overlay-black: linear-gradient(to bottom, var(--color-black-40), var(--color-black-20));
 
 
     /* === Icon === */
