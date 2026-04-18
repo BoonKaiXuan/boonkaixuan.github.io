@@ -35,8 +35,6 @@
 
     /* === Global Font === */
 
-    --color-font-light: var(--color-white);
-    --color-font-dark: var(--color-black);
     --font-body-base: "Work Sans", sans-serif;
     --font-body-default-size: 17px;
     --font-weight-regular: 400;
@@ -64,6 +62,8 @@
     /*Class Typo*/
     --font-size-banner-subheading: 14px;
     --font-size-caption-page: 13px;
+    --font-size-single-product-title: 28px;
+    --font-size-single-product-subtitle: 20px;
 
 
     /* === Radius === */
@@ -112,6 +112,11 @@
     --color-menu-with-bg-font-default: var(--color-black);
     --color-menu-with-bg-hover: var(--color-light-green);
     --color-menu-with-bg-font-hover: var(--color-white);
+
+    /*Product Title*/
+    --font-size-product-title: 22px;
+    --color-font-product-title-default: var(--color-black);
+    --color-font-product-title-hover: var(--color-light-green);
 
 
     /* == Form Elements === */

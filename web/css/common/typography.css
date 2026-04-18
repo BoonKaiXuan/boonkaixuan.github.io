@@ -3,7 +3,7 @@ body {
     font-size: var(--font-body-default-size);
     font-weight: var(--font-weight-regular);
     line-height: var(--font-body-default-line-height);
-    color: var(--color-font-dark);
+    color: var(--color-black);
 }
 
 h1,
@@ -18,24 +18,19 @@ h6 {
     font-family: var(--font-heading-sans-serif);
 }
 
-h1,
-.banner-heading {
+h1 {
     font-size: var(--h1-font-size);
 }
 
-h2,
-.section-heading {
+h2 {
     font-size: var(--h2-font-size);
 }
 
-h3,
-.product-title,
-.staff-name {
+h3 {
     font-size: var(--h3-font-size);
 }
 
-h4,
-.section-subheading {
+h4 {
     font-size: var(--h4-font-size);
 }
 
@@ -75,21 +70,28 @@ p {
     text-align: center;
 }
 
+.text-white {
+    color: var(--color-white);
+}
+
+.text-dark-green {
+    color: var(--color-dark-green);
+}
+
+.text-light-green {
+    color: var(--color-light-green);
+}
+
+.text-bold {
+    font-weight: var(--font-weight-bold);
+    ;
+}
+
 .banner-subheading {
     font-size: var(--font-size-banner-subheading);
     font-weight: var(--font-weight-bold);
     line-height: var(--font-line-height-110);
     letter-spacing: var(--letter-spacing-big);
-}
-
-.section-heading {
-    color: var(--color-dark-green);
-}
-
-.section-subheading,
-.product-price,
-.customer-green {
-    color: var(--color-light-green);
 }
 
 .product-price-b4-disc {
@@ -104,10 +106,22 @@ p {
     margin-bottom: 20px;
 }
 
-.caption,
-.pg-number {
+.caption {
     font-size: var(--font-size-caption-page);
+    letter-spacing: var(--letter-spacing-medium);
 }
+
+.single-product-title {
+    font-size: var(--font-size-single-product-title);
+    font-weight: var(--font-weight-medium);
+    letter-spacing: var(--letter-spacing-medium);
+    margin-bottom: 0;
+}
+
+.single-product-subtitle {
+    font-size: var(--font-size-single-product-subtitle);
+}
+
 
 @media screen and (max-width:1100px) {
 
@@ -132,3 +146,26 @@ p {
     }
 
 }
+
+/*List of Class*/
+/*
+.banner-subheading
+.product-price-b4-disc
+.customer-white
+.single-product-title
+.single-product-subtitle
+.caption
+
+.text-center
+.text-white
+.text-dark-green
+.text-light-green
+.text-bold
+
+h1-banner heading
+h2-section heading
+h3-staff name
+h4-section subheading, FAQ question
+h5-shipping info title, blog title
+h6-review title, comment title
+*/
