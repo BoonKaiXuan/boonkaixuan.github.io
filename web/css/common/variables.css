@@ -196,10 +196,10 @@
 
     /* === Layout === */
 
-    --gap-20: 20px;
-    --gap-40: 40px;
-    --gap-120: 120px;
-    --padding-top-bottom-section: 100px;
-    --padding-left-right-container: 30px;
+    --gap-xs: 4px;
+    --gap-s: 20px;
+    --gap-m: 40px;
+    --gap-l: 100px;
+    --padding-section: 90px 30px;
 
 }
