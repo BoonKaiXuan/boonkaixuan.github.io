@@ -68,9 +68,9 @@
 
     /* === Radius === */
 
-    --radius-5: 5px;
-    --radius-27: 27px;
-    --radius-30: 30px;
+    --radius-s: 5px;
+    --radius-m: 27px;
+    --radius-l: 30px;
 
 
     /* === Button === */
@@ -79,7 +79,7 @@
     --font-size-button-small: 14px;
     --padding-button-large: 17px 40px;
     --font-size-button-large: 18px;
-    --radius-button: var(--radius-30);
+    --radius-button: var(--radius-l);
 
     /*Button-Primary*/
     --color-button-green-bg-default: var(--color-light-green);
@@ -122,7 +122,7 @@
     /* == Form Elements === */
 
     --padding-text-field: 0px 16px;
-    --radius-text-field: var(--radius-27);
+    --radius-text-field: var(--radius-m);
     --font-size-text-field: 16px;
 
     /*Text-field-with-border*/
@@ -154,7 +154,7 @@
     --color-card-with-border-borderline-default: var(--color-light-grey) 1px solid;
     --color-card-with-border-bg-hover: var(--color-seashell);
     --color-card-with-border-borderline-hover: var(--color-mid-grey) 1px solid;
-    --radius-card-with-border: var(--radius-5);
+    --radius-card-with-border: var(--radius-s);
 
     /*Card-dark-green*/
     --color-card-dark-green-bg-default: var(--color-dark-green);
@@ -165,7 +165,7 @@
 
     /* === Imagery === */
 
-    --radius-image: var(--radius-27);
+    --radius-image: var(--radius-m);
     --color-gradient-image-overlay-black: linear-gradient(to bottom, var(--color-black-40), var(--color-black-20));
 
 
@@ -188,7 +188,7 @@
 
     /*Discount Label*/
     --padding-discount-label: 2px 9px;
-    --radius-discount-label: var(--radius-5);
+    --radius-discount-label: var(--radius-s);
     --font-size-discount-label: 14px;
     --font-weight-discount-label: var(--font-weight-bold);
     --letter-spacing-discount-label: 2px;
@@ -197,9 +197,9 @@
     /* === Layout === */
 
     --gap-xs: 4px;
-    --gap-s: 20px;
-    --gap-m: 40px;
-    --gap-l: 100px;
+    --gap-s: 12px;
+    --gap-m: 20px;
+    --gap-l: 40px;
     --padding-section: 90px 30px;
 
 }
