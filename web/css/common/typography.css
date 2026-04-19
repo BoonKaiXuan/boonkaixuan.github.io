@@ -58,10 +58,7 @@ h4,
 h5,
 h6 {
     font-weight: var(--font-weight-regular);
-}
-
-p {
-    margin-bottom: 20px;
+    margin: 16px 0px;
 }
 
 /*Class Typography*/
