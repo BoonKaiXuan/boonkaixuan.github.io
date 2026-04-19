@@ -1,7 +1,3 @@
-a {
-    color: inherit;
-}
-
 /*Button green*/
 .btn_green {
     padding: var(--padding-button-small);
@@ -14,6 +10,10 @@ a {
 
 .btn_green:hover {
     background-color: var(--color-button-green-bg-hover);
+}
+
+.btn_green a {
+    color: inherit;
 }
 
 /*Button subscribe,contact,addtocart*/
@@ -30,6 +30,11 @@ a {
     background-color: var(--color-button-green-bg-hover);
 }
 
+.btn_cta-full-width a {
+    color: inherit;
+}
+
+
 /*Button no radius*/
 .btn_no-radius-white {
     border-radius: 0px;
@@ -43,6 +48,10 @@ a {
 .btn_no-radius-white:hover {
     background-color: var(--color-button-white-bg-hover);
     color: var(--color-button-white-font-hover);
+}
+
+.btn_no-radius-white a {
+    color: inherit;
 }
 
 .btn_no-radius-green {
@@ -59,6 +68,10 @@ a {
     color: var(--color-button-white-font-default);
 }
 
+.btn_no-radius-green a {
+    color: inherit;
+}
+
 /*Button white*/
 .btn_white {
     padding: var(--padding-button-small);
@@ -72,6 +85,10 @@ a {
 .btn_white:hover {
     background-color: var(--color-button-white-bg-hover);
     color: var(--color-button-white-font-hover);
+}
+
+.btn_white a {
+    color: inherit;
 }
 
 @media (max-width: 880px) {
