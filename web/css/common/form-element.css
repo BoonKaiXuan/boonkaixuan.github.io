@@ -1,15 +1,4 @@
 /* shipping information*/
-input[type=text],
-select[name="state"] {
-    font-family: var(--font-body-base);
-    font-size: var(--font-default-size);
-    padding: var(--padding-text-field);
-    background-color: var(--color-txtfield-with-border-bg);
-    border-radius: var(--radius-text-field);
-    font-size: var(--font-size-text-field);
-    min-height: 55px;
-}
-
 .form-element-full-width {
     display: flex;
     flex-direction: column;
@@ -20,25 +9,47 @@ select[name="state"] {
 .text-field_with-borderline {
     border: var(--color-text-field-with-border-borderline-default);
     color: var(--color-txtfield-with-border-font-default);
+    font-family: var(--font-body-base);
+    font-size: var(--font-default-size);
+    padding: var(--padding-text-field);
+    border-radius: var(--radius-text-field);
+    font-size: var(--font-size-text-field);
+    min-height: 55px;
+    outline: var(--color-txtfield-with-border-font-pressed);
 }
 
 .text-field_with-borderline:hover {
     border: var(--color-txtfield-with-border-borderline-hover);
     background: var(--color-txtfield-with-border-bg);
-    color: var(--color-txtfield-with-border-font-pressed);
 }
 
 .text-field_with-borderline-textarea {
     border: var(--color-txtfield-with-border-borderline-pressed);
 }
 
+.text-field_with-borderline:valid {
+    color: var(--color-txtfield-with-border-options-font);
+}
+
+.form-element-half-width {
+    display: flex;
+    gap: 20px;
+}
+
+.form-element-half-width input {
+    display: flex;
+    gap: 20px;
+    width: 50%;
+    margin: 20px 0px 0px 0px;
+}
+
 /*contact,review,comment,insert your email*/
-input[type=text],
 .text-field_no-border {
     padding: var(--padding-text-field);
     background-color: var(--color-txtfield-no-border-bg);
     border-radius: var(--radius-text-field);
     font-size: var(--font-size-text-field);
     width: 100%;
-    border: none;
+    outline: none;
+    height: 55px;
 }
