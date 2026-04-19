@@ -184,6 +184,7 @@
     --color-icon-white-default: var(--color-white);
     --color-icon-white-hover: var(--color-light-green);
 
+
     /* === Label/Badge === */
     --color-label-bg: var(--color-light-green);
     --color-label-font: var(--color-white);
