@@ -1,10 +1,24 @@
 /* shipping information*/
-.text-field_with-borderline {
+input[type=text],
+select[name="state"] {
+    font-family: var(--font-body-base);
+    font-size: var(--font-default-size);
     padding: var(--padding-text-field);
     background-color: var(--color-txtfield-with-border-bg);
     border-radius: var(--radius-text-field);
-    border: var(--color-text-field-with-border-borderline-default);
     font-size: var(--font-size-text-field);
+    min-height: 55px;
+}
+
+.form-element-full-width {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 20px;
+}
+
+.text-field_with-borderline {
+    border: var(--color-text-field-with-border-borderline-default);
     color: var(--color-txtfield-with-border-font-default);
 }
 
@@ -19,9 +33,12 @@
 }
 
 /*contact,review,comment,insert your email*/
+input[type=text],
 .text-field_no-border {
     padding: var(--padding-text-field);
     background-color: var(--color-txtfield-no-border-bg);
     border-radius: var(--radius-text-field);
     font-size: var(--font-size-text-field);
+    width: 100%;
+    border: none;
 }
