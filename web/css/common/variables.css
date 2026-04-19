@@ -176,6 +176,13 @@
     --icon-size-m: 20px;
     --icon-size-l: 96px;
 
+    /*Icon-Black*/
+    --color-icon-black-default: var(--color-black);
+    --color-icon-black-hover: var(--color-light-green);
+
+    /*Icon-White*/
+    --color-icon-white-default: var(--color-white);
+    --color-icon-white-hover: var(--color-light-green);
 
     /* === Label/Badge === */
     --color-label-bg: var(--color-light-green);
