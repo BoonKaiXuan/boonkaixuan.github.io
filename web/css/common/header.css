@@ -1,34 +1,43 @@
+#header {
+    margin: 0 auto;
+    max-width: 1440px;
+}
+
 .header_topbar {
-    min-height: 76.8px;
-    padding: 0px 60px;
+    min-height: 77px;
+    padding: 6px 30px;
     justify-content: space-between;
+    gap: var(--gap-l);
 }
 
 .navbar {
-    font-size: 15px;
+    font-size: var(--font-size-menu);
     min-height: 61px;
     justify-content: center;
+    gap: var(--gap-l);
 }
 
 .menu-item a {
     padding: 17px 20px;
-    color: var(--color-navbar-large-menu-text-enabled);
+    color: var(--color-menu-font-dark-default);
 }
 
 .menu-item a:hover {
-    color: var(--color-navbar-large-menu-text-hover-pressed);
+    color: var(--color-menu-font-dark-hover);
 }
 
-.header_utility {
+.menu-item-dropdown a::after {
+    content: "f078";
+    font-family: "Font Awesome 7.2.0 Free";
+}
+
+.header_bottombar {
     min-height: 63px;
-    background-color: var(--color-bg-primary);
+    background-color: var(--color-dark-green);
     color: var(--color-text-light);
     gap: 60px;
     justify-content: center;
-}
-
-.header_utility>div {
-    align-items: center;
+    color: var(--color-white);
 }
 
 .search-bar {
