@@ -110,3 +110,19 @@
     align-items: center;
     align-content: flex-start;
 }
+
+/*related post, Everything your pet needs*/
+.background-image-dark {
+    background-image: url('../../images/card\ img.png ');
+    background-size: cover;
+    background-position: center;
+    width: 267px;
+    height: 241px;
+    color: var(--color-white);
+    font-family: var(--font-body-base);
+    font-size: var(--h3-font-size);
+    padding: 50px 20px;
+    text-align: center;
+    align-items: center;
+
+}
