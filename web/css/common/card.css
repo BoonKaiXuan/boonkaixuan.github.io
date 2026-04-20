@@ -1,8 +1,20 @@
+.row-flex {
+    display: flex;
+    gap: var(--gap);
+}
+
+/* card with border*/
+.card-4box {
+    gap: var(--gap-l);
+}
+
 .card_with-border {
+    font-family: var(--font-body-base);
     padding: var(--padding-card);
     background-color: var(--color-card-with-border-bg-default);
     border: var(--color-card-with-border-borderline-default);
     border-radius: var(--radius-card-with-border);
+    width: calc(25% - 30px);
 }
 
 .card_with-border:hover {
@@ -10,7 +22,28 @@
     border: var(--color-card-with-border-borderline-hover);
 }
 
+.gap-12 {
+    --gap: 12px;
+}
+
+.petcaretips {
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap-m);
+}
+
+.petcaretips-title {
+    font-size: 24px;
+}
+
+.continue-reading {
+    color: var(--color-light-green);
+}
+
+/*on sale products*/
 .card_dark-green {
+    font-family: var(--font-body-base);
+    color: var(--color-white);
     padding: var(--padding-card);
     background-color: var(--color-card-dark-green-bg-default);
 }
@@ -21,6 +54,68 @@
 }
 
 .card_mid-green {
+    font-family: var(--font-body-base);
+    color: var(--color-white);
     padding: var(--padding-card);
     background-color: var(--color-card-mid-green-bg-default);
+}
+
+.gap-0 {
+    --gap: 0px;
+}
+
+.on-sale-products {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 56px 30px;
+}
+
+.width-no-gap {
+    width: calc(33.33% - 0px);
+}
+
+.text-light-green {
+    color: var(--color-light-green);
+}
+
+.img-width-50 {
+    width: 50px;
+    align-items: center;
+}
+
+/*explore more*/
+.explore-more {
+    display: flex;
+    justify-content: center;
+}
+
+/* Dog, Cat, Accessories */
+.background-image {
+    background-image: url('../images/blog-8 2.png');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+}
+
+@media (max-width: 880px) {
+
+    .card-3box {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: calc(100% - 0px);
+    }
+}
+
+@media (max-width: 660px) {
+    .card-4box {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .card_with-border {
+        width: calc(50% - 15px);
+    }
 }
