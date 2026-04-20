@@ -33,6 +33,11 @@ section {
     text-align: center;
 }
 
+.flex-end {
+    display: flex;
+    align-items: flex-end;
+}
+
 .col-1 {
     width: 100%;
 }
@@ -136,6 +141,9 @@ section {
         width: calc(50% - calc(var(--gap) / 2));
     }
 
+    .shop-category {
+        gap: var(--gap-m);
+    }
 }
 
 /*List of Class
