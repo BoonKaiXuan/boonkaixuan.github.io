@@ -22,12 +22,15 @@
     border-radius: var(--radius-image);
 }
 
-.gradient-overlay {
-    background-image: var(--color-gradient-image-overlay-black);
+.bg-img {
+    background-image: var(--bg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-.bg-image {
-    background-image: var(--bg);
+.bg-img-gradient {
+    background-image: var(--color-gradient-image-overlay-black), var(--bg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
