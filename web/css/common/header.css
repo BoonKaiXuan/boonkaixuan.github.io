@@ -12,32 +12,57 @@
 
 .navbar {
     font-size: var(--font-size-menu);
+    font-weight: var(--font-weight-medium);
     min-height: 61px;
     justify-content: center;
     gap: var(--gap-l);
 }
 
-.menu-item a {
+.menu-item>a {
     padding: 17px 20px;
     color: var(--color-menu-font-dark-default);
 }
 
-.menu-item a:hover {
+.menu-item:hover>a,
+.menu-item:hover i {
     color: var(--color-menu-font-dark-hover);
 }
 
-.menu-item-dropdown a::after {
-    content: "f078";
-    font-family: "Font Awesome 7.2.0 Free";
+.has-submenu i {
+    margin-left: var(--gap-xs);
+}
+
+.submenu {
+    opacity: 0;
+    position: absolute;
+    transition: all 0.5s;
+}
+
+.submenu>a {
+    display: block;
+    background-color: var(--color-submenu-bg-default);
+    min-width: 205px;
+    padding: 13px 25px 13px 17px;
+    font-size: var(--font-size-submenu);
+    color: var(--color-submenu-bg-font-default);
+}
+
+.has-submenu:hover>.submenu {
+    opacity: 1;
+}
+
+.submenu>a:hover {
+    background-color: var(--color-submenu-bg-hover);
+    color: var(--color-submenu-bg-font-hover);
 }
 
 .header_bottombar {
     min-height: 63px;
     background-color: var(--color-dark-green);
     color: var(--color-text-light);
-    gap: 60px;
-    justify-content: center;
+    font-size: 15px;
     color: var(--color-white);
+    padding: 0px 30px;
 }
 
 .search-bar {
@@ -45,4 +70,31 @@
     border-radius: 24px;
     padding: 0px 15px 0px 45px;
     min-width: 368px;
+    min-height: 45px;
+
+}
+
+.search-bar::placeholder {
+    color: var(--color-dark-green);
+    font-family: var(--font-body-base);
+}
+
+.fa-magnifying-glass {
+    position: absolute;
+    padding: 13px;
+}
+
+input[type=text]:focus,
+.textarea:focus {
+    outline: none;
+}
+
+.icon img {
+    object-fit: contain;
+}
+
+.icon-inline-20 {
+    height: var(--icon-size-m);
+    width: var(--icon-size-m);
+    margin-right: var(--gap-xs);
 }

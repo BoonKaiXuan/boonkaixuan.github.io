@@ -30,6 +30,7 @@
     --color-black-20: rgba(0, 0, 0, 0.2);
     --color-black-30: rgba(0, 0, 0, 0.3);
     --color-black-40: rgba(0, 0, 0, 0.4);
+    --color-black-55: rgba(0, 0, 0, 0.55);
     --color-light-green-50: rgba(61, 111, 66, 0.5);
 
 
@@ -98,7 +99,7 @@
     --font-size-menu: 15px;
 
     /*Menu-Dark-Navbar*/
-    --color-menu-font-dark-default: var(--color-black-71);
+    --color-menu-font-dark-default: var(--color-black-55);
     --color-menu-font-dark-hover: var(--color-black);
 
     /*Menu-Light-Footer*/
@@ -112,6 +113,13 @@
     --color-menu-with-bg-font-default: var(--color-black);
     --color-menu-with-bg-hover: var(--color-light-green);
     --color-menu-with-bg-font-hover: var(--color-white);
+
+    /*Submenu*/
+    --font-size-submenu: 14px;
+    --color-submenu-bg-default: var(--color-white);
+    --color-submenu-bg-font-default: var(--color-black);
+    --color-submenu-bg-hover: var(--color-light-green);
+    --color-submenu-bg-font-hover: var(--color-white);
 
     /*Product Title*/
     --font-size-product-title: 22px;

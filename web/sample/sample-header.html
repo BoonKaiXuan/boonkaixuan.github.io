@@ -17,12 +17,13 @@
     <div id="header">
         <div class="header_topbar row-flex align-items-center">
             <div>
-                <a>
+                <a href="https://www.google.com">
                     <img src="../images/furever-friends-logo-big.svg" alt="Furever Friends Logo" height="36">
                 </a>
             </div>
 
             <div>
+                <i class="fa-solid fa-magnifying-glass" style="color: #000000;"></i>
                 <input class="search-bar" type="text" placeholder="Search..." />
             </div>
 
@@ -45,12 +46,17 @@
 
         </div>
 
-        <div class="navbar row-flex">
+        <div class="navbar row-flex align-items-center">
             <div class="menu-item">
                 <a href="https://www.google.com">Home</a>
             </div>
-            <div class="menu-item menu-item-dropdown">
-                <a href="https://www.google.com">Shop</a>
+            <div class="menu-item has-submenu">
+                <a href="https://www.google.com">Shop
+                    <i class="fa-solid fa-chevron-down"></i>
+                </a>
+                <div class="submenu">
+                    <a href="https://www.google.com">Dog Food</a>
+                </div>
             </div>
             <div class="menu-item">
                 <a href="https://www.google.com">About</a>
@@ -60,18 +66,24 @@
             </div>
         </div>
 
-        <div class="header_bottombar row-flex align-items-center">
-            <div class="row-flex gap-4">
-                <img src="../images/icon_map.png" alt="Map Icon" width="24">
-                Free shipping over RM100
+        <div class="header_bottombar row-flex gap-0 align-items-center">
+            <div class="row-flex col-3 content-center">
+                <div class="icon icon-inline-20">
+                    <img src="../images/icon_map.png" alt="Map Icon" width="100%">
+                </div>
+                <span class="text-bold">Free shipping</span> &nbsp;over RM100
             </div>
-            <div class="row-flex gap-4">
-                <img src="../images/icon_discount.png" alt="Discount Icon" width="24">
-                10% Off First Order
+            <div class="row-flex col-3 content-center">
+                <div class="icon icon-inline-20">
+                    <img src="../images/icon_discount.png" alt="Discount Icon" width="100%">
+                </div>
+                <span class="text-bold">10% Off</span>&nbsp;First Order
             </div>
-            <div class="row-flex gap-4">
-                <img src="../images/icon_track-order.png" alt="Track Order Icon" width="24">
-                Track Your Order
+            <div class="row-flex col-3 content-center">
+                <div class="icon icon-inline-20">
+                    <img src="../images/icon_track-order.png" alt="Track Order Icon" width="100%">
+                </div>
+                <span class="text-bold">Track</span>&nbsp;Your Order
             </div>
         </div>
     </div>
