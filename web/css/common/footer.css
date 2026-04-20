@@ -1,4 +1,5 @@
 /*footer*/
+
 .footer {
     background-color: var(--color-dark-green);
     color: var(--color-menu-font-light-default);
@@ -6,13 +7,23 @@
 }
 
 .footer_title {
-    font-family: var(--font-heading);
-    font-size: var(--h5-font-size);
+    font-family: var(--font-heading-serif);
+    font-size: 24px;
 }
 
 .footer_top-section {
     padding-bottom: 60px;
-    border-bottom: var(--color-white) 2px solid;
+    border-bottom: var(--color-light-green-50) 2px solid;
+    gap: 0px;
+}
+
+.footer_top-info {
+    width: calc(25% - 0px);
+}
+
+.menu-item a {
+    color: var(--color-white);
+    font-size: 16px;
 }
 
 .subscribe-form {
@@ -21,8 +32,18 @@
     border-radius: 6px;
 }
 
+.text-field {
+    display: flex;
+    flex-direction: column;
+    gap: var(--icon-size-xs);
+}
+
 .footer_menu-navbar {
     font-size: var(--font-size-menu);
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 40px 0px 0px 0px;
 }
 
 .footer_menu-navbar:hover {
@@ -33,4 +54,5 @@
     background-color: var(--color-black);
     color: var(--color-menu-font-light-default);
     padding: 13px 0px;
+    justify-content: center;
 }
