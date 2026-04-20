@@ -16,6 +16,7 @@
     min-height: 61px;
     justify-content: center;
     gap: var(--gap-l);
+    background-color: var(--color-white);
 }
 
 .menu-item>a {
@@ -98,4 +99,15 @@ input[type=text]:focus,
     height: var(--icon-size-m);
     width: var(--icon-size-m);
     margin-right: var(--gap-xs);
+}
+
+@media screen and (max-width:880px) {
+
+    .search {
+        width: 100%;
+    }
+
+    .navbar {
+        display: none;
+    }
 }
