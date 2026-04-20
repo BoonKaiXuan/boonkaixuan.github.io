@@ -25,3 +25,10 @@
 .gradient-overlay {
     background-image: var(--color-gradient-image-overlay-black);
 }
+
+.bg-image {
+    background-image: var(--bg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
