@@ -44,6 +44,7 @@
     min-width: 205px;
     padding: 13px 25px 13px 17px;
     font-size: var(--font-size-submenu);
+    font-weight: var(--font-weight-regular);
     color: var(--color-submenu-bg-font-default);
 }
 
