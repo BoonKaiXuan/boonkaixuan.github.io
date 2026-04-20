@@ -16,7 +16,6 @@
     min-height: 61px;
     justify-content: center;
     gap: var(--gap-l);
-    background-color: var(--color-white);
 }
 
 .menu-item>a {
@@ -47,6 +46,7 @@
     font-size: var(--font-size-submenu);
     font-weight: var(--font-weight-regular);
     color: var(--color-submenu-bg-font-default);
+    text-align: left;
 }
 
 .has-submenu:hover>.submenu {
@@ -101,6 +101,12 @@ input[type=text]:focus,
     margin-right: var(--gap-xs);
 }
 
+.logo-s,
+.header-icon,
+.menu-icon {
+    display: none;
+}
+
 @media screen and (max-width:880px) {
 
     .search {
@@ -109,5 +115,19 @@ input[type=text]:focus,
 
     .navbar {
         display: none;
+    }
+
+    .header-icon,
+    .menu-icon {
+        display: block;
+    }
+
+    .header_midbar {
+        justify-content: space-between;
+    }
+
+    .header-icon {
+        display: flex;
+        align-items: center;
     }
 }
