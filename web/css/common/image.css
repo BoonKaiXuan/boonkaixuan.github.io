@@ -1,0 +1,27 @@
+.circle {
+    border-radius: 50%;
+}
+
+.ratio-2-3 {
+    aspect-ratio: 2/3;
+}
+
+.ratio-16-9 {
+    aspect-ratio: 16/9;
+}
+
+.ratio-3-4 {
+    aspect-ratio: 3/4;
+}
+
+.ratio-4-3 {
+    aspect-ratio: 4/3;
+}
+
+.radius-27 {
+    border-radius: var(--radius-image);
+}
+
+.gradient-overlay {
+    background-image: var(--color-gradient-image-overlay-black);
+}
