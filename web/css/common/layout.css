@@ -108,7 +108,7 @@ section {
 }
 
 
-@media screen and (max-width:1100px) {
+@media screen and (max-width:880px) {
 
     /*Tablet*/
     .col-1-t {
@@ -130,7 +130,7 @@ section {
 
 }
 
-@media screen and (max-width:880px) {
+@media screen and (max-width:640px) {
 
     /*Mobile*/
     .col-1-m {
