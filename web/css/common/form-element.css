@@ -2,7 +2,6 @@
 .form-element-full-width {
     display: flex;
     flex-direction: column;
-    width: 100%;
     gap: 20px;
 }
 
@@ -38,7 +37,6 @@
 
 .form-element-half-width input {
     display: flex;
-    gap: 20px;
     width: 50%;
     margin: 20px 0px 0px 0px;
 }
