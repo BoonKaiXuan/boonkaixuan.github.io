@@ -77,6 +77,7 @@
     /* === Button === */
 
     --padding-button-small: 13px 29px;
+    --font-weight-button: var(--font-weight-medium);
     --font-size-button-small: 14px;
     --padding-button-large: 17px 40px;
     --font-size-button-large: 18px;
