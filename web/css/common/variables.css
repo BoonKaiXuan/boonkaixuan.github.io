@@ -93,6 +93,10 @@
     --color-button-white-font-default: var(--color-black);
     --color-button-white-font-hover: var(--color-white);
 
+    /*Button-White-Black-No radius*/
+    --color-button-white-black-font-hover: var(--color-white);
+    --color-button-white-black-bg-hover: var(--color-black);
+
 
     /* === Link - Header & Footer Menu === */
 
