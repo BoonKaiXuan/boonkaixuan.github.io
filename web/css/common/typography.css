@@ -6,6 +6,10 @@ body {
     color: var(--color-black);
 }
 
+button {
+    font-family: inherit;
+}
+
 h1,
 h2 {
     font-family: var(--font-heading-serif);
