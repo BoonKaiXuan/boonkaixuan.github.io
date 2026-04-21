@@ -36,9 +36,6 @@
 
 .bg-img-gradient {
     background-image: var(--color-gradient-image-overlay-black), var(--bg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 @media screen and (max-width:880px) {
