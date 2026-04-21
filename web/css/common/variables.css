@@ -83,20 +83,20 @@
     --font-size-button-large: 18px;
     --radius-button: var(--radius-l);
 
-    /*Button-Primary*/
+    /*Button-Default*/
     --color-button-green-bg-default: var(--color-light-green);
     --color-button-green-bg-hover: var(--color-dark-green);
     --color-button-green-font: var(--color-white);
 
-    /*Button-Secondary*/
+    /*Button-White*/
     --color-button--white-bg-default: var(--color-white);
     --color-button-white-bg-hover: var(--color-light-green);
     --color-button-white-font-default: var(--color-black);
     --color-button-white-font-hover: var(--color-white);
 
     /*Button-White-Black-No radius*/
-    --color-button-white-black-font-hover: var(--color-white);
-    --color-button-white-black-bg-hover: var(--color-black);
+    --color-button-white-font-hover-accent: var(--color-white);
+    --color-button-white-bg-hover-accent: var(--color-black);
 
 
     /* === Link - Header & Footer Menu === */
