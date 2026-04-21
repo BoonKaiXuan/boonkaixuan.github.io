@@ -1,7 +1,6 @@
 /*Button green*/
 .btn_green {
     padding: var(--padding-button-small);
-    color: var(--color-button-green-font);
     border-radius: var(--radius-button);
     font-size: var(--font-size-button-small);
     font-family: var(--font-body-base);
@@ -13,7 +12,7 @@
 }
 
 .btn_green a {
-    color: inherit;
+    color: var(--color-button-green-font);
 }
 
 /*Button subscribe,contact,addtocart*/
@@ -22,7 +21,6 @@
     border-radius: var(--radius-button);
     font-size: var(--font-size-button-large);
     font-family: var(--font-body-base);
-    color: var(--color-button-green-font);
     background-color: var(--color-button-green-bg-default);
 }
 
@@ -31,7 +29,7 @@
 }
 
 .btn_cta-full-width a {
-    color: inherit;
+    color: var(--color-button-green-font);
 }
 
 
@@ -39,7 +37,6 @@
 .btn_no-radius-white {
     border-radius: 0px;
     padding: var(--padding-button-small);
-    color: var(--color-button-white-font-default);
     background-color: var(--color-button--white-bg-default);
     font-size: var(--font-size-button-small);
     font-family: var(--font-body-base);
@@ -51,13 +48,12 @@
 }
 
 .btn_no-radius-white a {
-    color: inherit;
+    color: var(--color-button-white-font-default);
 }
 
 .btn_no-radius-green {
     border-radius: 0px;
     padding: var(--padding-button-small);
-    color: var(--color-button-white-font-default);
     background-color: var(--color-button-green-bg-default);
     font-size: var(--font-size-button-small);
     font-family: var(--font-body-base);
@@ -69,14 +65,13 @@
 }
 
 .btn_no-radius-green a {
-    color: inherit;
+    color: var(--color-button-white-font-default);
 }
 
 /*Button white*/
 .btn_white {
     padding: var(--padding-button-small);
     background-color: var(--color-button--white-bg-default);
-    color: var(--color-button-white-font-default);
     border-radius: var(--radius-button);
     font-size: var(--font-size-button-small);
     font-family: var(--font-body-base);
@@ -88,7 +83,7 @@
 }
 
 .btn_white a {
-    color: inherit;
+    color: var(--color-button-white-font-default);
 }
 
 @media (max-width: 880px) {
