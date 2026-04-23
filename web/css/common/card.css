@@ -1,20 +1,11 @@
-.row-flex {
-    display: flex;
-    gap: var(--gap);
-}
-
-/* card with border*/
-.card-4box {
-    gap: var(--gap-l);
+.card {
+    padding: var(--padding-card);
 }
 
 .card_with-border {
-    font-family: var(--font-body-base);
-    padding: var(--padding-card);
     background-color: var(--color-card-with-border-bg-default);
     border: var(--color-card-with-border-borderline-default);
     border-radius: var(--radius-card-with-border);
-    width: calc(25% - 30px);
 }
 
 .card_with-border:hover {
@@ -22,54 +13,36 @@
     border: var(--color-card-with-border-borderline-hover);
 }
 
-.gap-12 {
-    --gap: 12px;
-}
-
-.petcaretips {
-    display: flex;
-    flex-direction: column;
-    gap: var(--gap-m);
-}
-
-.petcaretips-title {
-    font-size: 24px;
-}
-
-.continue-reading {
-    color: var(--color-light-green);
-}
-
 /*on sale products*/
 .card_dark-green {
-    font-family: var(--font-body-base);
-    color: var(--color-white);
-    padding: var(--padding-card);
     background-color: var(--color-card-dark-green-bg-default);
 }
 
 .card_dark-green:hover {
     filter: var(--card-filter-hover);
-    box-shadow: var(--card-box-shadow-hover);
 }
 
 .card_mid-green {
-    font-family: var(--font-body-base);
-    color: var(--color-white);
-    padding: var(--padding-card);
     background-color: var(--color-card-mid-green-bg-default);
 }
 
-.gap-0 {
-    --gap: 0px;
+.card_mid-green:hover {
+    filter: var(--card-filter-hover);
 }
 
-.on-sale-products {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 56px 30px;
-}
+
+
+
+
+
+
+
+
+
+
+/* card with border*/
+
+
 
 .width-no-gap {
     width: calc(33.33% - 0px);
@@ -105,7 +78,6 @@
 
 /*items everyone loves, all dog food, */
 .card_without-border {
-    font-family: var(--font-body-base);
     flex-direction: column;
     align-items: center;
     align-content: flex-start;
@@ -119,8 +91,6 @@
     width: 267px;
     height: 241px;
     color: var(--color-white);
-    font-family: var(--font-body-base);
-    font-size: var(--h3-font-size);
     padding: 50px 20px;
     text-align: center;
     align-items: center;
