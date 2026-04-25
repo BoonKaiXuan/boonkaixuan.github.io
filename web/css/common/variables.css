@@ -160,7 +160,7 @@
 
     --padding-card: 20px;
     --card-box-shadow-hover: 0px 15px 30px var(--color-black-20);
-    --card-filter-hover: saturate(105%) brightness(120%) con;
+    --card-filter-hover: saturate(105%) brightness(120%) contrast(105%);
 
     /*Card-with-border*/
     --color-card-with-border-bg-default: var(--color-white);
