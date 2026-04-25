@@ -1,5 +1,7 @@
 section {
     padding: var(--padding-section);
+    margin: 0 auto;
+    max-width: 1440px;
 }
 
 .row-flex {
@@ -73,11 +75,6 @@ section {
     --gap: var(--gap-l);
 }
 
-.max-width-1440 {
-    margin: 0 auto;
-    max-width: 1440px;
-}
-
 .max-width-850 {
     margin: 0 auto;
     max-width: 850px;
@@ -97,6 +94,10 @@ section {
 
 .width-30 {
     width: 30%;
+}
+
+.bg-dark-green {
+    background-color: var(--color-dark-green);
 }
 
 .divider {
