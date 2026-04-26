@@ -3,6 +3,12 @@
     height: var(--size-badge-circle);
     border-radius: var(--radius-badge-circle);
     font-size: var(--font-size-badge-circle);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    top: 10px;
+    left: 10px;
 }
 
 .discount-label {
@@ -17,4 +23,12 @@
 .discount-label {
     color: var(--color-label-font);
     background-color: var(--color-label-bg);
+}
+
+.relative {
+    position: relative;
+}
+
+.absolute {
+    position: absolute;
 }
