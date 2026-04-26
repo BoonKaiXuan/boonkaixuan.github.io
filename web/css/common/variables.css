@@ -101,7 +101,8 @@
 
     /* === Link - Header & Footer Menu === */
 
-    --font-size-menu: 15px;
+    --font-size-header-menu: 15px;
+    --font-size-footer-menu: 16px;
 
     /*Menu-Dark-Navbar*/
     --color-menu-font-dark-default: var(--color-black-55);
