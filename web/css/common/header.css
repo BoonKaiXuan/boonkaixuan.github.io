@@ -2,7 +2,7 @@
 .header_midbar,
 .header_bottombar,
 nav,
-.topbar_icon {
+.topbar_icons {
     display: flex;
     flex-wrap: wrap;
     gap: var(--gap);
@@ -11,10 +11,10 @@ nav,
 
 .header_topbar {
     min-height: 77px;
-    padding: 6px 30px;
+    padding: 20px 30px;
 }
 
-.topbar_icon {
+.topbar_icons {
     justify-content: flex-end;
 }
 
@@ -30,27 +30,27 @@ nav {
     gap: var(--gap-l);
 }
 
-.menu-item>a {
+nav .menu-item>a {
     padding: 17px 20px;
     color: var(--color-menu-font-dark-default);
 }
 
-.menu-item:hover>a,
-.menu-item:hover i {
+nav .menu-item:hover>a,
+nav .menu-item:hover i {
     color: var(--color-menu-font-dark-hover);
 }
 
-.has-submenu i {
+nav .has-submenu i {
     margin-left: var(--gap-xs);
 }
 
-.submenu {
+nav .submenu {
     opacity: 0;
     position: absolute;
     transition: all 0.5s;
 }
 
-.submenu>a {
+nav .submenu>a {
     display: block;
     background-color: var(--color-submenu-bg-default);
     min-width: 205px;
@@ -61,11 +61,11 @@ nav {
     text-align: left;
 }
 
-.has-submenu:hover>.submenu {
+nav .has-submenu:hover>.submenu {
     opacity: 1;
 }
 
-.submenu>a:hover {
+nav .submenu>a:hover {
     background-color: var(--color-submenu-bg-hover);
     color: var(--color-submenu-bg-font-hover);
 }
@@ -100,6 +100,31 @@ input[type=text]:focus,
     outline: none;
 }
 
+.topbar_icon,
+.midbar_icon {
+    color: var(--color-black);
+}
+
+.fa-regular {
+    font-size: 18px;
+}
+
+.menu-icon {
+    font-size: 24px;
+    padding: 12px 20px;
+    cursor: pointer;
+}
+
+.midbar_icons,
+.menu-icon {
+    display: none;
+}
+
+.topbar_icon:hover,
+.midbar_icon:hover {
+    color: var(--color-light-green);
+}
+
 .icon img {
     object-fit: contain;
 }
@@ -110,13 +135,16 @@ input[type=text]:focus,
     margin-right: var(--gap-xs);
 }
 
-.midbar_icon,
-.menu-icon {
-    display: none;
-}
+
 
 .vertical-center {
     vertical-align: middle;
+}
+
+@media screen and (max-width:1100px) {
+    .topbar_contact {
+        text-align: left;
+    }
 }
 
 @media screen and (max-width:880px) {
@@ -132,23 +160,28 @@ input[type=text]:focus,
     }
 
     nav,
-    .topbar_icon,
+    .topbar_icons,
     .bottombar_item {
         display: none;
     }
 
-    .midbar_icon,
+    .topbar_contact {
+        text-align: center;
+    }
+
+    .midbar_icons,
     .menu-icon {
         display: block;
     }
 
-    .header_midbar {
-        justify-content: space-between;
-    }
-
-    .midbar_icon {
+    .midbar_icons {
         display: flex;
         align-items: center;
+        gap: var(--gap-m);
+    }
+
+    .header_midbar {
+        justify-content: space-between;
     }
 
     .header_bottombar {
@@ -159,7 +192,7 @@ input[type=text]:focus,
         width: 100%;
     }
 
-    .menu-item>a {
+    nav .menu-item>a {
         color: var();
         background-color: var();
     }
