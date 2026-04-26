@@ -1,14 +1,3 @@
-.header_topbar,
-.header_midbar,
-.header_bottombar,
-nav,
-.topbar_icons {
-    display: flex;
-    flex-wrap: wrap;
-    gap: var(--gap);
-    align-items: center;
-}
-
 .header_topbar {
     min-height: 77px;
     padding: 20px 30px;
@@ -27,7 +16,6 @@ nav {
     font-size: var(--font-size-header-menu);
     font-weight: var(--font-weight-medium);
     min-height: 61px;
-    gap: var(--gap-l);
 }
 
 nav .menu-item>a {
@@ -135,8 +123,6 @@ input[type=text]:focus,
     width: var(--icon-size-m);
     margin-right: var(--gap-xs);
 }
-
-
 
 .vertical-center {
     vertical-align: middle;
