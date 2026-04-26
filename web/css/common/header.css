@@ -175,23 +175,39 @@ input[type=text]:focus,
     }
 
     nav {
-        height: 40vh;
         width: 100%;
         flex-direction: column;
+        gap: 0px;
 
         position: absolute;
         top: 259.60px;
+        right: 0;
     }
 
     nav .menu-item>a {
-        color: var();
-        background-color: var();
+        color: var(--color-mobile-menu-font-default);
     }
 
+    nav .menu-item {
+        background-color: var(--color-mobile-menu-bg-default);
+        min-height: 65px;
+        width: 100%;
+    }
+
+    nav .menu-item>a,
     .midbar_icons {
         display: flex;
         align-items: center;
+        justify-content: space-between;
         gap: var(--gap-m);
+    }
+
+    nav .menu-item:active {
+        background-color: var(--color-mobile-menu-bg-active);
+    }
+
+    nav .menu-item>a:active {
+        color: var(--color-mobile-menu-font-active);
     }
 
     .header_midbar {
