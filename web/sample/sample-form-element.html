@@ -8,41 +8,48 @@
     <link rel="stylesheet" a href="../css/common/variables.css">
     <link rel="stylesheet" a href="../css/common/form-element.css">
     <link rel="stylesheet" a href="../css/common/typography.css">
+    <link rel="stylesheet" a href="../css/common/layout.css">
 </head>
 
 <body>
-    <label for="fname">Your name</label><br>
-    <input class="text-field_no-border" type="text" id="fname" name="fname"><br>
-    <label for="email">Your email</label><br>
-    <input class="text-field_no-border" type="text" id="email" name="email"><br>
-    <label for="subject">Subject</label><br>
-    <input class="text-field_no-border" type="text" id="subject" name="subject"><br>
-    <label for="message">Message</label><br>
-    <textarea class="text-field_no-border" type="text" id="message" name="message"></textarea>
+    <div id="main">
+        <section>
+            <label for="fname">Your name</label><br>
+            <input class="form text-field_no-borderline col-1" type="text" id="fname" name="fname"><br>
+            <label for="email">Your email</label><br>
+            <input class="form text-field_no-borderline col-1" type="text" id="email" name="email"><br>
+            <label for="subject">Subject</label><br>
+            <input class=" form text-field_no-borderline col-1" type="text" id="subject" name="subject"><br>
+            <label for="message">Message</label><br>
+            <textarea class=" form text-field_no-borderline col-1" type="text" id="message" name="message"></textarea>
+        </section>
 
-    <div class="form-element-full-width">
-        <input class="text-field_with-borderline" type="text" placeholder="Malaysia">
-        <input class="text-field_with-borderline" type="text" placeholder="Address">
-        <select class="text-field_with-borderline" name="state" id="state">
-            <option value="" disabled selected>State</option>
-            <option value="Johor">Johor</option>
-            <option value="Kedah">Kedah</option>
-            <option value="Melaka">Melaka</option>
-            <option value="Kelantan">Kelantan</option>
-            <option value="Negeri Sembilan">Negeri Sembilan</option>
-            <option value="Pahang">Pahang</option>
-            <option value="Perak">Perak</option>
-            <option value="Perlis">Perlis</option>
-            <option value="Pulau Pinang">Pulau Pinang</option>
-            <option value="Selangor">Selangor</option>
-            <option value="Terengganu">Terengganu</option>
-            <option value="Sabah">Sabah</option>
-            <option value="Sarawak">Sarawak</option>
-        </select>
-    </div>
-    <div class="form-element-half-width">
-        <input class="text-field_with-borderline" type="text" placeholder="Postcode">
-        <input class="text-field_with-borderline" type="text" placeholder="City">
+        <section>
+            <div class="direction-col">
+                <input class="form text-field_with-borderline" type="text" placeholder="Malaysia">
+                <input class=" form text-field_with-borderline" type="text" placeholder="Address">
+                <select class="form text-field_with-borderline" name="state" id="state">
+                    <option value="" disabled selected>State</option>
+                    <option value="Johor">Johor</option>
+                    <option value="Kedah">Kedah</option>
+                    <option value="Melaka">Melaka</option>
+                    <option value="Kelantan">Kelantan</option>
+                    <option value="Negeri Sembilan">Negeri Sembilan</option>
+                    <option value="Pahang">Pahang</option>
+                    <option value="Perak">Perak</option>
+                    <option value="Perlis">Perlis</option>
+                    <option value="Pulau Pinang">Pulau Pinang</option>
+                    <option value="Selangor">Selangor</option>
+                    <option value="Terengganu">Terengganu</option>
+                    <option value="Sabah">Sabah</option>
+                    <option value="Sarawak">Sarawak</option>
+                </select>
+            </div>
+            <div class="row-flex gap-20">
+                <input class="form col-2 text-field_with-borderline" type="text" placeholder="Postcode">
+                <input class="form col-2 text-field_with-borderline" type="text" placeholder="City">
+            </div>
+        </section>
     </div>
 
 
