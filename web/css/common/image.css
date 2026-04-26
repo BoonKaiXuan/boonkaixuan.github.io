@@ -32,6 +32,12 @@
     background-image: var(--color-gradient-image-overlay-black), var(--bg);
 }
 
+.bg-paws {
+    background-image: url(../../images/paws-bg.png);
+    background-position: center top;
+    background-repeat: repeat-x;
+}
+
 @media screen and (max-width:880px) {
 
     .related-post {
