@@ -14,45 +14,80 @@
 </head>
 
 <body>
-    <div id="main">
-        <div id="header">
-            <div class="header_topbar row-flex align-items-center divider">
-                <div class="logo-l">
+    <header>
+        <div class="max-width-1440 header_topbar gap-20 divider">
+            <div class="logo-l col-4 col-2-t col-1-m">
+                <a href="https://www.google.com">
+                    <img class="vertical-center" src="../images/furever-friends-logo-big.svg" alt="Furever Friends Logo"
+                        height="36">
+                </a>
+            </div>
+
+            <div class="search col-4 col-2-t col-1-m">
+                <i class="fa-solid fa-magnifying-glass" style="color: #000000;"></i>
+                <input type="text" placeholder="Search..." />
+            </div>
+
+            <div class="text-center col-4 col-2-t col-1-m">
+                <span class="text-bold">Questions?</span> Call us: (+60)147895478
+            </div>
+
+            <div class="topbar_icon col-4 col-2-t col-1-m">
+                <div>
                     <a href="https://www.google.com">
-                        <img src="../images/furever-friends-logo-big.svg" alt="Furever Friends Logo" height="36">
+                        <span class="material-symbols-outlined vertical-center">
+                            local_mall
+                        </span>
                     </a>
                 </div>
-
-                <div class="search">
-                    <i class="fa-solid fa-magnifying-glass" style="color: #000000;"></i>
-                    <input type="text" placeholder="Search..." />
+                <div>
+                    <a href="https://www.google.com">
+                        <i class="fa-regular fa-user" style="color: #000000;"></i>
+                    </a>
                 </div>
-
-                <div class="text-center">
-                    <span class="text-bold">Questions?</span> Call us: (+60)147895478
-                </div>
-
-                <div class="topbar_icon row-flex align-items-center">
-                    <div>
-                        <a href="https://www.google.com">
-                            <span class="material-symbols-outlined">
-                                local_mall
-                            </span>
-                        </a>
-                    </div>
-                    <div>
-                        <a href="https://www.google.com">
-                            <i class="fa-regular fa-user" style="color: #000000;"></i>
-                        </a>
-                    </div>
-                </div>
-
             </div>
-            <div class="header_midbar content-center">
-                <div class="logo-s">
-                    <img src="../images/furever-friends-logo-small.svg" alt="Furever Friends Logo" width="35">
+
+        </div>
+
+        <div class="header_midbar">
+            <nav>
+                <div class="menu-item">
+                    <a href="https://www.google.com">Home</a>
                 </div>
-                <div class="navbar row-flex align-items-center">
+                <div class="menu-item has-submenu">
+                    <a href="https://www.google.com">Shop
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </a>
+                    <div class="submenu">
+                        <a href="https://www.google.com">Dog Food</a>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <a href="https://www.google.com">About</a>
+                </div>
+                <div class="menu-item">
+                    <a href="https://www.google.com">Contact</a>
+                </div>
+            </nav>
+
+            <div class="midbar_icon">
+                <div>
+                    <a href="https://www.google.com">
+                        <span class="material-symbols-outlined">
+                            local_mall
+                        </span>
+                    </a>
+                </div>
+                <div>
+                    <a href="https://www.google.com">
+                        <i class="fa-regular fa-user" style="color: #000000;"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="menu-icon">
+                <i class="fa-solid fa-bars" style="color: #000000;"></i>
+                <div>
                     <div class="menu-item">
                         <a href="https://www.google.com">Home</a>
                     </div>
@@ -71,58 +106,24 @@
                         <a href="https://www.google.com">Contact</a>
                     </div>
                 </div>
-                <div class="midbar_icon">
-                    <div>
-                        <a href="https://www.google.com">
-                            <span class="material-symbols-outlined">
-                                local_mall
-                            </span>
-                        </a>
-                    </div>
-                    <div>
-                        <a href="https://www.google.com">
-                            <i class="fa-regular fa-user" style="color: #000000;"></i>
-                        </a>
-                    </div>
-                </div>
-                <div class="menu-icon">
-                    <i class="fa-solid fa-bars" style="color: #000000;"></i>
-                    <div>
-                        <div class="menu-item">
-                            <a href="https://www.google.com">Home</a>
-                        </div>
-                        <div class="menu-item has-submenu">
-                            <a href="https://www.google.com">Shop
-                                <i class="fa-solid fa-chevron-down"></i>
-                            </a>
-                            <div class="submenu">
-                                <a href="https://www.google.com">Dog Food</a>
-                            </div>
-                        </div>
-                        <div class="menu-item">
-                            <a href="https://www.google.com">About</a>
-                        </div>
-                        <div class="menu-item">
-                            <a href="https://www.google.com">Contact</a>
-                        </div>
-                    </div>
-                </div>
             </div>
+        </div>
 
-            <div class="header_bottombar row-flex gap-0 align-items-center">
-                <div class="row-flex col-3 content-center">
+        <div class="bg-dark-green">
+            <div class="max-width-1440 header_bottombar gap-0">
+                <div class="col-3 content-center">
                     <div class="icon icon-inline-20">
                         <img src="../images/icon_map.png" alt="Map Icon" width="100%">
                     </div>
                     <span class="text-bold">Free shipping</span> &nbsp;over RM100
                 </div>
-                <div class="row-flex col-3 content-center bottombar_item">
+                <div class="col-3 content-center bottombar_item">
                     <div class="icon icon-inline-20">
                         <img src="../images/icon_discount.png" alt="Discount Icon" width="100%">
                     </div>
                     <span class="text-bold">10% Off</span>&nbsp;First Order
                 </div>
-                <div class="row-flex col-3 content-center bottombar_item">
+                <div class="col-3 content-center bottombar_item">
                     <div class="icon icon-inline-20">
                         <img src="../images/icon_track-order.png" alt="Track Order Icon" width="100%">
                     </div>
@@ -130,48 +131,48 @@
                 </div>
             </div>
         </div>
+    </header>
 
-        <section>
-            <h2 class="text-center">Navigation Menu</h2>
-            <p>This is a placeholder text This is a placeholder text This is a placeholder text This is a placeholder
-                textThis
-                is a placeholder text This is a placeholder textThis is a placeholder textThis is a placeholder text
-                This is a placeholder text</p>
-            <p>This is a placeholder text This is a placeholder text This is a placeholder text This is a placeholder
-                textThis
-                is a placeholder text This is a placeholder textThis is a placeholder textThis is a placeholder text
-                This is a placeholder text</p>
-            <p>This is a placeholder text This is a placeholder text This is a placeholder text This is a placeholder
-                textThis
-                is a placeholder text This is a placeholder textThis is a placeholder textThis is a placeholder text
-                This is a placeholder text</p>
-            <p>This is a placeholder text This is a placeholder text This is a placeholder text This is a placeholder
-                textThis
-                is a placeholder text This is a placeholder textThis is a placeholder textThis is a placeholder text
-                This is a placeholder text</p>
-            <p>This is a placeholder text This is a placeholder text This is a placeholder text This is a placeholder
-                textThis
-                is a placeholder text This is a placeholder textThis is a placeholder textThis is a placeholder text
-                This is a placeholder text</p>
-            <p>This is a placeholder text This is a placeholder text This is a placeholder text This is a placeholder
-                textThis
-                is a placeholder text This is a placeholder textThis is a placeholder textThis is a placeholder text
-                This is a placeholder text</p>
-            <p>This is a placeholder text This is a placeholder text This is a placeholder text This is a placeholder
-                textThis
-                is a placeholder text This is a placeholder textThis is a placeholder textThis is a placeholder text
-                This is a placeholder text</p>
-            <p>This is a placeholder text This is a placeholder text This is a placeholder text This is a placeholder
-                textThis
-                is a placeholder text This is a placeholder textThis is a placeholder textThis is a placeholder text
-                This is a placeholder text</p>
-            <p>This is a placeholder text This is a placeholder text This is a placeholder text This is a placeholder
-                textThis
-                is a placeholder text This is a placeholder textThis is a placeholder textThis is a placeholder text
-                This is a placeholder text</p>
+    <section class="max-width-1440">
+        <h2 class="text-center">Navigation Menu</h2>
+        <p>This is a placeholder text This is a placeholder text This is a placeholder text This is a placeholder
+            textThis
+            is a placeholder text This is a placeholder textThis is a placeholder textThis is a placeholder text
+            This is a placeholder text</p>
+        <p>This is a placeholder text This is a placeholder text This is a placeholder text This is a placeholder
+            textThis
+            is a placeholder text This is a placeholder textThis is a placeholder textThis is a placeholder text
+            This is a placeholder text</p>
+        <p>This is a placeholder text This is a placeholder text This is a placeholder text This is a placeholder
+            textThis
+            is a placeholder text This is a placeholder textThis is a placeholder textThis is a placeholder text
+            This is a placeholder text</p>
+        <p>This is a placeholder text This is a placeholder text This is a placeholder text This is a placeholder
+            textThis
+            is a placeholder text This is a placeholder textThis is a placeholder textThis is a placeholder text
+            This is a placeholder text</p>
+        <p>This is a placeholder text This is a placeholder text This is a placeholder text This is a placeholder
+            textThis
+            is a placeholder text This is a placeholder textThis is a placeholder textThis is a placeholder text
+            This is a placeholder text</p>
+        <p>This is a placeholder text This is a placeholder text This is a placeholder text This is a placeholder
+            textThis
+            is a placeholder text This is a placeholder textThis is a placeholder textThis is a placeholder text
+            This is a placeholder text</p>
+        <p>This is a placeholder text This is a placeholder text This is a placeholder text This is a placeholder
+            textThis
+            is a placeholder text This is a placeholder textThis is a placeholder textThis is a placeholder text
+            This is a placeholder text</p>
+        <p>This is a placeholder text This is a placeholder text This is a placeholder text This is a placeholder
+            textThis
+            is a placeholder text This is a placeholder textThis is a placeholder textThis is a placeholder text
+            This is a placeholder text</p>
+        <p>This is a placeholder text This is a placeholder text This is a placeholder text This is a placeholder
+            textThis
+            is a placeholder text This is a placeholder textThis is a placeholder textThis is a placeholder text
+            This is a placeholder text</p>
 
-        </section>
-    </div>
+    </section>
 </body>
 
 </html>
