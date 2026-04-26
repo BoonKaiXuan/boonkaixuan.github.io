@@ -112,12 +112,12 @@
     --color-menu-font-light-hover: var(--color-white-71);
     --color-menu-font-accent-hover: var(--color-light-green);
 
-    /*Menu-with Background color*/
+    /*Mobile Menu-with Background color*/
 
-    --color-menu-with-bg-default: var(--color-white);
-    --color-menu-with-bg-font-default: var(--color-black);
-    --color-menu-with-bg-hover: var(--color-light-green);
-    --color-menu-with-bg-font-hover: var(--color-white);
+    --color-mobile-menu-bg-default: var(--color-light-green);
+    --color-mobile-menu-font-default: var(--color-white);
+    --color-mobile-menu-bg-active: var(--color-white);
+    --color-mobile-menu-font-active: var(--color-light-green);
 
     /*Submenu*/
     --font-size-submenu: 14px;
