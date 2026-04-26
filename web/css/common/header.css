@@ -109,14 +109,15 @@ input[type=text]:focus,
     font-size: 18px;
 }
 
-.menu-icon {
+.menu-toggle {
     font-size: 24px;
     padding: 12px 20px;
     cursor: pointer;
+    z-index: 1001;
 }
 
 .midbar_icons,
-.menu-icon {
+.menu-toggle {
     display: none;
 }
 
@@ -159,7 +160,6 @@ input[type=text]:focus,
         width: 100%;
     }
 
-    nav,
     .topbar_icons,
     .bottombar_item {
         display: none;
@@ -170,14 +170,44 @@ input[type=text]:focus,
     }
 
     .midbar_icons,
-    .menu-icon {
+    .menu-toggle {
         display: block;
     }
 
+    nav {
+        width: 100%;
+        flex-direction: column;
+        gap: 0px;
+
+        position: absolute;
+        top: 259.60px;
+        right: 0;
+    }
+
+    nav .menu-item>a {
+        color: var(--color-mobile-menu-font-default);
+    }
+
+    nav .menu-item {
+        background-color: var(--color-mobile-menu-bg-default);
+        min-height: 65px;
+        width: 100%;
+    }
+
+    nav .menu-item>a,
     .midbar_icons {
         display: flex;
         align-items: center;
+        justify-content: space-between;
         gap: var(--gap-m);
+    }
+
+    nav .menu-item:active {
+        background-color: var(--color-mobile-menu-bg-active);
+    }
+
+    nav .menu-item>a:active {
+        color: var(--color-mobile-menu-font-active);
     }
 
     .header_midbar {
@@ -192,8 +222,5 @@ input[type=text]:focus,
         width: 100%;
     }
 
-    nav .menu-item>a {
-        color: var();
-        background-color: var();
-    }
+
 }
