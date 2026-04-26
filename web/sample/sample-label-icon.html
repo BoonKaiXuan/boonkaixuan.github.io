@@ -6,23 +6,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sample - Label</title>
     <link rel="stylesheet" a href="../css/common/variables.css">
+    <link rel="stylesheet" a href="../css/common/layout.css">
     <link rel="stylesheet" a href="../css/common/image.css">
     <link rel="stylesheet" a href="../css/common/label-icon.css">
     <link rel="stylesheet" a href="../css/common/typography.css">
 </head>
 
 <body>
-    <div>
-        <div>
-            <img src="../images/dry-food 2.png" alt="Dry Food Product" width="100%">
+    <section>
+        <div class="width-30 relative direction-col">
+            <div>
+                <img src="../images/dry-food 2.png" alt="Dry Food Product" width="100%">
+            </div>
+            <div>
+                <h3 class="text-center">Product Title</h3>
+            </div>
+            <div class="row-flex gap-12 content-center">
+                <div>
+                    <p class="text-light-green">RM12.00</p>
+                </div>
+                <div>
+                    <p class="product-price-b4-disc">
+                        RM25.00
+                    </p>
+                </div>
+                <div class="discount-label">
+                    52% Off
+                </div>
+            </div>
+            <div class="absolute sale-badge">
+                Sale!
+            </div>
         </div>
-        <div>
-            <p>Product Title</p>
-        </div>
-        <div class="absolute sale-badge">
-            Sale!
-        </div>
-    </div>
+    </section>
 </body>
 
 </html>
