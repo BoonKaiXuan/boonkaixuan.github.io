@@ -6,13 +6,22 @@
     margin: 10px 0px;
 }
 
+.textarea {
+    height: 140px;
+    font-family: var(--font-body-base);
+}
+
 /*contact,review,comment,insert your email*/
 .text-field_no-borderline {
     background-color: var(--color-txtfield-no-border-bg);
     outline: none;
 }
 
+.text-field_no-borderline::placeholder {
+    color: var(--color-txtfield-with-border-font-default);
+}
 
+/*add to cart*/
 .text-field_with-borderline {
     border: var(--color-text-field-with-border-borderline-default);
     color: var(--color-txtfield-with-border-font-default);
@@ -21,4 +30,8 @@
 .text-field_with-borderline:hover {
     border: var(--color-txtfield-with-border-borderline-hover);
     background: var(--color-txtfield-with-border-bg);
+}
+
+.text-field_with-borderline:focus {
+    outline: var(--color-txtfield-with-border-borderline-pressed);
 }
