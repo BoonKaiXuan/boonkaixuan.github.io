@@ -9,6 +9,7 @@
     <link rel="stylesheet" a href="../css/common/form-element.css">
     <link rel="stylesheet" a href="../css/common/typography.css">
     <link rel="stylesheet" a href="../css/common/layout.css">
+    <link rel="stylesheet" a href="../css/common/button.css">
 </head>
 
 <body>
@@ -21,7 +22,8 @@
             <label for="subject">Subject</label><br>
             <input class=" form text-field_no-borderline col-1" type="text" id="subject" name="subject"><br>
             <label for="message">Message</label><br>
-            <textarea class=" form text-field_no-borderline col-1" type="text" id="message" name="message"></textarea>
+            <textarea class=" form text-field_no-borderline col-1 textarea" type="text" id="message"
+                name="message"></textarea>
         </section>
 
         <section>
@@ -49,6 +51,19 @@
                 <input class="form col-2 text-field_with-borderline" type="text" placeholder="Postcode">
                 <input class="form col-2 text-field_with-borderline" type="text" placeholder="City">
             </div>
+        </section>
+
+        <section>
+            <textarea class="form text-field_no-borderline col-1 textarea" type="text"
+                placeholder="Comment..."></textarea>
+            <div class="row-flex gap-20">
+                <input class="col-3 form text-field_no-borderline" type="text" placeholder="Name (required)">
+                <input class="col-3 form text-field_no-borderline" type="text" placeholder="Email (required)">
+                <input class="col-3 form text-field_no-borderline" type="text" placeholder="Website">
+                <input type="checkbox" id="save" name="save" value="save">
+                <label for="save"> Save my name, email, and website in this browser for the next time I comment.</label>
+            </div>
+            <div><button class="btn"><a href="https://google.com">Post comment</a></button></div>
         </section>
     </div>
 
