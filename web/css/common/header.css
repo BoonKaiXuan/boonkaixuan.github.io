@@ -24,7 +24,7 @@ nav,
 }
 
 nav {
-    font-size: var(--font-size-menu);
+    font-size: var(--font-size-header-menu);
     font-weight: var(--font-weight-medium);
     min-height: 61px;
     gap: var(--gap-l);
