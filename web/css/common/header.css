@@ -144,11 +144,6 @@ input[type=text]:focus,
         text-align: center;
     }
 
-    .search,
-    .search input {
-        width: 100%;
-    }
-
     .topbar_icons,
     .bottombar_item {
         display: none;
