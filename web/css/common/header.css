@@ -117,10 +117,6 @@ input[type=text]:focus,
     color: var(--color-light-green);
 }
 
-.icon img {
-    object-fit: contain;
-}
-
 .icon-inline-20 {
     height: var(--icon-size-m);
     width: var(--icon-size-m);
