@@ -169,8 +169,13 @@ input[type=text]:focus,
         gap: 0px;
 
         position: absolute;
-        top: 259.60px;
+        top: -260px;
         right: 0;
+    }
+
+    nav.active {
+        top: 260px;
+        transition: all 0.5s ease;
     }
 
     nav .menu-item>a,
