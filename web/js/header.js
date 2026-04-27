@@ -22,7 +22,12 @@ toggleButton.addEventListener(
 )
 
 dropDown.addEventListener(
-    "click", () => {
+    "click", (e) => {
+
+        e.stopPropagation();
+
+        e.preventDefault();
+
         subMenu.classList.toggle("active");
 
         if (subMenu.classList.contains("active")) {
