@@ -42,7 +42,7 @@
 }
 
 .reserved {
-    font-size: var(--h6-font-size);
+    font-size: 14px;
     background-color: var(--color-black);
     padding: 13px 0px;
 }
