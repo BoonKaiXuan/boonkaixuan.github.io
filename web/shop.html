@@ -4,11 +4,134 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>shop</title>
+    <link rel="stylesheet" a href="css/common/variables.css">
+    <link rel="stylesheet" a href="css/common/typography.css">
+    <link rel="stylesheet" a href="css/common/layout.css">
+    <link rel="stylesheet" a href="css/common/header.css">
+    <link rel="stylesheet" a href="css/common/footer.css">
+    <link rel="stylesheet" a href="css/common/button.css">
+    <link rel="stylesheet" a href="css/common/card.css">
+    <link rel="stylesheet" a href="css/common/form-element.css">
+    <link rel="stylesheet" a href="css/common/image.css">
+    <link rel="stylesheet" a href="css/common/label-icon.css">
+    <script src="https://kit.fontawesome.com/1619a0e9db.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
 </head>
 
 <body>
+    <header>
+        <div class="max-width-1440 header_topbar row-flex gap-20 align-items-center divider">
+            <div class="logo-l col-4 col-2-t col-1-m">
+                <a href="https://www.google.com">
+                    <img class="vertical-center" src="images/furever-friends-logo-big.svg" alt="Furever Friends Logo"
+                        height="36">
+                </a>
+            </div>
 
+            <div class="search col-4 col-2-t col-1-m">
+                <i class="fa-solid fa-magnifying-glass" style="color: #000000;"></i>
+                <input type="text" placeholder="Search..." />
+            </div>
+
+            <div class="topbar_contact text-center col-4 col-2-t col-1-m">
+                <span class="text-bold">Questions?</span> Call us: (+60)147895478
+            </div>
+
+            <div class="topbar_icons row-flex align-items-center col-4 col-2-t col-1-m">
+                <div>
+                    <a href="https://www.google.com">
+                        <span class="topbar_icon material-symbols-outlined vertical-center">
+                            local_mall
+                        </span>
+                    </a>
+                </div>
+                <div>
+                    <a href="https://www.google.com">
+                        <i class="topbar_icon fa-regular fa-user"></i>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="header_midbar row-flex align-items-center">
+            <nav id="mobile-menu" class="row-flex gap-40 align-items-center">
+                <div class="menu-item">
+                    <a href="https://www.google.com">Home</a>
+                </div>
+                <div class="menu-item has-submenu">
+                    <a href="https://www.google.com">Shop
+                        <i id="submenu-toggle" class="fa-solid fa-chevron-down"></i>
+                    </a>
+                    <div id="submenu" class="submenu">
+                        <a href="https://www.google.com">Dog Food</a>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <a href="https://www.google.com">About</a>
+                </div>
+                <div class="menu-item">
+                    <a href="https://www.google.com">Contact</a>
+                </div>
+            </nav>
+
+            <div class="midbar_icons">
+                <div>
+                    <a href="https://www.google.com">
+                        <span class="midbar_icon material-symbols-outlined vertical-center">
+                            local_mall
+                        </span>
+                    </a>
+                </div>
+                <div>
+                    <a href="https://www.google.com">
+                        <i class="midbar_icon fa-regular fa-user"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="menu-toggle">
+                <i id="menu-toggle" class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+
+        <div class="bg-paws bg-dark-green">
+            <div class="max-width-1440 header_bottombar row-flex gap-0 align-items-center">
+                <div class="col-3 content-center">
+                    <div class="icon icon-inline-20">
+                        <img src="images/icon_map.png" alt="Map Icon" width="100%">
+                    </div>
+                    <span class="text-bold">Free shipping</span> &nbsp;over RM100
+                </div>
+                <div class="col-3 content-center bottombar_item">
+                    <div class="icon icon-inline-20">
+                        <img src="images/icon_discount.png" alt="Discount Icon" width="100%">
+                    </div>
+                    <span class="text-bold">10% Off</span>&nbsp;First Order
+                </div>
+                <div class="col-3 content-center bottombar_item">
+                    <div class="icon icon-inline-20">
+                        <img src="images/icon_track-order.png" alt="Track Order Icon" width="100%">
+                    </div>
+                    <span class="text-bold">Track</span>&nbsp;Your Order
+                </div>
+            </div>
+        </div>
+    </header>
+    <section>
+        <div class="banner bg-img bg-img-gradient" style="--bg: url(../../images/banner_shop.png);">
+            <div class="max-width-1440 text-white gap-0 col-2 col-1-t ">
+                <p>
+                    FIND THE BEST ANIMAL SUPPLIES
+                </p>
+                <h1>
+                    New arrivals weekly
+                </h1>
+                <button class="btn btn_white"><a href="https://google.com">Learn more about us</a></button>
+            </div>
+        </div>
+    </section>
 </body>
 
 </html>
