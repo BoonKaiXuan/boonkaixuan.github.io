@@ -21,38 +21,39 @@
 
 <body>
     <header>
-        <div class="max-width-1440 header_topbar row-flex gap-20 align-items-center divider">
-            <div class="logo-l col-4 col-2-t col-1-m">
-                <a href="https://www.google.com">
-                    <img class="vertical-center" src="images/furever-friends-logo-big.svg" alt="Furever Friends Logo"
-                        height="36">
-                </a>
-            </div>
-
-            <div class="search col-4 col-2-t col-1-m">
-                <i class="fa-solid fa-magnifying-glass" style="color: #000000;"></i>
-                <input type="text" placeholder="Search..." />
-            </div>
-
-            <div class="topbar_contact text-center col-4 col-2-t col-1-m">
-                <span class="text-bold">Questions?</span> Call us: (+60)147895478
-            </div>
-
-            <div class="topbar_icons row-flex align-items-center col-4 col-2-t col-1-m">
-                <div>
-                    <a href="https://www.google.com">
-                        <span class="topbar_icon material-symbols-outlined vertical-center">
-                            local_mall
-                        </span>
+        <div class="divider">
+            <div class="max-width-1440 header_topbar row-flex gap-20 align-items-center">
+                <div class="logo-l col-4 col-2-t col-1-m">
+                    <a href="index.html">
+                        <img class="vertical-center" src="images/furever-friends-logo-big.svg"
+                            alt="Furever Friends Logo" height="36">
                     </a>
                 </div>
-                <div>
-                    <a href="https://www.google.com">
-                        <i class="topbar_icon fa-regular fa-user"></i>
-                    </a>
+
+                <div class="search col-4 col-2-t col-1-m">
+                    <i class="fa-solid fa-magnifying-glass" style="color: #000000;"></i>
+                    <input type="text" placeholder="Search..." />
+                </div>
+
+                <div class="topbar_contact text-center col-4 col-2-t col-1-m">
+                    <span class="text-bold">Questions?</span> Call us: (+60)147895478
+                </div>
+
+                <div class="topbar_icons row-flex align-items-center col-4 col-2-t col-1-m">
+                    <div>
+                        <a href="https://www.google.com">
+                            <span class="topbar_icon material-symbols-outlined vertical-center">
+                                local_mall
+                            </span>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://www.google.com">
+                            <i class="topbar_icon fa-regular fa-user"></i>
+                        </a>
+                    </div>
                 </div>
             </div>
-
         </div>
 
         <div class="header_midbar row-flex align-items-center">
@@ -119,10 +120,11 @@
             </div>
         </div>
     </header>
-    <section class="max-width-1440">
-        <div class="banner bg-img bg-img-gradient" style="--bg: url(../../images/banner_shop.png);">
-            <div class="text-center max-width-1440 text-white gap-0 col-2 col-1-t ">
-                <p>
+
+    <section>
+        <div class="banner bg-img bg-img-gradient" style="--bg:url(../../images/banner_shop.png);">
+            <div class="max-width-1440 text-center text-white gap-0 col-2 col-1-m col-1-t">
+                <p class="banner-subheading">
                     FIND THE BEST ANIMAL SUPPLIES
                 </p>
                 <h1>
@@ -136,104 +138,121 @@
     <section class="max-width-1440">
         <h2>Shop by categories</h2>
         <div class="row-flex gap-0">
-            <div class="col-3 ratio-16-9 bg-img bg-img-gradient col-1-t"
+            <div class="on-sale-item col-3 ratio-16-9 bg-img bg-img-gradient col-1-t"
                 style="--bg: url(../../images/shop_categories-dog-food.png)">
-                <h2 class="text-white">Dog food</h2>
+                <h3 class="text-white">Dog food</h3>
             </div>
 
-            <div class="col-3 ratio-16-9 bg-img bg-img-gradient col-2-t col-1-m"
+            <div class="on-sale-item col-3 ratio-16-9 bg-img bg-img-gradient col-2-t col-1-m"
                 style="--bg: url(../../images/shop_categories-cat-food.png)">
-                <h2 class="text-white">Cat food</h2>
+                <h3 class="text-white">Cat food</h3>
             </div>
 
-            <div class="col-3 ratio-16-9 bg-img bg-img-gradient col-2-t col-1-m"
+            <div class="on-sale-item col-3 ratio-16-9 bg-img bg-img-gradient col-2-t col-1-m"
                 style="--bg: url(../../images/shop_categories-accessories.png)">
-                <h2 class="text-white">Accessories</h2>
+                <h3 class="text-white">Accessories</h3>
             </div>
         </div>
     </section>
 
-    <section class="bg-dark-green bg-paws">
-        <div class="max-width-1440 row-flex space-between align-items-center section_topbar">
-            <div>
-                <h4 class="text-light-green">
-                    All-time best sellers
-                </h4>
-                <h2 class="text-white">
-                    Everything your pup needs
-                </h2>
+    <div class="bg-dark-green bg-paws">
+        <section class="max-width-1440">
+            <div class="row-flex space-between align-items-center section_inner-margin">
+                <div>
+                    <h4 class="text-light-green">
+                        Dog food
+                    </h4>
+                    <h2 class="text-white">
+                        Everything your pup needs
+                    </h2>
+                </div>
+                <div class="btn all-prod-top">
+                    <a href="https://google.com">
+                        View all products
+                    </a>
+                </div>
             </div>
-            <div>
-                <a href="https://google.com" class="btn">
+
+            <div class="row-flex gap-40">
+                <div class="col-4 col-2-m">
+                    <div>
+                        <img src="images/product/chewable-weight.jpg" alt="Chewable Weight" width="100%">
+                    </div>
+                    <div class="text-center text-white">
+                        <h3>Chewable weight</h3>
+                        <p class="text-white">RM20.00</p>
+                    </div>
+                </div>
+
+                <div class="col-4 col-2-m relative">
+                    <div>
+                        <img src="images/product/chewable-toy.jpg" alt="Purple & Orange Chewable Toy" width="100%">
+                    </div>
+                    <div class="text-center text-white">
+                        <h3>Chewable weight</h3>
+                    </div>
+                    <div class="row-flex gap-12 content-center">
+                        <div>
+                            <p class="text-light-green">
+                                RM12.00
+                            </p>
+                        </div>
+                        <div>
+                            <p class="product-price-b4-disc text-white">
+                                RM25.00
+                            </p>
+                        </div>
+                        <div class="discount-label">
+                            <p>
+                                52% Off
+                            </p>
+                        </div>
+                    </div>
+                    <div class="absolute sale-badge">
+                        Sale!
+                    </div>
+                </div>
+
+                <div class="col-4 col-2-m">
+                    <div>
+                        <img src="images/product/transport-cage.jpg" alt="Black Transport Cage" width="100%">
+                    </div>
+                    <div class="text-center text-white">
+                        <h3>Transport cage</h3>
+                        <p class="text-white">RM50.00</p>
+                    </div>
+                </div>
+
+                <div class="col-4 col-2-m">
+                    <div>
+                        <img src="images/product/dog-leash.jpg" alt="Pink Dog Leash" width="100%">
+                    </div>
+                    <div class="text-center text-white">
+                        <h3>Chewable weight</h3>
+                        <p class="text-white">RM30.00</p>
+                    </div>
+                </div>
+            </div>
+            <div class="btn all-prod-bottom col-1-m text-center">
+                <a href="https://google.com">
                     View all products
                 </a>
             </div>
-        </div>
-
-        <div class="row-flex gap-20">
-            <div class="col-4 col-2-m">
-                <div>
-                    <img src="images/product/chewable-weight.jpg" alt="Chewable Weight" width="100%">
-                </div>
-                <div class="text-center text-white">
-                    <h3>Chewable weight</h3>
-                    <p class="text-light-green">RM20.00</p>
-                </div>
-            </div>
-
-            <div class="col-4 col-2-m relative">
-                <div>
-                    <img src="images/product/chewable-toy.jpg" alt="Purple & Orange Chewable Toy" width="100%">
-                </div>
-                <div class="text-center text-white">
-                    <h3>Chewable weight</h3>
-                </div>
-                <div class="row-flex gap-12 content-center">
-                    <div>
-                        <p class="text-light-green">
-                            RM12.00
-                        </p>
-                    </div>
-                    <div>
-                        <p class="product-price-b4-disc text-white">
-                            RM25.00
-                        </p>
-                    </div>
-                    <div class="discount-label">
-                        <p>
-                            52% Off
-                        </p>
-                    </div>
-                </div>
-                <div class="absolute sale-badge">
-                    Sale!
-                </div>
-            </div>
-
-            <div class="col-4 col-2-m">
-                <div>
-                    <img src="images/product/transport-cage.jpg" alt="Black Transport Cage" width="100%">
-                </div>
-                <div class="text-center text-white">
-                    <h3>Transport cage</h3>
-                    <p class="text-light-green">RM50.00</p>
-                </div>
-            </div>
-
-            <div class="col-4 col-2-m">
-                <div>
-                    <img src="images/product/dog-leash.jpg" alt="Pink Dog Leash" width="100%">
-                </div>
-                <div class="text-center text-white">
-                    <h3>Chewable weight</h3>
-                    <p class="text-light-green">RM30.00</p>
-                </div>
+        </section>
+    </div>
+    <section class="max-width-1440">
+        <div class="row-flex align-items-center section_inner-margin">
+            <div>
+                <h4 class="text-light-green">
+                    Dog Food
+                </h4>
+                <h2>
+                    Everything your pup needs
+                </h2>
             </div>
         </div>
-    </section>
-    <section>
         <div class="gap-40 row-flex ">
-            <div class="col-4 card card_with-border">
+            <div class="col-4 card card_with-border col-2-m">
                 <div><img src="images/card_borderline1.png" alt="card" width="100%"></div>
                 <div class="direction-col gap-20">
                     <div class="row-flex gap-12">
@@ -244,41 +263,111 @@
                     <div class="text-light-green">Continue Reading</div>
                 </div>
             </div>
-            <div class="col-4 card card_with-border">
+            <div class="col-4 card card_with-border col-2-m">
                 <div><img src="images/card_borderline2.png" alt="card" width="100%"></div>
                 <div class="direction-col gap-20">
                     <div class="row-flex gap-12">
-                        <div>April 19st, 2020 </div>
+                        <div>April 20st, 2020 </div>
                         <div>Tips & Tricks</div>
                     </div>
-                    <h5>How to ‘loose leash walk’ your dog </h5>
+                    <h5>Why cats love climbing & how to manage it </h5>
                     <div class="text-light-green">Continue Reading</div>
                 </div>
             </div>
-            <div class="col-4 card card_with-border">
+            <div class="col-4 card card_with-border col-2-m">
                 <div><img src="images/card_borderline3.png" alt="card" width="100%"></div>
                 <div class="direction-col gap-20">
                     <div class="row-flex gap-12">
-                        <div>April 19st, 2020 </div>
+                        <div>April 18st, 2020 </div>
                         <div>Tips & Tricks</div>
                     </div>
-                    <h5>How to ‘loose leash walk’ your dog </h5>
+                    <h5>Is your pet sleeping too much?</h5>
                     <div class="text-light-green">Continue Reading</div>
                 </div>
             </div>
-            <div class="col-4 card card_with-border">
+            <div class="col-4 card card_with-border col-2-m">
                 <div><img src="images/card_borderline4.png" alt="card" width="100%"></div>
                 <div class="direction-col gap-20">
                     <div class="row-flex gap-12">
-                        <div>April 19st, 2020 </div>
+                        <div>April 21st, 2020 </div>
                         <div>Tips & Tricks</div>
                     </div>
-                    <h5>How to ‘loose leash walk’ your dog </h5>
+                    <h5>How to build trust with your pet </h5>
                     <div class="text-light-green">Continue Reading</div>
                 </div>
             </div>
         </div>
+        <div class="text-center">
+            <a href="https://google.com" class="btn">
+                Read all articles
+            </a>
+        </div>
     </section>
+    <div class="bg-dark-green">
+        <div class="footer max-width">
+            <div class="footer_top-section gap-0 row-flex">
+                <div class="footer_logo-m direction-col col-4 col-1-m ">
+                    <div><img src="images/logo_white.png" alt="logo" width="200px" height="70px"></div>
+
+                    123 Jalan Impian,<br>
+                    58000 WP Kuala Lumpur<br>info@fureverfriends.com<br>Call us: (+60) 147895478
+                </div>
+                <div class="footer_menu-m col-4 col-2-m">
+                    <div class="footer_title text-white">Shop by Categories
+                    </div>
+                    <div class="footer_menu-item direction-col">
+                        <a href="https://www.google.com/">Dog food</a>
+                        <a href="https://www.google.com/">Cat food</a>
+                        <a href="https://www.google.com/">Accessories</a>
+                    </div>
+                </div>
+
+                <div class="footer_menu-m col-4 col-2-m">
+                    <div class="footer_title text-white">Useful links</div>
+                    <div class="footer_menu-item direction-col">
+                        <a href="https://www.google.com/">My account</a>
+                        <a href="https://www.google.com/">Orders</a>
+                        <a href="https://www.google.com/">Checkout</a>
+                        <a href="https://www.google.com/">Cart</a>
+                    </div>
+
+                </div>
+                <div class="subscribe-form col-4 col-1-m bg-paws">
+                    <div class="footer_title text-white">Subscribe to our newsletter</div>
+                    <div class="direction-col">
+                        <input class="form text-field_no-borderline" type="text" placeholder="Insert your email...*">
+                        <button class="btn btn_cta"><a href="https://google.com">Subscribe</a></button>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="footer_menu-navbar content-center ">
+                <a href="https://www.google.com">Home</a>
+                <a href="https://www.google.com">Shop</a>
+                <a href="https://www.google.com">About</a>
+                <a href="https://www.google.com">Contact</a>
+            </div>
+
+            <div class="footer_menu-navbar content-center">
+                <a href="https://www.google.com">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+                <a href="https://www.google.com">
+                    <i class="fa-brands fa-x-twitter"></i>
+                </a>
+                <a href="https://www.google.com">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="https://www.google.com">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="reserved text-white text-center">
+        @ 2026 FurEver Friends Sdn. Bhd. All Rights Reserved
+    </div>
 
 
 </body>
