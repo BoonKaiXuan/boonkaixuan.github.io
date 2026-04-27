@@ -2,8 +2,8 @@ section {
     padding: var(--padding-section);
 }
 
-.section_topbar {
-    margin-bottom: 30px;
+.section_inner-margin {
+    margin-bottom: 40px;
 }
 
 .row-flex {
