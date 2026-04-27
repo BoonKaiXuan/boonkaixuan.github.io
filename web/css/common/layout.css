@@ -145,35 +145,3 @@ section {
         gap: var(--gap-m);
     }
 }
-
-/*List of Class
-.row-flex
-.direction-col
-.align-items-center
-.space-between
-.content-center
-.col-1
-.col-2
-.col-3
-.col-4
-.col-5
-.gap-0
-.gap-4
-.gap-12
-.gap-20
-.gap-40
-.max-width-1440
-.max-width-850
-.banner
-.on-sale-item
-.width-30
-.divider
-
-.col-1-t
-.col-2-t
-.col-3-t
-.col-4-t
-
-.col-1-m
-.col-2-m
-*/
