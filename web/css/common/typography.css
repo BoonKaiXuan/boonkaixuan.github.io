@@ -11,6 +11,10 @@ input {
     font-family: inherit;
 }
 
+a {
+    color: inherit;
+}
+
 h1,
 h2 {
     font-family: var(--font-heading-serif);
@@ -148,26 +152,3 @@ h6 {
     }
 
 }
-
-/*List of Class*/
-/*
-.banner-subheading
-.product-price-b4-disc
-.customer-white
-.single-product-title
-.single-product-subtitle
-.caption
-
-.text-center
-.text-white
-.text-dark-green
-.text-light-green
-.text-bold
-
-h1-banner heading
-h2-section heading
-h3-staff name
-h4-section subheading, FAQ question
-h5-shipping info title, blog title
-h6-review title, comment title
-*/
