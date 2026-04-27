@@ -2,6 +2,10 @@ section {
     padding: var(--padding-section);
 }
 
+.section_topbar {
+    margin-bottom: 30px;
+}
+
 .row-flex {
     display: flex;
     flex-wrap: wrap;
