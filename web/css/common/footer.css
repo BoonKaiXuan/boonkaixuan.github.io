@@ -1,8 +1,6 @@
 .footer {
-    background-color: var(--color-dark-green);
     color: var(--color-menu-font-light-default);
     padding: 120px 30px 60px;
-    flex-wrap: wrap;
 }
 
 .footer_title {
@@ -10,9 +8,12 @@
     font-size: var(--h5-font-size);
 }
 
+
 .footer_top-section {
     padding-bottom: 60px;
+    border-bottom: var(--color-light-green-50) 2px solid;
 }
+
 
 .footer_menu-item a {
     color: var(--color-menu-font-light-default);
@@ -32,6 +33,7 @@
 }
 
 .footer_menu-navbar {
+    gap: var(--gap-l);
     padding: 40px 0px 0px 0px;
 }
 
@@ -40,6 +42,7 @@
 }
 
 .reserved {
+    font-size: var(--h6-font-size);
     background-color: var(--color-black);
     padding: 13px 0px;
 }
