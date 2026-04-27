@@ -53,14 +53,11 @@
         text-align: center;
     }
 
-    .footer_menu-t {
-        margin: 60px 0px;
-    }
 }
 
 @media screen and (max-width:880px) {
 
-    .footer_menu-t {
+    .footer_menu-m {
         justify-content: center;
         text-align: center;
     }
