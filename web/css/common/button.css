@@ -7,6 +7,7 @@
     color: var(--color-button-green-font);
     cursor: pointer;
     margin: 10px 0px;
+    display: inline-block;
 }
 
 .btn:hover {
