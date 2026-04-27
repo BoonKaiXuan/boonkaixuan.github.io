@@ -50,7 +50,7 @@ nav .submenu>a {
     text-align: left;
 }
 
-nav .has-submenu:hover>.submenu {
+nav .has-submenu:hover .submenu {
     opacity: 1;
     transition: all 0.3s ease;
 }
@@ -191,14 +191,36 @@ input[type=text]:focus,
         gap: var(--gap-m);
     }
 
-    nav .menu-item:hover>a,
-    nav .menu-item:hover>i {
-        background-color: var(--color-mobile-menu-bg-active);
-        color: var(--color-mobile-menu-font-active);
+    nav .has-submenu {
+        position: relative;
     }
 
-    nav .has-submenu:hover>.submenu {
-        opacity: 0;
+    nav .has-submenu i {
+        padding: 25px 30px;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    nav .submenu {
+        display: none;
+        opacity: 1;
+        position: relative;
+    }
+
+    nav .submenu>a {
+        padding-left: 40px;
+    }
+
+    nav .submenu.active {
+        display: block;
+    }
+
+    nav .menu-item:hover>a,
+    nav .menu-item:hover>i,
+    nav .submenu:hover>a {
+        background-color: var(--color-mobile-menu-bg-active);
+        color: var(--color-mobile-menu-font-active);
     }
 
     .header_midbar {
