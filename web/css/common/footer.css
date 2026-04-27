@@ -15,12 +15,13 @@
 }
 
 .footer_menu-item a {
-    color: var(--color-white);
-    font-size: 16px;
+    color: var(--color-menu-font-light-default);
+    font-size: var(--font-size-footer-menu);
     padding: 10px 0px;
 }
 
-.footer_menu-item a:hover {
+.footer_menu-item a:hover,
+.footer_menu-navbar a {
     color: var(--color-white-71);
 }
 
@@ -31,16 +32,11 @@
 }
 
 .footer_menu-navbar {
-    font-size: var(--font-size-menu);
     padding: 40px 0px 0px 0px;
 }
 
-.footer_menu-navbar a {
-    color: var(--color-white-71);
-}
-
 .footer_menu-navbar a:hover {
-    color: var(--color-white);
+    color: var(--color-menu-font-light-default);
 }
 
 .reserved {
@@ -48,7 +44,7 @@
     padding: 13px 0px;
 }
 
-@media screen and (max-width:800px) {
+@media screen and (max-width:880px) {
     .footer_logo-m {
         justify-content: center;
         align-items: center;

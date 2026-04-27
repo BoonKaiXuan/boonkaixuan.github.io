@@ -18,14 +18,11 @@
     background-color: var(--color-card-dark-green-bg-default);
 }
 
-.card_dark-green:hover {
+.card_dark-green:hover,
+.card_mid-green:hover {
     filter: var(--card-filter-hover);
 }
 
 .card_mid-green {
     background-color: var(--color-card-mid-green-bg-default);
-}
-
-.card_mid-green:hover {
-    filter: var(--card-filter-hover);
 }
