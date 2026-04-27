@@ -184,10 +184,8 @@
 
     /* === Icon === */
 
-    --icon-size-xs: 10px;
-    --icon-size-s: 14px;
-    --icon-size-m: 20px;
-    --icon-size-l: 96px;
+    --icon-size-s: 20px;
+    --icon-size-m: 30px;
 
     /*Icon-Black*/
     --color-icon-black-default: var(--color-black);
