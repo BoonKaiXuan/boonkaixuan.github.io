@@ -21,8 +21,15 @@
 .card_dark-green:hover,
 .card_mid-green:hover {
     filter: var(--card-filter-hover);
+    box-shadow: var(--card-box-shadow-hover);
 }
 
 .card_mid-green {
     background-color: var(--color-card-mid-green-bg-default);
+}
+
+.card_with-shadow:hover {
+    box-shadow: var(--card-box-shadow-hover);
+    transform: perspective(1000px) scale(1.03);
+    transition: all .35s ease;
 }
