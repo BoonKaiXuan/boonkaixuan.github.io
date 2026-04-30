@@ -17,6 +17,11 @@
     aspect-ratio: 4/3;
 }
 
+/*About*/
+.ratio-1 {
+    aspect-ratio: 1;
+}
+
 .radius-27 {
     border-radius: var(--radius-image);
 }
