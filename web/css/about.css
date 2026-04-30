@@ -10,6 +10,10 @@ section.mission-vision {
     display: none;
 }
 
+.position {
+    margin: -10px 0px 20px 0px;
+}
+
 @media screen and (max-width:1100px) {
     .about_title-d {
         display: none;
