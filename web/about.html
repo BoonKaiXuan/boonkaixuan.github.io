@@ -5,10 +5,202 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About - FurEver Friends</title>
+    <link rel="stylesheet" a href="css/common/variables.css">
+    <link rel="stylesheet" a href="css/common/typography.css">
+    <link rel="stylesheet" a href="css/common/layout.css">
+    <link rel="stylesheet" a href="css/common/header.css">
+    <link rel="stylesheet" a href="css/common/footer.css">
+    <link rel="stylesheet" a href="css/common/button.css">
+    <link rel="stylesheet" a href="css/common/card.css">
+    <link rel="stylesheet" a href="css/common/form-element.css">
+    <link rel="stylesheet" a href="css/common/image.css">
+    <link rel="stylesheet" a href="css/common/label-icon.css">
+    <script src="https://kit.fontawesome.com/1619a0e9db.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
 </head>
 
 <body>
+    <header>
+        <div class="divider">
+            <div class="max-width-1440 header_topbar row-flex gap-20 align-items-center">
+                <div class="logo-l col-4 col-2-t col-1-m">
+                    <a href="index.html">
+                        <img class="vertical-center" src="images/furever-friends-logo-big.svg"
+                            alt="Furever Friends Logo" height="36">
+                    </a>
+                </div>
 
+                <div class="search col-4 col-2-t col-1-m">
+                    <i class="fa-solid fa-magnifying-glass" style="color: #000000;"></i>
+                    <input type="text" placeholder="Search..." />
+                </div>
+
+                <div class="topbar_contact text-center col-4 col-2-t col-1-m">
+                    <span class="text-bold">Questions?</span> Call us: (+60)147895478
+                </div>
+
+                <div class="topbar_icons row-flex align-items-center col-4 col-2-t col-1-m">
+                    <div>
+                        <a href="https://www.google.com">
+                            <span class="topbar_icon material-symbols-outlined vertical-center">
+                                local_mall
+                            </span>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://www.google.com">
+                            <i class="topbar_icon fa-regular fa-user"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="header_midbar row-flex align-items-center">
+            <nav id="mobile-menu" class="row-flex gap-40 align-items-center">
+                <div class="menu-item">
+                    <a href="https://www.google.com">Home</a>
+                </div>
+                <div class="menu-item has-submenu">
+                    <a href="https://www.google.com">Shop
+                        <i id="submenu-toggle" class="fa-solid fa-chevron-down"></i>
+                    </a>
+                    <div id="submenu" class="submenu">
+                        <a href="https://www.google.com">Dog Food</a>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <a href="https://www.google.com">About</a>
+                </div>
+                <div class="menu-item">
+                    <a href="https://www.google.com">Contact</a>
+                </div>
+            </nav>
+
+            <div class="midbar_icons">
+                <div>
+                    <a href="https://www.google.com">
+                        <span class="midbar_icon material-symbols-outlined vertical-center">
+                            local_mall
+                        </span>
+                    </a>
+                </div>
+                <div>
+                    <a href="https://www.google.com">
+                        <i class="midbar_icon fa-regular fa-user"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="menu-toggle">
+                <i id="menu-toggle" class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+
+        <div class="bg-paws bg-dark-green">
+            <div class="max-width-1440 header_bottombar row-flex gap-0 align-items-center">
+                <div class="col-3 content-center">
+                    <div class="icon icon-inline-20">
+                        <img src="images/icon_map.png" alt="Map Icon" width="100%">
+                    </div>
+                    <span class="text-bold">Free shipping</span> &nbsp;over RM100
+                </div>
+                <div class="col-3 content-center bottombar_item">
+                    <div class="icon icon-inline-20">
+                        <img src="images/icon_discount.png" alt="Discount Icon" width="100%">
+                    </div>
+                    <span class="text-bold">10% Off</span>&nbsp;First Order
+                </div>
+                <div class="col-3 content-center bottombar_item">
+                    <div class="icon icon-inline-20">
+                        <img src="images/icon_track-order.png" alt="Track Order Icon" width="100%">
+                    </div>
+                    <span class="text-bold">Track</span>&nbsp;Your Order
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="banner bg-img bg-img-gradient" style="--bg:url(/web/images/banner_about.jpg);">
+        <div class="max-width-1440">
+            <h1 class="text-center text-white">
+                About
+            </h1>
+            <p class="banner-subheading text-center text-white">
+                Learn about our business philosophy
+            </p>
+        </div>
+    </div>
+
+    <div class="bg-dark-green">
+        <div class="footer max-width-1440">
+            <div class="footer_top-section gap-40 row-flex">
+                <div class="footer_logo-t direction-col col-4 col-1-t ">
+                    <div><img src="images/logo_white.png" alt="logo" width="auto" height="70px"></div>
+
+                    123 Jalan Impian,<br>
+                    58000 WP Kuala Lumpur<br>info@fureverfriends.com<br>Call us: (+60) 147895478
+                </div>
+                <div class="footer_menu-m col-4 col-2-t col-1-m">
+                    <div class="footer_title text-white">Shop by Categories
+                    </div>
+                    <div class="footer_menu-item direction-col">
+                        <a href="https://www.google.com/">Dog food</a>
+                        <a href="https://www.google.com/">Cat food</a>
+                        <a href="https://www.google.com/">Accessories</a>
+                    </div>
+                </div>
+
+                <div class="footer_menu-m col-4 col-2-t col-1-m">
+                    <div class="footer_title text-white">Useful links</div>
+                    <div class="footer_menu-item direction-col">
+                        <a href="https://www.google.com/">My account</a>
+                        <a href="https://www.google.com/">Orders</a>
+                        <a href="https://www.google.com/">Checkout</a>
+                        <a href="https://www.google.com/">Cart</a>
+                    </div>
+
+                </div>
+                <div class="subscribe-form col-4 col-1-t bg-paws">
+                    <div class="footer_title text-white">Subscribe to our newsletter</div>
+                    <div class="direction-col">
+                        <input class="form text-field_no-borderline" type="text" placeholder="Insert your email...*">
+                        <button class="btn btn_cta"><a href="https://google.com">Subscribe</a></button>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="footer_menu-navbar content-center ">
+                <a href="https://www.google.com">Home</a>
+                <a href="https://www.google.com">Shop</a>
+                <a href="https://www.google.com">About</a>
+                <a href="https://www.google.com">Contact</a>
+            </div>
+
+            <div class="footer_menu-navbar content-center">
+                <a href="https://www.google.com">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+                <a href="https://www.google.com">
+                    <i class="fa-brands fa-x-twitter"></i>
+                </a>
+                <a href="https://www.google.com">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="https://www.google.com">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="reserved text-white text-center">
+        @ 2026 FurEver Friends Sdn. Bhd. All Rights Reserved
+    </div>
+
+    <script src="js/header.js">
+    </script>
 </body>
 
 </html>
