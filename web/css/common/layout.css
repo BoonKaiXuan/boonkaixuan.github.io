@@ -103,6 +103,10 @@ section {
     width: 30%;
 }
 
+.width-65 {
+    width: 65%;
+}
+
 .bg-dark-green {
     background-color: var(--color-dark-green);
 }
