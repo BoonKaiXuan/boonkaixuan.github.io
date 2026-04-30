@@ -1,4 +1,7 @@
-.mission-vision {
-    padding-left: -30px;
-    padding-right: -30px;
+section.mission-vision {
+    padding: 90px 0px;
+}
+
+.mission-vision-img>div {
+    min-height: 420px;
 }
