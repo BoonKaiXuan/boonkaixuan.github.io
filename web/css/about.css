@@ -6,6 +6,16 @@ section.mission-vision {
     min-height: 420px;
 }
 
-.width-65 {
-    width: 65%;
+.about_title-t {
+    display: none;
+}
+
+@media screen and (max-width:1100px) {
+    .about_title-d {
+        display: none;
+    }
+
+    .about_title-t {
+        display: block;
+    }
 }
