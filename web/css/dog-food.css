@@ -1,0 +1,13 @@
+.dog-food-search {
+    display: none;
+}
+
+.support ::before {
+    content: \f105;
+}
+
+@media screen and (max-width:880px) {
+    .dog-food-search {
+        display: block;
+    }
+}
