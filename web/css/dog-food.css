@@ -1,13 +1,25 @@
-.dog-food-search {
+.dog-food-search-top {
     display: none;
 }
 
 .support ::before {
-    content: \f105;
+    font-family: 'Font Awesome 7 Free';
+    content: '\f105';
+    font-size: 18px;
+    font-weight: 600;
+    margin-right: 8px;
 }
 
-@media screen and (max-width:880px) {
-    .dog-food-search {
+.support {
+    min-height: 40px;
+}
+
+@media screen and (max-width:1100px) {
+    .dog-food-search-top {
         display: block;
+    }
+
+    .dog-food-search-short {
+        display: none;
     }
 }
