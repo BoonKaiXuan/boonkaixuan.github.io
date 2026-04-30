@@ -2,3 +2,12 @@
     padding: 40px;
     margin: 0 35px;
 }
+
+.product-details {
+    background-color: var(--color-seashell);
+    padding: 70px 70px 50px
+}
+
+.star-rating {
+    background-color: var(--color-light-grey);
+}
