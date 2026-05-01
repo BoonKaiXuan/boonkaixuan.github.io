@@ -1,0 +1,11 @@
+.brand-logo {
+    color: var(--color-light-green);
+}
+
+.brand-logo:hover {
+    color: var(---color-light-green-50);
+}
+
+.faq-title {
+    font-family: var(--font-heading-serif);
+}
