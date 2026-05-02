@@ -9,6 +9,7 @@
 .textarea {
     height: 140px;
     font-family: var(--font-body-base);
+    padding: 16px;
 }
 
 /*contact,review,comment,insert your email*/
