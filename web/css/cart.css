@@ -96,6 +96,7 @@ input::-webkit-outer-spin-button {
     background-color: var(--color-seashell);
     height: 55px;
     text-align: center;
+    width: calc(100% - 110px);
 }
 
 .add-to-cart_qty_btn {
