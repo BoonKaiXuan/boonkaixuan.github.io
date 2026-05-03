@@ -131,13 +131,64 @@
 
     <section class="max-width-1440 divider">
 
+        <div class="row-flex">
+            <div>Product</div>
+            <div>Price</div>
+            <div>Quantity</div>
+            <div>Subtotal</div>
+            <div></div>
+        </div>
+
+        <div class="row-flex align-items-center">
+            <div class="row-flex align-items-center">
+                <img src="images/product/dog-bone.jpg" alt="Prestige Dog Bone" width="90">
+                <p>
+                    Prestige dog bone
+                </p>
+            </div>
+            <div>
+                <p>RM18.00</p>
+            </div>
+            <div>
+
+            </div>
+            <div>
+                <p>RM36.00</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-xmark" style="color: rgb(0, 0, 0);"></i>
+            </div>
+        </div>
+
+        <div class="row-flex align-items-center">
+            <div class="row-flex align-items-center">
+                <img src="images/product/dog-leash.jpg" alt="Pink Dog Leash" width="90">
+                <p>
+                    Dog Leash
+                </p>
+            </div>
+            <div>
+                <p>RM30.00</p>
+            </div>
+            <div>
+
+            </div>
+            <div>
+                <p>RM30.00</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-xmark" style="color: rgb(0, 0, 0);"></i>
+            </div>
+        </div>
+
     </section>
 
     <section class="max-width-1440 row-flex space-between">
+
         <div class="width-65 col-1-t">
             <h4>Shipping Information</h4>
             <div class="direction-col">
-                <input class="form text-field_with-borderline" type="text" placeholder="Malaysia">
+                <input class="form text-field_with-borderline" type="text" placeholder="Malaysia" readonly>
                 <input class=" form text-field_with-borderline" type="text" placeholder="Address">
                 <select class="form text-field_with-borderline" name="state" id="state">
                     <option value="" disabled selected>State</option>
@@ -160,13 +211,50 @@
                 <input class="form col-2 text-field_with-borderline" type="text" placeholder="Postcode">
                 <input class="form col-2 text-field_with-borderline" type="text" placeholder="City">
             </div>
-        </div>
-        <div class="width-30 col-1-t">
-            <div class="bg-img bg-img-gradient card ratio-2-3" style="--bg:url(/web/images/bull-dog-on-couch.jpg);">
-
+            <div class="btn btn_green">
+                Update
             </div>
-            <div>
-                <h5>Got a coupon? Use it here.</h5>
+        </div>
+
+        <div class="width-30 col-1-t">
+            <div class="bg-img bg-img-gradient card ratio-2-3 text-white"
+                style="--bg:url(/web/images/bull-dog-on-couch.jpg);">
+                <h5>
+                    Cart total: 2 items
+                </h5>
+                <div class="row-flex space-between">
+                    <div>Subtotal:</div>
+                    <div>RM66.00</div>
+                </div>
+                <div class="row-flex space-between">
+                    <div>Shipping Flat Rate:</div>
+                    <div>RM8.00</div>
+                </div>
+                <div>
+                    Shipping to <span class="text-bold">KL</span>
+                </div>
+                <div class="row-flex space-between">
+                    <div>Total:</div>
+                    <div class="text-bold">RM74.00</div>
+                </div>
+                <div class="btn btn_white btn_no-radius btn_white-black text-center col-1">
+
+                    Update cart
+                </div>
+                <div class="btn btn_green btn_no-radius text-center col-1">
+                    Proceed to checkout
+                </div>
+            </div>
+            <div class="card coupon">
+                <div>
+                    <h5>Got a coupon? Use it here.</h5>
+                </div>
+                <div>
+                    <input class="col-1 form text-field_no-borderline" type="text" placeholder="Coupon code">
+                </div>
+                <div class="btn btn_green col-1 text-center">
+                    Apply coupon
+                </div>
             </div>
         </div>
     </section>
@@ -174,7 +262,7 @@
     <section class="max-width-1440">
         <h2>Why choose us</h2>
         <div class="row-flex gap-0 text-white">
-            <div class="col-4 col-2-t col-1-m card card_dark-green bg-paws content-center direction-col ratio-1">
+            <div class="col-4 col-2-m card card_dark-green bg-paws content-center direction-col ratio-1">
                 <div class="width-30">
                     <img src="images/icon_quality-assured.png" alt="Icon of a badge with tick" width="100%">
                 </div>
@@ -183,7 +271,7 @@
                 </div>
             </div>
 
-            <div class="col-4 col-2-t col-1-m card card_mid-green bg-paws content-center direction-col">
+            <div class="col-4 col-2-m card card_mid-green bg-paws content-center direction-col">
                 <div class="width-30">
                     <img src="images/icon_delivery.png" alt="Icon of a badge with tick" width="100%">
                 </div>
@@ -192,7 +280,7 @@
                 </div>
             </div>
 
-            <div class="col-4 col-2-t col-1-m card card_dark-green bg-paws content-center direction-col">
+            <div class="col-4 col-2-m card card_dark-green bg-paws content-center direction-col">
                 <div class="width-30">
                     <img src="images/icon_price.png" alt="Icon of a badge with tick" width="100%">
                 </div>
@@ -201,7 +289,7 @@
                 </div>
             </div>
 
-            <div class="col-4 col-2-t col-1-m card card_mid-green bg-paws content-center direction-col">
+            <div class="col-4 col-2-m card card_mid-green bg-paws content-center direction-col">
                 <div class="width-30">
                     <img src="images/icon_all-in-one-shop.png" alt="Icon of a badge with tick" width="100%">
                 </div>
