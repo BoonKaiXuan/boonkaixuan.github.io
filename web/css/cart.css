@@ -15,12 +15,9 @@ table {
     color: var(--color-dark-blue);
 }
 
-tr {
-    padding: 20px 0px;
-}
-
 td {
     text-align: center;
+    padding: 20px 0px;
 }
 
 th {
