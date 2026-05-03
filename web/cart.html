@@ -207,9 +207,9 @@
             <h4>Shipping Information</h4>
             <div class="direction-col">
                 <input class="form text-field_with-borderline" type="text" placeholder="Malaysia" readonly>
-                <input class=" form text-field_with-borderline" type="text" placeholder="Address">
-                <select class="form text-field_with-borderline" name="state" id="state">
-                    <option value="" disabled selected>State</option>
+                <input class=" form text-field_with-borderline" type="text" placeholder="Address" required>
+                <select class="form text-field_with-borderline" name="state" id="state" required>
+                    <option class="select_placeholder" value="" disabled selected>State</option>
                     <option value="Johor">Johor</option>
                     <option value="Kedah">Kedah</option>
                     <option value="Melaka">Melaka</option>
@@ -226,13 +226,11 @@
                 </select>
             </div>
             <div class="row-flex gap-20">
-                <input class="form col-2 text-field_with-borderline" type="text" placeholder="Postcode">
-                <input class="form col-2 text-field_with-borderline" type="text" placeholder="City">
+                <input class="form col-2 text-field_with-borderline" type="text" placeholder="Postcode" required>
+                <input class="form col-2 text-field_with-borderline" type="text" placeholder="City" required>
             </div>
             <div class="btn_update">
-                <button class="btn btn_green">
-                    Update
-                </button>
+                <input class="btn btn_green" type="submit" value="Update">
             </div>
         </div>
 
