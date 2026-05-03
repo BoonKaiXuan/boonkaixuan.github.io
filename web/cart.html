@@ -153,9 +153,15 @@
                 </td>
                 <td>
                     <div class="cart_qty row-flex gap-0">
-                        <input class="cart_qty_btn cart_qty_minus" type="button" value="-">
+                        <button class="cart_qty_btn cart_qty_minus">
+                            -
+                        </button>
+
                         <input class="cart_qty_btn cart_qty_number" type="number" value="2">
-                        <input class="cart_qty_btn cart_qty_plus" type="button" value="+">
+
+                        <button class="cart_qty_btn cart_qty_plus">
+                            +
+                        </button>
                     </div>
                 </td>
                 <td>
@@ -195,7 +201,7 @@
 
     </section>
 
-    <section class="max-width-1440 row-flex space-between">
+    <section class="max-width-1440 row-flex space-between gap-40">
 
         <div class="width-65 col-1-t">
             <h4>Shipping Information</h4>
@@ -223,19 +229,20 @@
                 <input class="form col-2 text-field_with-borderline" type="text" placeholder="Postcode">
                 <input class="form col-2 text-field_with-borderline" type="text" placeholder="City">
             </div>
-            <div>
-                <input class="btn btn_green" type="button" value="Update">
+            <div class="btn_update">
+                <button class="btn btn_green">
+                    Update
+                </button>
             </div>
         </div>
 
         <div class="width-30 col-1-t">
-            <div class="bg-img bg-img-gradient card ratio-2-3 text-white cart_summary"
-                style="--bg:url(/web/images/bull-dog-on-couch.jpg);">
-                <h5>
+            <div class="bg-img bg-img-gradient card cart_summary" style="--bg:url(/web/images/bull-dog-on-couch.jpg);">
+                <h5 class="text-white">
                     Cart total: 3 items
                 </h5>
 
-                <table class="cart_summary text-white">
+                <table class="cart_summary text-white col-1">
                     <tr>
                         <th>Subtotal:</th>
                         <td>RM66.00</td>
@@ -255,12 +262,13 @@
                     </tr>
                 </table>
 
-                <div>
-                    <input class="btn btn_white btn_no-radius btn_white-black text-center col-1" type="button"
-                        value="Update cart">
+                <div class="btn btn_white btn_no-radius btn_white-black text-center col-1">
+                    Update cart
                 </div>
                 <div class="btn btn_green btn_no-radius text-center col-1">
-                    Proceed to checkout
+                    <a href="https://www.google.com">
+                        Proceed to checkout
+                    </a>
                 </div>
             </div>
             <div class="card coupon">
@@ -270,8 +278,8 @@
                 <div>
                     <input class="col-1 form text-field_no-borderline" type="text" placeholder="Coupon code">
                 </div>
-                <div>
-                    <input class="btn btn_green col-1 text-center" type="button" value="Apply coupon">
+                <div class="btn btn_green col-1 text-center">
+                    Apply coupon
                 </div>
             </div>
         </div>
@@ -280,8 +288,8 @@
     <section class="max-width-1440">
         <h2 class="text-dark-green">Why choose us</h2>
         <div class="row-flex gap-0 text-white">
-            <div class="col-4 col-2-m card card_dark-green bg-paws content-center direction-col ratio-1">
-                <div class="width-30">
+            <div class="col-4 col-1-m card card_dark-green bg-paws content-center direction-col usp_list">
+                <div class="usp_icon">
                     <img src="images/icon_quality-assured.png" alt="Icon of a badge with tick" width="100%">
                 </div>
                 <div>
@@ -289,8 +297,8 @@
                 </div>
             </div>
 
-            <div class="col-4 col-2-m card card_mid-green bg-paws content-center direction-col">
-                <div class="width-30">
+            <div class="col-4 col-1-m card card_mid-green bg-paws content-center direction-col usp_list">
+                <div class="usp_icon">
                     <img src="images/icon_delivery.png" alt="Icon of a badge with tick" width="100%">
                 </div>
                 <div>
@@ -298,8 +306,8 @@
                 </div>
             </div>
 
-            <div class="col-4 col-2-m card card_dark-green bg-paws content-center direction-col">
-                <div class="width-30">
+            <div class="col-4 col-1-m card card_dark-green bg-paws content-center direction-col usp_list">
+                <div class="usp_icon">
                     <img src="images/icon_price.png" alt="Icon of a badge with tick" width="100%">
                 </div>
                 <div>
@@ -307,8 +315,8 @@
                 </div>
             </div>
 
-            <div class="col-4 col-2-m card card_mid-green bg-paws content-center direction-col">
-                <div class="width-30">
+            <div class="col-4 col-1-m card card_mid-green bg-paws content-center direction-col usp_list">
+                <div class="usp_icon">
                     <img src="images/icon_all-in-one-shop.png" alt="Icon of a badge with tick" width="100%">
                 </div>
                 <div>
@@ -398,9 +406,15 @@
                 </div>
 
                 <div class="add-to-cart_qty_btn row-flex gap-0 col-1">
-                    <input class="add-to-cart_qty_btn_minus" type="button" value="-">
+                    <button class="add-to-cart_qty_btn_minus">
+                        -
+                    </button>
+
                     <input class="add-to-cart_qty_btn_number" type="number" value="1">
-                    <input class="add-to-cart_qty_btn_plus" type="button" value="+">
+
+                    <button class="add-to-cart_qty_btn_plus">
+                        +
+                    </button>
                 </div>
 
                 <div>
