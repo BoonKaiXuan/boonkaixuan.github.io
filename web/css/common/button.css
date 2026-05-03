@@ -63,6 +63,7 @@
     height: 55px;
     border: 1px solid var(--color-black-20);
     background-color: transparent;
+    cursor: pointer;
 }
 
 .add-to-cart_qty_btn_minus {
