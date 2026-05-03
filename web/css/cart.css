@@ -25,4 +25,5 @@ td {
 
 th {
     font-size: 13px;
+    font-weight: var(--font-weight-regular);
 }
