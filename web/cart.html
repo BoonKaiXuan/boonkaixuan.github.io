@@ -132,7 +132,7 @@
 
     <section class="max-width-1440 divider">
 
-        <table class="col-1">
+        <table class="col-1 cart_lists">
             <tr>
                 <th class="cart_prod">Product</th>
                 <th>Price</th>
@@ -141,8 +141,8 @@
                 <th></th>
             </tr>
 
-            <tr>
-                <td class="row-flex gap-12 align-items-center">
+            <tr class="relative">
+                <td class="row-flex gap-12 align-items-center cart_prod_item">
                     <img src="images/product/dog-bone.jpg" alt="Prestige Dog Bone" width="120">
                     <p>
                         Prestige dog bone
@@ -161,13 +161,13 @@
                 <td>
                     RM36.00
                 </td>
-                <td>
+                <td class="remove-item">
                     <i class="fa-solid fa-xmark" style="color: rgb(0, 0, 0);"></i>
                 </td>
             </tr>
 
-            <tr>
-                <td class="row-flex gap-12 align-items-center">
+            <tr class="relative">
+                <td class="row-flex gap-12 align-items-center cart_prod_item">
                     <img src="images/product/dog-leash.jpg" alt="Pink Dog Leash" width="120">
                     <p>
                         Dog Leash
@@ -186,7 +186,7 @@
                 <td>
                     RM30.00
                 </td>
-                <td>
+                <td class="remove-item">
                     <i class="fa-solid fa-xmark" style="color: rgb(0, 0, 0);"></i>
                 </td>
             </tr>
@@ -229,26 +229,32 @@
         </div>
 
         <div class="width-30 col-1-t">
-            <div class="bg-img bg-img-gradient card ratio-2-3 text-white"
+            <div class="bg-img bg-img-gradient card ratio-2-3 text-white cart_summary"
                 style="--bg:url(/web/images/bull-dog-on-couch.jpg);">
                 <h5>
-                    Cart total: 2 items
+                    Cart total: 3 items
                 </h5>
-                <div class="row-flex space-between">
-                    <div>Subtotal:</div>
-                    <div>RM66.00</div>
-                </div>
-                <div class="row-flex space-between">
-                    <div>Shipping Flat Rate:</div>
-                    <div>RM8.00</div>
-                </div>
-                <div>
-                    Shipping to <span class="text-bold">KL</span>
-                </div>
-                <div class="row-flex space-between">
-                    <div>Total:</div>
-                    <div class="text-bold">RM74.00</div>
-                </div>
+
+                <table class="cart_summary text-white">
+                    <tr>
+                        <th>Subtotal:</th>
+                        <td>RM66.00</td>
+                    </tr>
+
+                    <tr>
+                        <th>
+                            Shipping Flat Rate:
+                            <p class="shipping_area">Shipping to <span class="text-bold">KL</span></p>
+                        </th>
+                        <td>RM8.00</td>
+                    </tr>
+
+                    <tr>
+                        <th>Total:</th>
+                        <td class="text-bold">RM74.00</td>
+                    </tr>
+                </table>
+
                 <div>
                     <input class="btn btn_white btn_no-radius btn_white-black text-center col-1" type="button"
                         value="Update cart">
