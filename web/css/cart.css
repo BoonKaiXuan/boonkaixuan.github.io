@@ -17,12 +17,6 @@ td {
     font-weight: var(--font-weight-regular);
 }
 
-input::-webkit-inner-spin-button,
-input::-webkit-outer-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
-}
-
 .cart_qty {
     justify-content: center;
 }
