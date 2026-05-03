@@ -31,14 +31,15 @@ th {
     text-align: center;
     width: 40px;
     height: 40px;
+    background-color: transparent;
 }
 
 .cart_qty_minus {
-    border-top-left-radius: 25%;
-    border-bottom-left-radius: 25%;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
 }
 
 .cart_qty_plus {
-    border-top-right-radius: 25%;
-    border-bottom-right-radius: 25%;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
 }
