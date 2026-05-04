@@ -37,25 +37,3 @@ gsap.fromTo(".section_scroll_fade-in",
         }
     }
 );
-
-//Scroll trigger - Bounce in (Card)
-
-const tl = gsap.timeline({
-    scrollTrigger: {
-        trigger: ".scroll_sequence_bounce-in",
-        start: "top 70%",
-    }
-});
-
-tl.fromTo(".scroll_sequence_bounce-in",
-    {
-        opacity: 0,
-        y: 40,
-    },
-    {
-        opacity: 1,
-        y: 0,
-        ease: "power3.out",
-        stagger: 0.6,
-    }
-);
