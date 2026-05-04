@@ -224,19 +224,19 @@
             </h2>
         </div>
         <div class="row-flex gap-40 text-white section_inner-margin">
-            <div class="card bg-img bg-img-gradient ratio-1 content-center col-3 col-1-m scroll_sequence_bounce-in"
+            <div class="card bg-img bg-img-gradient ratio-1 content-center col-3 col-1-m what-we-offer"
                 style="--bg:url(/web/images/what-we-offer-1.jpg);">
                 <h3>
                     High-quality dog and cat food for a balanced diet
                 </h3>
             </div>
-            <div class="card bg-img bg-img-gradient ratio-1 content-center col-3 col-1-m scroll_sequence_bounce-in"
+            <div class="card bg-img bg-img-gradient ratio-1 content-center col-3 col-1-m what-we-offer"
                 style="--bg:url(/web/images/what-we-offer-2.jpg);">
                 <h3>
                     Accessories, toys and care products for daily needs
                 </h3>
             </div>
-            <div class="card bg-img bg-img-gradient ratio-1 content-center col-3 col-1-m scroll_sequence_bounce-in"
+            <div class="card bg-img bg-img-gradient ratio-1 content-center col-3 col-1-m what-we-offer"
                 style="--bg:url(/web/images/banner_shop.png);">
                 <h3>
                     Everything designed to keep your pets active and loved
@@ -376,6 +376,27 @@
     <script src="js/common.js"></script>
     <script src="js/header.js"></script>
 
+    <script>
+        const tl = gsap.timeline({
+            scrollTrigger: {
+                trigger: ".what-we-offer",
+                start: "top 70%",
+            }
+        });
+
+        tl.fromTo(".what-we-offer",
+            {
+                opacity: 0,
+                y: 40,
+            },
+            {
+                opacity: 1,
+                y: 0,
+                ease: "power3.out",
+                stagger: 0.6,
+            }
+        );
+    </script>
 
 </body>
 
