@@ -150,7 +150,7 @@
     <section class="max-width-1440">
         <div class="row-flex gap-20">
             <div class="col-3 col-1-m">
-                <div class="bg-img ratio-2-3 category card row-flex direction-col align-items-center space-between text-center scroll_sequence_bounce-in"
+                <div class="bg-img ratio-2-3 category card row-flex direction-col align-items-center space-between text-center"
                     style="--bg:url(/web/images/bull-dog-on-couch.jpg);">
 
                     <div>
@@ -165,7 +165,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-3 col-1-m bg-img ratio-2-3 category card row-flex direction-col align-items-center space-between text-center scroll_sequence_bounce-in"
+            <div class="col-3 col-1-m bg-img ratio-2-3 category card row-flex direction-col align-items-center space-between text-center"
                 style="--bg:url(/web/images/cat-on-cushion.jpg);">
 
                 <div>
@@ -179,7 +179,7 @@
                     </a>
                 </div>
             </div>
-            <div class="col-3 col-1-m bg-img ratio-2-3 category card row-flex direction-col align-items-center space-between text-center scroll_sequence_bounce-in"
+            <div class="col-3 col-1-m bg-img ratio-2-3 category card row-flex direction-col align-items-center space-between text-center"
                 style="--bg:url(/web/images/dog-collar.jpg);">
 
                 <div>
@@ -420,7 +420,28 @@
     <script src="js/common.js"></script>
     <script src="js/header.js"></script>
 
+    <script>
+        const tl = gsap.timeline({
+            scrollTrigger: {
+                trigger: ".category",
+                start: "top 70%",
+            }
+        });
 
+        tl.fromTo(".category",
+            {
+                opacity: 0,
+                y: 40,
+            },
+            {
+                opacity: 1,
+                y: 0,
+                ease: "power3.out",
+                stagger: 0.6,
+            }
+        );
+
+    </script>
 </body>
 
 </html>
