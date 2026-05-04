@@ -81,11 +81,11 @@ body {
     padding: 20px 0px;
 }
 
-.cart_summary>div.btn_white {
+.cart_summary>div>input.btn_white {
     color: var(--color-button-white-font-default);
 }
 
-.cart_summary>div.btn_white:hover {
+.cart_summary>div>input.btn_white:hover {
     color: var(--color-button-white-font-hover);
 }
 
