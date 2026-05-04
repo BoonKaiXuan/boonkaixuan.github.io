@@ -141,13 +141,15 @@
         </div>
 
         <div class="row-flex align-items-center cart_list_row relative">
-            <div class="row-flex gap-12 align-items-center cart_lists_body_cell cart_prod cart_prod_item">
-                <div>
-                    <img src="images/product/dog-bone.jpg" alt="Prestige Dog Bone" width="120">
-                </div>
-                <div>
-                    <p>Prestige dog bone</p>
-                </div>
+            <div class="cart_lists_body_cell cart_prod">
+                <a class="row-flex gap-12 align-items-center cart_prod_item" href="https://www.google.com">
+                    <div>
+                        <img src="images/product/dog-bone.jpg" alt="Prestige Dog Bone" width="120">
+                    </div>
+                    <div>
+                        <p>Prestige dog bone</p>
+                    </div>
+                </a>
             </div>
 
             <div class="cart_lists_body_cell cart_price">
@@ -176,13 +178,15 @@
         </div>
 
         <div class="relative row-flex align-items-center cart_list_row">
-            <div class="row-flex gap-12 align-items-center cart_lists_body_cell cart_prod cart_prod_item">
-                <div>
-                    <img src="images/product/dog-leash.jpg" alt="Pink Dog Leash" width="120">
-                </div>
-                <div>
-                    <p>Dog leash</p>
-                </div>
+            <div class="cart_lists_body_cell cart_prod">
+                <a class="row-flex gap-12 align-items-center cart_prod_item" href="https://www.google.com">
+                    <div>
+                        <img src="images/product/dog-leash.jpg" alt="Pink Dog Leash" width="120">
+                    </div>
+                    <div>
+                        <p>Dog leash</p>
+                    </div>
+                </a>
             </div>
 
             <div class="cart_lists_body_cell cart_price">
@@ -246,30 +250,41 @@
         </div>
 
         <div class="width-30 col-1-t">
-            <div class="bg-img bg-img-gradient card cart_summary" style="--bg:url(/web/images/bull-dog-on-couch.jpg);">
-                <h5 class="text-white">
+            <div class="bg-img card cart_summary" style="--bg:url(/web/images/bull-dog-on-couch.jpg);">
+                <h5>
                     Cart total: 3 items
                 </h5>
 
-                <table class="cart_summary text-white col-1">
-                    <tr>
-                        <th>Subtotal:</th>
-                        <td>RM66.00</td>
-                    </tr>
+                <div class="row-flex gap-0 cart_summary_row">
+                    <div class="col-2">
+                        Subtotal:
+                    </div>
+                    <div class="col-2 cart_summary_column-r">
+                        RM66.00
+                    </div>
+                </div>
 
-                    <tr>
-                        <th>
-                            Shipping Flat Rate:
-                            <p class="shipping_area">Shipping to <span class="text-bold">KL</span></p>
-                        </th>
-                        <td>RM8.00</td>
-                    </tr>
+                <div class="row-flex gap-0 cart_summary_row">
+                    <div class="col-2 ">
+                        Shipment Flat Rate:
+                    </div>
+                    <div class="col-2 cart_summary_column-r">
+                        RM8.00
+                    </div>
+                </div>
 
-                    <tr>
-                        <th>Total:</th>
-                        <td class="text-bold">RM74.00</td>
-                    </tr>
-                </table>
+                <div class="shipping_area cart_summary_row">
+                    Shipping to <span class="text-bold">KL</span>
+                </div>
+
+                <div class="row-flex gap-0 cart_summary_row">
+                    <div class="col-2">
+                        Total:
+                    </div>
+                    <div class="col-2 cart_summary_column-r text-bold">
+                        RM74.00
+                    </div>
+                </div>
 
                 <div class="btn btn_white btn_no-radius btn_white-black text-center col-1">
                     Update cart
