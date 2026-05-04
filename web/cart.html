@@ -223,22 +223,28 @@
             <div class="direction-col">
                 <input class="form text-field_with-borderline" type="text" placeholder="Malaysia" readonly>
                 <input class=" form text-field_with-borderline" type="text" placeholder="Address" required>
-                <select class="form text-field_with-borderline" name="state" id="state" required>
-                    <option class="select_placeholder" value="" disabled selected>State</option>
-                    <option value="Johor">Johor</option>
-                    <option value="Kedah">Kedah</option>
-                    <option value="Melaka">Melaka</option>
-                    <option value="Kelantan">Kelantan</option>
-                    <option value="Negeri Sembilan">Negeri Sembilan</option>
-                    <option value="Pahang">Pahang</option>
-                    <option value="Perak">Perak</option>
-                    <option value="Perlis">Perlis</option>
-                    <option value="Pulau Pinang">Pulau Pinang</option>
-                    <option value="Selangor">Selangor</option>
-                    <option value="Terengganu">Terengganu</option>
-                    <option value="Sabah">Sabah</option>
-                    <option value="Sarawak">Sarawak</option>
-                </select>
+                <div class="select-wrap">
+                    <select class="form text-field_with-borderline" name="state" id="state">
+                        <option value="" disabled selected>State</option>
+                        <option value="Johor">Johor</option>
+                        <option value="Kedah">Kedah</option>
+                        <option value="Melaka">Melaka</option>
+                        <option value="Kelantan">Kelantan</option>
+                        <option value="Negeri Sembilan">Negeri Sembilan</option>
+                        <option value="Pahang">Pahang</option>
+                        <option value="Perak">Perak</option>
+                        <option value="Perlis">Perlis</option>
+                        <option value="Pulau Pinang">Pulau Pinang</option>
+                        <option value="Selangor">Selangor</option>
+                        <option value="Terengganu">Terengganu</option>
+                        <option value="Sabah">Sabah</option>
+                        <option value="Sarawak">Sarawak</option>
+                    </select>
+                    <div class="select-circle">
+                        <i class="fa-solid fa-angle-down"></i>
+                    </div>
+
+                </div>
             </div>
             <div class="row-flex gap-20">
                 <input class="form col-2 text-field_with-borderline" type="text" placeholder="Postcode" required>
