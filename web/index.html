@@ -23,23 +23,23 @@
     <header>
         <div class="divider">
             <div class="max-width-1440 header_topbar row-flex gap-20 align-items-center">
-                <div class="logo-l col-4 col-2-t col-1-m">
+                <div class="logo-l col-4 col-2-t col-1-m start_fade-in">
                     <a href="/web/index.html">
                         <img class="vertical-center" src="images/furever-friends-logo-big.svg"
                             alt="Furever Friends Logo" height="36">
                     </a>
                 </div>
 
-                <div class="search col-4 col-2-t col-1-m">
+                <div class="search col-4 col-2-t col-1-m start_fade-in">
                     <i class="fa-solid fa-magnifying-glass" style="color: #000000;"></i>
                     <input type="text" placeholder="Search..." />
                 </div>
 
-                <div class="topbar_contact text-center col-4 col-2-t col-1-m">
+                <div class="topbar_contact text-center col-4 col-2-t col-1-m start_fade-in">
                     <span class="text-bold">Questions?</span> Call us: (+60)147895478
                 </div>
 
-                <div class="topbar_icons row-flex align-items-center col-4 col-2-t col-1-m">
+                <div class="topbar_icons row-flex align-items-center col-4 col-2-t col-1-m start_fade-in">
                     <div>
                         <a href="/web/cart.html">
                             <span class="topbar_icon material-symbols-outlined vertical-center">
@@ -57,7 +57,7 @@
         </div>
 
         <div class="header_midbar row-flex align-items-center">
-            <nav id="mobile-menu" class="row-flex gap-40 align-items-center">
+            <nav id="mobile-menu" class="row-flex gap-40 align-items-center start_fade-in">
                 <div class="menu-item">
                     <a href="/web/index.html">Home</a>
                 </div>
@@ -77,7 +77,7 @@
                 </div>
             </nav>
 
-            <div class="midbar_icons">
+            <div class="midbar_icons start_fade-in">
                 <div>
                     <a href="/web/cart.html">
                         <span class="midbar_icon material-symbols-outlined vertical-center">
@@ -92,26 +92,26 @@
                 </div>
             </div>
 
-            <div class="menu-toggle">
+            <div class="menu-toggle start_fade-in">
                 <i id="menu-toggle" class="fa-solid fa-bars"></i>
             </div>
         </div>
 
         <div class="bg-paws bg-dark-green">
             <div class="max-width-1440 header_bottombar row-flex gap-0 align-items-center">
-                <div class="col-3 content-center">
+                <div class="col-3 content-center start_fade-in">
                     <div class="icon icon-inline-20">
                         <img src="images/icon_map.png" alt="Map Icon" width="100%">
                     </div>
                     <span class="text-bold">Free shipping</span> &nbsp;over RM100
                 </div>
-                <div class="col-3 content-center bottombar_item">
+                <div class="col-3 content-center bottombar_item start_fade-in">
                     <div class="icon icon-inline-20">
                         <img src="images/icon_discount.png" alt="Discount Icon" width="100%">
                     </div>
                     <span class="text-bold">10% Off</span>&nbsp;First Order
                 </div>
-                <div class="col-3 content-center bottombar_item">
+                <div class="col-3 content-center bottombar_item start_fade-in">
                     <div class="icon icon-inline-20">
                         <img src="images/icon_track-order.png" alt="Track Order Icon" width="100%">
                     </div>
@@ -122,7 +122,7 @@
     </header>
 
     <div class="banner bg-img bg-img-gradient" style="--bg:url(/web/images/banner_home.jpg);">
-        <div class="max-width-1440">
+        <div class="max-width-1440 start_home_banner">
             <div class="text-white gap-0 col-2 col-1-m">
                 <div>
                     <p class="banner-subheading">
@@ -417,7 +417,43 @@
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/ScrollTrigger.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/SplitText.min.js"></script>
 
-    <script src="js/header.js">
+    <script src="js/common.js"></script>
+    <script src="js/header.js"></script>
+
+    <script>
+        gsap.fromTo(".start_home_banner",
+            {
+                opacity: 0,
+                y: 30,
+            },
+            {
+                delay: 0.5,
+                opacity: 1,
+                y: 0,
+                duration: 1,
+            }
+        );
+
+        const tl = gsap.timeline({
+            scrollTrigger: {
+                trigger: ".category",
+                start: "top 70%",
+            }
+        });
+
+        tl.fromTo(".category",
+            {
+                opacity: 0,
+                y: 40,
+            },
+            {
+                opacity: 1,
+                y: 0,
+                ease: "power3.out",
+                stagger: 0.8,
+            }
+        );
+
     </script>
 
 </body>
