@@ -13,13 +13,25 @@ toggleButton.addEventListener(
 
         if (navBar.classList.contains("active")) {
 
-            toggleButton.classList.replace('fa-bars', 'fa-chevron-up');
+            toggleButton.classList.replace('fa-bars', 'fa-chevron-down');
+
+            gsap.to(toggleButton, {
+                rotate: 180,
+                duration: 0.3,
+            });
+
         }
         else {
-            toggleButton.classList.replace('fa-chevron-up', 'fa-bars');
+            toggleButton.classList.replace('fa-chevron-down', 'fa-bars');
+
+            gsap.to(toggleButton, {
+                rotate: -180,
+                duration: 0.3,
+            });
         }
     }
 )
+
 
 dropDown.addEventListener(
     "click", (e) => {
