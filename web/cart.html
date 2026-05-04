@@ -24,25 +24,25 @@
     <header>
         <div class="divider">
             <div class="max-width-1440 header_topbar row-flex gap-20 align-items-center">
-                <div class="logo-l col-4 col-2-t col-1-m">
-                    <a href="index.html">
+                <div class="logo-l col-4 col-2-t col-1-m start_fade-in">
+                    <a href="/web/index.html">
                         <img class="vertical-center" src="images/furever-friends-logo-big.svg"
                             alt="Furever Friends Logo" height="36">
                     </a>
                 </div>
 
-                <div class="search col-4 col-2-t col-1-m">
+                <div class="search col-4 col-2-t col-1-m start_fade-in">
                     <i class="fa-solid fa-magnifying-glass" style="color: #000000;"></i>
                     <input type="text" placeholder="Search..." />
                 </div>
 
-                <div class="topbar_contact text-center col-4 col-2-t col-1-m">
+                <div class="topbar_contact text-center col-4 col-2-t col-1-m start_fade-in">
                     <span class="text-bold">Questions?</span> Call us: (+60)147895478
                 </div>
 
-                <div class="topbar_icons row-flex align-items-center col-4 col-2-t col-1-m">
+                <div class="topbar_icons row-flex align-items-center col-4 col-2-t col-1-m start_fade-in">
                     <div>
-                        <a href="https://www.google.com">
+                        <a href="/web/cart.html">
                             <span class="topbar_icon material-symbols-outlined vertical-center">
                                 local_mall
                             </span>
@@ -58,29 +58,29 @@
         </div>
 
         <div class="header_midbar row-flex align-items-center">
-            <nav id="mobile-menu" class="row-flex gap-40 align-items-center">
+            <nav id="mobile-menu" class="row-flex gap-40 align-items-center start_fade-in">
                 <div class="menu-item">
-                    <a href="https://www.google.com">Home</a>
+                    <a href="/web/index.html">Home</a>
                 </div>
                 <div class="menu-item has-submenu">
-                    <a href="https://www.google.com">Shop
+                    <a href="/web/shop.html">Shop
                         <i id="submenu-toggle" class="fa-solid fa-chevron-down"></i>
                     </a>
                     <div id="submenu" class="submenu">
-                        <a href="https://www.google.com">Dog Food</a>
+                        <a href="/web/dog-food.html">Dog Food</a>
                     </div>
                 </div>
                 <div class="menu-item">
-                    <a href="https://www.google.com">About</a>
+                    <a href="/web/about.html">About</a>
                 </div>
                 <div class="menu-item">
-                    <a href="https://www.google.com">Contact</a>
+                    <a href="/web/contact.html">Contact</a>
                 </div>
             </nav>
 
-            <div class="midbar_icons">
+            <div class="midbar_icons start_fade-in">
                 <div>
-                    <a href="https://www.google.com">
+                    <a href="/web/cart.html">
                         <span class="midbar_icon material-symbols-outlined vertical-center">
                             local_mall
                         </span>
@@ -93,26 +93,26 @@
                 </div>
             </div>
 
-            <div class="menu-toggle">
+            <div class="menu-toggle start_fade-in">
                 <i id="menu-toggle" class="fa-solid fa-bars"></i>
             </div>
         </div>
 
         <div class="bg-paws bg-dark-green">
             <div class="max-width-1440 header_bottombar row-flex gap-0 align-items-center">
-                <div class="col-3 content-center">
+                <div class="col-3 content-center start_fade-in">
                     <div class="icon icon-inline-20">
                         <img src="images/icon_map.png" alt="Map Icon" width="100%">
                     </div>
                     <span class="text-bold">Free shipping</span> &nbsp;over RM100
                 </div>
-                <div class="col-3 content-center bottombar_item">
+                <div class="col-3 content-center bottombar_item start_fade-in">
                     <div class="icon icon-inline-20">
                         <img src="images/icon_discount.png" alt="Discount Icon" width="100%">
                     </div>
                     <span class="text-bold">10% Off</span>&nbsp;First Order
                 </div>
-                <div class="col-3 content-center bottombar_item">
+                <div class="col-3 content-center bottombar_item start_fade-in">
                     <div class="icon icon-inline-20">
                         <img src="images/icon_track-order.png" alt="Track Order Icon" width="100%">
                     </div>
@@ -123,14 +123,14 @@
     </header>
 
     <div class="banner bg-img bg-img-gradient" style="--bg:url(/web/images/banner_cart.jpg);">
-        <div class="max-width-1440">
+        <div class="max-width-1440 start_fade-in">
             <h1 class="text-center text-white">
                 Cart
             </h1>
         </div>
     </div>
 
-    <section class="max-width-1440 divider">
+    <section class="max-width-1440 divider start_float-in">
 
         <div class="cart_lists_heading row-flex gap-0">
             <div class="cart_prod">Product</div>
@@ -310,7 +310,7 @@
         </div>
     </section>
 
-    <section class="max-width-1440">
+    <section class="max-width-1440 why-us">
         <h2 class="text-dark-green">Why choose us</h2>
         <div class="row-flex gap-0 text-white">
             <div class="col-4 col-1-m card card_dark-green bg-paws content-center direction-col usp_list">
@@ -351,7 +351,7 @@
         </div>
     </section>
 
-    <section class="max-width-1440">
+    <section class="max-width-1440 section_scroll_fade-in">
         <h2 class="text-dark-green">You may also like</h2>
         <div class="row-flex gap-40">
             <div class="col-2 col-1-t">
@@ -516,7 +516,31 @@
         @ 2026 FurEver Friends Sdn. Bhd. All Rights Reserved
     </div>
 
-    <script src="js/header.js">
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/SplitText.min.js"></script>
+
+    <script src="js/common.js"></script>
+    <script src="js/header.js"></script>
+
+    <script>
+        gsap.fromTo(".why-us",
+            {
+                opacity: 0,
+                y: 40,
+            },
+            {
+                opacity: 1,
+                y: 0,
+                ease: "power3.out",
+                stagger: 0.6,
+
+                scrollTrigger: {
+                    trigger: ".why-us",
+                    start: "top 60%",
+                }
+            }
+        );
     </script>
 
 </body>
