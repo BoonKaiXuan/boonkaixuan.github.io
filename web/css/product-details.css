@@ -1,13 +1,45 @@
 .add-to-cart-details {
     padding: 40px;
-    margin: 0 35px;
+    margin: 0 35px 20px 35px;
 }
 
-.product-details {
+.more-product-details {
     background-color: var(--color-seashell);
     padding: 70px 70px 50px
 }
 
 .star-rating {
     background-color: var(--color-light-grey);
+}
+
+.star-review {
+    margin: 20px 0px 40px;
+}
+
+.product-details {
+    margin: 0px 0px 20px;
+}
+
+.review,
+.review-item,
+.review-user-comment {
+    border: var(--color-light-grey) 1px solid;
+}
+
+.review-item {
+    padding: 40px;
+}
+
+.review-user-comment {
+    padding: 15px;
+    width: 90%;
+}
+
+.review {
+    padding: 10px 20px;
+    width: 120px;
+}
+
+.user-images {
+    width: 60px;
 }
