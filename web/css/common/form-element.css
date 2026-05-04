@@ -25,6 +25,9 @@
 /*add to cart*/
 .text-field_with-borderline {
     border: var(--color-text-field-with-border-borderline-default);
+}
+
+.text-field_with-borderline::placeholder {
     color: var(--color-txtfield-with-border-font-default);
 }
 

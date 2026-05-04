@@ -143,7 +143,7 @@
     --color-text-field-with-border-borderline-default: var(--color-black-30) 1px solid;
     --color-txtfield-with-border-borderline-hover: var(--color-light-green-50) 1px solid;
     --color-txtfield-with-border-borderline-pressed: var(--color-light-green) 1px solid;
-    --color-txtfield-with-border-font-default: var(--color-black-30) 1px solid;
+    --color-txtfield-with-border-font-default: var(--color-black-30);
     --color-txtfield-with-border-font-pressed: var(--color-dark-blue);
 
     /*Text-field-with-border - Options*/

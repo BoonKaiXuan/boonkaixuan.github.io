@@ -132,7 +132,7 @@
 
     <section class="max-width-1440 divider">
 
-        <table class="col-1">
+        <table class="col-1 cart_lists">
             <tr>
                 <th class="cart_prod">Product</th>
                 <th>Price</th>
@@ -141,8 +141,8 @@
                 <th></th>
             </tr>
 
-            <tr>
-                <td class="row-flex gap-12 align-items-center">
+            <tr class="relative">
+                <td class="row-flex gap-12 align-items-center cart_prod_item">
                     <img src="images/product/dog-bone.jpg" alt="Prestige Dog Bone" width="120">
                     <p>
                         Prestige dog bone
@@ -153,21 +153,27 @@
                 </td>
                 <td>
                     <div class="cart_qty row-flex gap-0">
-                        <input class="cart_qty_btn cart_qty_minus" type="button" value="-">
+                        <button class="cart_qty_btn cart_qty_minus">
+                            -
+                        </button>
+
                         <input class="cart_qty_btn cart_qty_number" type="number" value="2">
-                        <input class="cart_qty_btn cart_qty_plus" type="button" value="+">
+
+                        <button class="cart_qty_btn cart_qty_plus">
+                            +
+                        </button>
                     </div>
                 </td>
                 <td>
                     RM36.00
                 </td>
-                <td>
+                <td class="remove-item">
                     <i class="fa-solid fa-xmark" style="color: rgb(0, 0, 0);"></i>
                 </td>
             </tr>
 
-            <tr>
-                <td class="row-flex gap-12 align-items-center">
+            <tr class="relative">
+                <td class="row-flex gap-12 align-items-center cart_prod_item">
                     <img src="images/product/dog-leash.jpg" alt="Pink Dog Leash" width="120">
                     <p>
                         Dog Leash
@@ -186,7 +192,7 @@
                 <td>
                     RM30.00
                 </td>
-                <td>
+                <td class="remove-item">
                     <i class="fa-solid fa-xmark" style="color: rgb(0, 0, 0);"></i>
                 </td>
             </tr>
@@ -195,15 +201,15 @@
 
     </section>
 
-    <section class="max-width-1440 row-flex space-between">
+    <section class="max-width-1440 row-flex space-between gap-40">
 
         <div class="width-65 col-1-t">
             <h4>Shipping Information</h4>
             <div class="direction-col">
                 <input class="form text-field_with-borderline" type="text" placeholder="Malaysia" readonly>
-                <input class=" form text-field_with-borderline" type="text" placeholder="Address">
-                <select class="form text-field_with-borderline" name="state" id="state">
-                    <option value="" disabled selected>State</option>
+                <input class=" form text-field_with-borderline" type="text" placeholder="Address" required>
+                <select class="form text-field_with-borderline" name="state" id="state" required>
+                    <option class="select_placeholder" value="" disabled selected>State</option>
                     <option value="Johor">Johor</option>
                     <option value="Kedah">Kedah</option>
                     <option value="Melaka">Melaka</option>
@@ -220,41 +226,47 @@
                 </select>
             </div>
             <div class="row-flex gap-20">
-                <input class="form col-2 text-field_with-borderline" type="text" placeholder="Postcode">
-                <input class="form col-2 text-field_with-borderline" type="text" placeholder="City">
+                <input class="form col-2 text-field_with-borderline" type="text" placeholder="Postcode" required>
+                <input class="form col-2 text-field_with-borderline" type="text" placeholder="City" required>
             </div>
-            <div>
-                <input class="btn btn_green" type="button" value="Update">
+            <div class="btn_update">
+                <input class="btn btn_green" type="submit" value="Update">
             </div>
         </div>
 
         <div class="width-30 col-1-t">
-            <div class="bg-img bg-img-gradient card ratio-2-3 text-white"
-                style="--bg:url(/web/images/bull-dog-on-couch.jpg);">
-                <h5>
-                    Cart total: 2 items
+            <div class="bg-img bg-img-gradient card cart_summary" style="--bg:url(/web/images/bull-dog-on-couch.jpg);">
+                <h5 class="text-white">
+                    Cart total: 3 items
                 </h5>
-                <div class="row-flex space-between">
-                    <div>Subtotal:</div>
-                    <div>RM66.00</div>
-                </div>
-                <div class="row-flex space-between">
-                    <div>Shipping Flat Rate:</div>
-                    <div>RM8.00</div>
-                </div>
-                <div>
-                    Shipping to <span class="text-bold">KL</span>
-                </div>
-                <div class="row-flex space-between">
-                    <div>Total:</div>
-                    <div class="text-bold">RM74.00</div>
-                </div>
-                <div>
-                    <input class="btn btn_white btn_no-radius btn_white-black text-center col-1" type="button"
-                        value="Update cart">
+
+                <table class="cart_summary text-white col-1">
+                    <tr>
+                        <th>Subtotal:</th>
+                        <td>RM66.00</td>
+                    </tr>
+
+                    <tr>
+                        <th>
+                            Shipping Flat Rate:
+                            <p class="shipping_area">Shipping to <span class="text-bold">KL</span></p>
+                        </th>
+                        <td>RM8.00</td>
+                    </tr>
+
+                    <tr>
+                        <th>Total:</th>
+                        <td class="text-bold">RM74.00</td>
+                    </tr>
+                </table>
+
+                <div class="btn btn_white btn_no-radius btn_white-black text-center col-1">
+                    Update cart
                 </div>
                 <div class="btn btn_green btn_no-radius text-center col-1">
-                    Proceed to checkout
+                    <a href="https://www.google.com">
+                        Proceed to checkout
+                    </a>
                 </div>
             </div>
             <div class="card coupon">
@@ -264,8 +276,8 @@
                 <div>
                     <input class="col-1 form text-field_no-borderline" type="text" placeholder="Coupon code">
                 </div>
-                <div>
-                    <input class="btn btn_green col-1 text-center" type="button" value="Apply coupon">
+                <div class="btn btn_green col-1 text-center">
+                    Apply coupon
                 </div>
             </div>
         </div>
@@ -274,8 +286,8 @@
     <section class="max-width-1440">
         <h2 class="text-dark-green">Why choose us</h2>
         <div class="row-flex gap-0 text-white">
-            <div class="col-4 col-2-m card card_dark-green bg-paws content-center direction-col ratio-1">
-                <div class="width-30">
+            <div class="col-4 col-1-m card card_dark-green bg-paws content-center direction-col usp_list">
+                <div class="usp_icon">
                     <img src="images/icon_quality-assured.png" alt="Icon of a badge with tick" width="100%">
                 </div>
                 <div>
@@ -283,8 +295,8 @@
                 </div>
             </div>
 
-            <div class="col-4 col-2-m card card_mid-green bg-paws content-center direction-col">
-                <div class="width-30">
+            <div class="col-4 col-1-m card card_mid-green bg-paws content-center direction-col usp_list">
+                <div class="usp_icon">
                     <img src="images/icon_delivery.png" alt="Icon of a badge with tick" width="100%">
                 </div>
                 <div>
@@ -292,8 +304,8 @@
                 </div>
             </div>
 
-            <div class="col-4 col-2-m card card_dark-green bg-paws content-center direction-col">
-                <div class="width-30">
+            <div class="col-4 col-1-m card card_dark-green bg-paws content-center direction-col usp_list">
+                <div class="usp_icon">
                     <img src="images/icon_price.png" alt="Icon of a badge with tick" width="100%">
                 </div>
                 <div>
@@ -301,8 +313,8 @@
                 </div>
             </div>
 
-            <div class="col-4 col-2-m card card_mid-green bg-paws content-center direction-col">
-                <div class="width-30">
+            <div class="col-4 col-1-m card card_mid-green bg-paws content-center direction-col usp_list">
+                <div class="usp_icon">
                     <img src="images/icon_all-in-one-shop.png" alt="Icon of a badge with tick" width="100%">
                 </div>
                 <div>
@@ -392,9 +404,15 @@
                 </div>
 
                 <div class="add-to-cart_qty_btn row-flex gap-0 col-1">
-                    <input class="add-to-cart_qty_btn_minus" type="button" value="-">
+                    <button class="add-to-cart_qty_btn_minus">
+                        -
+                    </button>
+
                     <input class="add-to-cart_qty_btn_number" type="number" value="1">
-                    <input class="add-to-cart_qty_btn_plus" type="button" value="+">
+
+                    <button class="add-to-cart_qty_btn_plus">
+                        +
+                    </button>
                 </div>
 
                 <div>

@@ -1,9 +1,5 @@
-.coupon {
-    background-color: #fbfaf8;
-}
-
-ul {
-    list-style-position: inside;
+body {
+    color: var(--color-dark-blue);
 }
 
 .cart_prod {
@@ -11,24 +7,14 @@ ul {
     text-align: left;
 }
 
-table {
-    color: var(--color-dark-blue);
-}
-
 td {
     text-align: center;
     padding: 20px 0px;
 }
 
-th {
+.cart_lists th {
     font-size: 13px;
     font-weight: var(--font-weight-regular);
-}
-
-input::-webkit-inner-spin-button,
-input::-webkit-outer-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
 }
 
 .cart_qty {
@@ -42,11 +28,13 @@ input::-webkit-outer-spin-button {
     height: 40px;
     background-color: transparent;
     border: 1px solid var(--color-black-20);
+    cursor: pointer;
 }
 
 .cart_qty_number {
     border-left: none;
     border-right: none;
+    cursor: text;
 }
 
 .cart_qty_minus {
@@ -57,6 +45,57 @@ input::-webkit-outer-spin-button {
 .cart_qty_plus {
     border-top-right-radius: 50%;
     border-bottom-right-radius: 50%;
+}
+
+.btn_update {
+    text-align: right;
+}
+
+.cart_summary {
+    margin-bottom: 40px;
+}
+
+.cart_summary th {
+    font-weight: var(--font-weight-regular);
+    text-align: left;
+    width: 50%;
+}
+
+.cart_summary td {
+    text-align: right;
+}
+
+.cart_summary>div.btn_white {
+    color: var(--color-button-white-font-default);
+}
+
+.cart_summary>div.btn_white:hover {
+    color: var(--color-button-white-font-hover);
+}
+
+.shipping_area {
+    font-size: var(--font-size-caption-page);
+}
+
+.coupon {
+    background-color: #fbfaf8;
+}
+
+.coupon>div>input::placeholder {
+    color: var(--color-black-40);
+}
+
+.usp_list {
+    min-height: 220px;
+}
+
+.usp_icon {
+    width: 60px;
+    height: auto;
+}
+
+ul {
+    list-style-position: inside;
 }
 
 .color-option {
@@ -75,22 +114,23 @@ input::-webkit-outer-spin-button {
     margin: 40px 0px;
 }
 
-@media screen and (max-width:1100px) {
-    .cart_summary {
-        aspect-ratio: 4/3;
-    }
-}
 
 @media screen and (max-width:880px) {
-    td {
+    .cart_lists td {
         display: block;
     }
 
-    th {
+    .cart_lists th {
         display: none;
     }
 
-    .cart_prod {
+    .cart_prod_item {
         flex-direction: column;
+    }
+
+    .remove-item {
+        position: absolute;
+        top: 0;
+        right: 0;
     }
 }
