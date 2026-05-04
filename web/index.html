@@ -427,13 +427,20 @@
                 y: 30,
             },
             {
+                delay: 0.5,
                 opacity: 1,
                 y: 0,
                 duration: 1,
             }
         );
 
-        const tl = gsap.timeline();
+        const tl = gsap.timeline({
+            scrollTrigger: {
+                trigger: ".category",
+                start: "top 70%",
+                markers: 1,
+            }
+        });
 
         tl.fromTo(".category",
             {
@@ -444,8 +451,7 @@
                 opacity: 1,
                 y: 0,
                 ease: "power3.out",
-                duration: 1.5,
-                stagger: 1,
+                stagger: 0.8,
             }
         );
 
