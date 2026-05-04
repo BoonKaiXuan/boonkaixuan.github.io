@@ -132,72 +132,83 @@
 
     <section class="max-width-1440 divider">
 
-        <table class="col-1 cart_lists">
-            <tr>
-                <th class="cart_prod">Product</th>
-                <th>Price</th>
-                <th>Quantity</th>
-                <th>Subtotal</th>
-                <th></th>
-            </tr>
+        <div class="cart_lists_heading row-flex gap-0">
+            <div class="cart_prod">Product</div>
+            <div class="cart_price">Price</div>
+            <div class="cart_qty">Quantity</div>
+            <div class="cart_subtotal">Subtotal</div>
+            <div class="cart_remove"></div>
+        </div>
 
-            <tr class="relative">
-                <td class="row-flex gap-12 align-items-center cart_prod_item">
+        <div class="row-flex align-items-center cart_list_row relative">
+            <div class="row-flex gap-12 align-items-center cart_lists_body_cell cart_prod cart_prod_item">
+                <div>
                     <img src="images/product/dog-bone.jpg" alt="Prestige Dog Bone" width="120">
-                    <p>
-                        Prestige dog bone
-                    </p>
-                </td>
-                <td>
-                    RM18.00
-                </td>
-                <td>
-                    <div class="cart_qty row-flex gap-0">
-                        <button class="cart_qty_btn cart_qty_minus">
-                            -
-                        </button>
+                </div>
+                <div>
+                    <p>Prestige dog bone</p>
+                </div>
+            </div>
 
-                        <input class="cart_qty_btn cart_qty_number" type="number" value="2">
+            <div class="cart_lists_body_cell cart_price">
+                <p>RM18.00</p>
+            </div>
 
-                        <button class="cart_qty_btn cart_qty_plus">
-                            +
-                        </button>
-                    </div>
-                </td>
-                <td>
-                    RM36.00
-                </td>
-                <td class="remove-item">
-                    <i class="fa-solid fa-xmark" style="color: rgb(0, 0, 0);"></i>
-                </td>
-            </tr>
+            <div class="row-flex gap-0 content-center cart_lists_body_cell cart_qty">
+                <div class="cart_qty_btn content-center cart_qty_minus">
+                    -
+                </div>
 
-            <tr class="relative">
-                <td class="row-flex gap-12 align-items-center cart_prod_item">
+                <input class="cart_qty_btn content-center cart_qty_number" type="number" value="2">
+
+                <div class="cart_qty_btn content-center cart_qty_plus">
+                    +
+                </div>
+            </div>
+
+            <div class="cart_lists_body_cell cart_subtotal">
+                <p>RM36.00</p>
+            </div>
+
+            <div class="cart_lists_body_cell cart_remove remove-icon ">
+                <i class="fa-solid fa-xmark" style="color: rgb(0, 0, 0);"></i>
+            </div>
+        </div>
+
+        <div class="relative row-flex align-items-center cart_list_row">
+            <div class="row-flex gap-12 align-items-center cart_lists_body_cell cart_prod cart_prod_item">
+                <div>
                     <img src="images/product/dog-leash.jpg" alt="Pink Dog Leash" width="120">
-                    <p>
-                        Dog Leash
-                    </p>
-                </td>
-                <td>
-                    RM30.00
-                </td>
-                <td>
-                    <div class="cart_qty row-flex gap-0">
-                        <input class="cart_qty_btn cart_qty_minus" type="button" value="-">
-                        <input class="cart_qty_btn cart_qty_number" type="number" value="1">
-                        <input class="cart_qty_btn cart_qty_plus" type="button" value="+">
-                    </div>
-                </td>
-                <td>
-                    RM30.00
-                </td>
-                <td class="remove-item">
-                    <i class="fa-solid fa-xmark" style="color: rgb(0, 0, 0);"></i>
-                </td>
-            </tr>
+                </div>
+                <div>
+                    <p>Dog leash</p>
+                </div>
+            </div>
 
-        </table>
+            <div class="cart_lists_body_cell cart_price">
+                <p>RM30.00</p>
+            </div>
+
+            <div class="row-flex gap-0 content-center cart_lists_body_cell cart_qty">
+                <div class="cart_qty_btn content-center cart_qty_minus">
+                    -
+                </div>
+
+                <input class="cart_qty_btn content-center cart_qty_number" type="number" value="1">
+
+                <div class="cart_qty_btn content-center cart_qty_plus">
+                    +
+                </div>
+            </div>
+
+            <div class="cart_lists_body_cell cart_subtotal">
+                <p>RM30.00</p>
+            </div>
+
+            <div class="cart_lists_body_cell cart_remove remove-icon">
+                <i class="fa-solid fa-xmark" style="color: rgb(0, 0, 0);"></i>
+            </div>
+        </div>
 
     </section>
 
