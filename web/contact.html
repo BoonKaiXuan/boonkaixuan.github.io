@@ -289,8 +289,7 @@
 
             </section>
         </div>
-        <div class="banner bg-img max-width-1440 relative newsletter start_float-in"
-            style="--bg:url(/web/images/newsletter.png);">
+        <div class="banner bg-img max-width-1440 relative newsletter" style="--bg:url(/web/images/newsletter.png);">
             <div class="max-width-1440">
                 <div class="gap-0 col-1-m">
                     <div>
@@ -410,6 +409,26 @@
 
     <script src="js/common.js"></script>
     <script src="js/header.js"></script>
+
+    <script>
+        gsap.fromTo(".newsletter",
+            {
+                opacity: 0,
+                y: 30,
+            },
+            {
+                delay: 0.5,
+                opacity: 1,
+                y: 0,
+                duration: 1,
+
+                scrollTrigger: {
+                    trigger: ".newsletter",
+                    start: "top 70%",
+                }
+            }
+        );
+    </script>
 </body>
 
 </html>
