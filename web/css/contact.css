@@ -9,3 +9,7 @@
 .faq-title {
     font-family: var(--font-heading-serif);
 }
+
+.newsletter {
+    bottom: 70px;
+}
