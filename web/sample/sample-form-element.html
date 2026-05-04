@@ -10,6 +10,7 @@
     <link rel="stylesheet" a href="../css/common/typography.css">
     <link rel="stylesheet" a href="../css/common/layout.css">
     <link rel="stylesheet" a href="../css/common/button.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
 <body>
@@ -30,22 +31,28 @@
             <div class="direction-col">
                 <input class="form text-field_with-borderline" type="text" placeholder="Malaysia">
                 <input class=" form text-field_with-borderline" type="text" placeholder="Address">
-                <select class="form text-field_with-borderline" name="state" id="state">
-                    <option value="" disabled selected>State</option>
-                    <option value="Johor">Johor</option>
-                    <option value="Kedah">Kedah</option>
-                    <option value="Melaka">Melaka</option>
-                    <option value="Kelantan">Kelantan</option>
-                    <option value="Negeri Sembilan">Negeri Sembilan</option>
-                    <option value="Pahang">Pahang</option>
-                    <option value="Perak">Perak</option>
-                    <option value="Perlis">Perlis</option>
-                    <option value="Pulau Pinang">Pulau Pinang</option>
-                    <option value="Selangor">Selangor</option>
-                    <option value="Terengganu">Terengganu</option>
-                    <option value="Sabah">Sabah</option>
-                    <option value="Sarawak">Sarawak</option>
-                </select>
+                <div class="select-wrap">
+                    <select class="form text-field_with-borderline" name="state" id="state">
+                        <option value="" disabled selected>State</option>
+                        <option value="Johor">Johor</option>
+                        <option value="Kedah">Kedah</option>
+                        <option value="Melaka">Melaka</option>
+                        <option value="Kelantan">Kelantan</option>
+                        <option value="Negeri Sembilan">Negeri Sembilan</option>
+                        <option value="Pahang">Pahang</option>
+                        <option value="Perak">Perak</option>
+                        <option value="Perlis">Perlis</option>
+                        <option value="Pulau Pinang">Pulau Pinang</option>
+                        <option value="Selangor">Selangor</option>
+                        <option value="Terengganu">Terengganu</option>
+                        <option value="Sabah">Sabah</option>
+                        <option value="Sarawak">Sarawak</option>
+                    </select>
+                    <div class="select-circle">
+                        <i class="fa-solid fa-angle-down"></i>
+                    </div>
+
+                </div>
             </div>
             <div class="row-flex gap-20">
                 <input class="form col-2 text-field_with-borderline" type="text" placeholder="Postcode">
