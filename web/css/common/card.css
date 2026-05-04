@@ -11,6 +11,8 @@
 .card_with-border:hover {
     background: var(--color-card-with-border-bg-hover);
     border: var(--color-card-with-border-borderline-hover);
+    transform: perspective(1000px) scale(1.03);
+    transition: all .35s ease;
 }
 
 /*on sale products*/
