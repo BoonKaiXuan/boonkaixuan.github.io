@@ -110,6 +110,7 @@ body {
     height: auto;
 }
 
+/*You may also like*/
 ul {
     list-style-position: inside;
 }
@@ -130,6 +131,28 @@ ul {
     margin: 40px 0px;
 }
 
+.prod-arrow {
+    width: 30px;
+    height: 30px;
+    background-color: rgb(166, 166, 166);
+    cursor: pointer;
+}
+
+.prod_container>div {
+    width: 100%;
+    left: 0px;
+    bottom: 50%;
+    opacity: 0;
+}
+
+.prod_container:hover>div {
+    opacity: 1;
+    transition: ease-in 0.4s;
+}
+
+.opacity-50 {
+    opacity: 0.5;
+}
 
 @media screen and (max-width:880px) {
 
