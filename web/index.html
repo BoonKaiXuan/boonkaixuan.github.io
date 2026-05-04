@@ -122,7 +122,7 @@
     </header>
 
     <div class="banner bg-img bg-img-gradient" style="--bg:url(/web/images/banner_home.jpg);">
-        <div class="max-width-1440">
+        <div class="max-width-1440 start_home_banner">
             <div class="text-white gap-0 col-2 col-1-m">
                 <div>
                     <p class="banner-subheading">
@@ -419,6 +419,21 @@
 
     <script src="js/common.js"></script>
     <script src="js/header.js"></script>
+
+    <script>
+        gsap.fromTo(".start_home_banner",
+            {
+                opacity: 0,
+                y: 30,
+            },
+            {
+                opacity: 1,
+                y: 0,
+                duration: 1,
+            }
+        );
+
+    </script>
 
 </body>
 
