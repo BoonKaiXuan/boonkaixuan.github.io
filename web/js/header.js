@@ -6,6 +6,7 @@ const subMenu = document.getElementById("submenu");
 
 const dropDown = document.getElementById("submenu-toggle");
 
+const stickyHeader = document.querySelectorAll("header_midbar");
 
 toggleButton.addEventListener(
     "click", () => {
