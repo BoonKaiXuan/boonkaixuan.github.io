@@ -251,7 +251,7 @@
 
     </section>
 
-    <section class="max-width-1440 section_scroll_fade-in">
+    <section class="max-width-1440 team">
         <div class="text-center section_inner-margin">
             <h4 class="text-light-green">
                 Meet our awesome team
@@ -396,6 +396,19 @@
                 stagger: 0.6,
             }
         );
+
+        gsap.fromTo(".team",
+            { opacity: 0 },
+            {
+                opacity: 1,
+                duration: 1.2,
+                scrollTrigger: {
+                    trigger: ".team",
+                    start: "top 50%",
+                }
+            }
+        );
+
     </script>
 
 </body>
