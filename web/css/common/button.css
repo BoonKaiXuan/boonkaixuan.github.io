@@ -1,5 +1,4 @@
 .btn {
-    padding: var(--padding-button-small);
     border-radius: var(--radius-button);
     background-color: var(--color-button-green-bg-default);
     font-size: var(--font-size-button-small);
@@ -10,13 +9,19 @@
     display: inline-block;
 }
 
+.btn a {
+    display: block;
+    color: var(--color-button-green-font);
+}
+
+.btn a,
+input[type="submit"] {
+    padding: var(--padding-button-small);
+}
+
 .btn:hover {
     background-color: var(--color-button-green-bg-hover);
     transition: all 0.5s ease;
-}
-
-.btn a {
-    color: var(--color-button-green-font);
 }
 
 .btn_white {
@@ -48,7 +53,7 @@
     border-radius: 0px;
 }
 
-.btn_cta {
+.btn_cta a {
     padding: var(--padding-button-large);
     font-size: var(--font-size-button-large);
 }
