@@ -3,14 +3,50 @@
     padding: 20px 30px;
 }
 
-.topbar_icons {
+.search input {
+    background-color: #1d2f1f0e;
+    border-radius: 24px;
+    padding: 0px 15px 0px 45px;
+    width: 100%;
+    min-height: 45px;
+
+}
+
+.search input::placeholder {
+    color: var(--color-dark-green);
+}
+
+.fa-magnifying-glass {
+    position: absolute;
+    padding: 13px;
+}
+
+input[type=text]:focus,
+.textarea:focus {
+    outline: none;
+}
+
+.topbar_icon {
     justify-content: flex-end;
+}
+
+.topbar_icon,
+.midbar_icon {
+    color: var(--color-black);
+}
+
+.topbar_icon:hover,
+.midbar_icon:hover {
+    color: var(--color-light-green);
 }
 
 .header_midbar {
     padding: 0px 30px;
     justify-content: center;
     background-color: var(--color-white);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 nav {
@@ -70,38 +106,6 @@ nav .submenu>a:hover {
     padding: 0px 30px;
 }
 
-.search input {
-    background-color: #1d2f1f0e;
-    border-radius: 24px;
-    padding: 0px 15px 0px 45px;
-    width: 100%;
-    min-height: 45px;
-
-}
-
-.search input::placeholder {
-    color: var(--color-dark-green);
-}
-
-.fa-magnifying-glass {
-    position: absolute;
-    padding: 13px;
-}
-
-input[type=text]:focus,
-.textarea:focus {
-    outline: none;
-}
-
-.topbar_icon,
-.midbar_icon {
-    color: var(--color-black);
-}
-
-.fa-regular {
-    font-size: 18px;
-}
-
 .menu-toggle {
     font-size: 24px;
     padding: 12px 20px;
@@ -109,15 +113,11 @@ input[type=text]:focus,
     z-index: 1001;
 }
 
-.midbar_icons,
+.midbar_icon,
 .menu-toggle {
     display: none;
 }
 
-.topbar_icon:hover,
-.midbar_icon:hover {
-    color: var(--color-light-green);
-}
 
 .icon-inline-20 {
     height: var(--icon-size-m);
@@ -142,7 +142,7 @@ input[type=text]:focus,
         text-align: center;
     }
 
-    .topbar_icons,
+    .topbar_icon,
     .bottombar_item {
         display: none;
     }
@@ -151,7 +151,7 @@ input[type=text]:focus,
         text-align: center;
     }
 
-    .midbar_icons,
+    .midbar_icon,
     .menu-toggle {
         display: block;
     }
@@ -162,7 +162,7 @@ input[type=text]:focus,
         gap: 0px;
 
         position: absolute;
-        top: 260px;
+        top: 67.2px;
         right: 0;
         opacity: 0;
         visibility: hidden;
