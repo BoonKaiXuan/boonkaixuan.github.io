@@ -146,12 +146,6 @@
     --color-txtfield-with-border-font-default: var(--color-black-30);
     --color-txtfield-with-border-font-pressed: var(--color-dark-blue);
 
-    /*Text-field-with-border - Options*/
-    --color-txtfield-with-border-options-bg: var(--color-white);
-    --color-txtfield-with-border-options-font: var(--color-black);
-    --color-txtfield-with-border-options-bg-hover: var(--color-mid-blue);
-    --color-txtfield-with-border-options-font-hover: var(--color-white);
-
     /*Text-field-no-border*/
     --color-txtfield-no-border-bg: var(--color-seashell);
 
