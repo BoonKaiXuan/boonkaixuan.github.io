@@ -223,22 +223,28 @@
             <div class="direction-col">
                 <input class="form text-field_with-borderline" type="text" placeholder="Malaysia" readonly>
                 <input class=" form text-field_with-borderline" type="text" placeholder="Address" required>
-                <select class="form text-field_with-borderline" name="state" id="state" required>
-                    <option class="select_placeholder" value="" disabled selected>State</option>
-                    <option value="Johor">Johor</option>
-                    <option value="Kedah">Kedah</option>
-                    <option value="Melaka">Melaka</option>
-                    <option value="Kelantan">Kelantan</option>
-                    <option value="Negeri Sembilan">Negeri Sembilan</option>
-                    <option value="Pahang">Pahang</option>
-                    <option value="Perak">Perak</option>
-                    <option value="Perlis">Perlis</option>
-                    <option value="Pulau Pinang">Pulau Pinang</option>
-                    <option value="Selangor">Selangor</option>
-                    <option value="Terengganu">Terengganu</option>
-                    <option value="Sabah">Sabah</option>
-                    <option value="Sarawak">Sarawak</option>
-                </select>
+                <div class="select-wrap">
+                    <select class="form text-field_with-borderline" name="state" id="state">
+                        <option value="" disabled selected>State</option>
+                        <option value="Johor">Johor</option>
+                        <option value="Kedah">Kedah</option>
+                        <option value="Melaka">Melaka</option>
+                        <option value="Kelantan">Kelantan</option>
+                        <option value="Negeri Sembilan">Negeri Sembilan</option>
+                        <option value="Pahang">Pahang</option>
+                        <option value="Perak">Perak</option>
+                        <option value="Perlis">Perlis</option>
+                        <option value="Pulau Pinang">Pulau Pinang</option>
+                        <option value="Selangor">Selangor</option>
+                        <option value="Terengganu">Terengganu</option>
+                        <option value="Sabah">Sabah</option>
+                        <option value="Sarawak">Sarawak</option>
+                    </select>
+                    <div class="select-circle">
+                        <i class="fa-solid fa-angle-down"></i>
+                    </div>
+
+                </div>
             </div>
             <div class="row-flex gap-20">
                 <input class="form col-2 text-field_with-borderline" type="text" placeholder="Postcode" required>
@@ -360,19 +366,27 @@
         <div class="row-flex gap-40">
             <div class="col-2 col-1-t">
                 <div class="row-flex gap-12">
-                    <div class="col-1">
+                    <div class="col-1 prod_container relative">
                         <img src="images/product/pet-bed-blue.jpg" alt="Blue Pet Bed" width="100%">
+                        <div class="row-flex align-items-center space-between absolute">
+                            <div class="prod-arrow content-center">
+                                <i class="fa-solid fa-angle-left" style="color: rgb(255, 255, 255);"></i>
+                            </div>
+                            <div class="prod-arrow content-center">
+                                <i class="fa-solid fa-angle-right" style="color: rgb(255, 255, 255);"></i>
+                            </div>
+                        </div>
                     </div>
                     <div class="col-4">
                         <img src="images/product/pet-bed-blue.jpg" alt="Blue Pet Bed" width="100%">
                     </div>
-                    <div class="col-4">
+                    <div class="col-4 opacity-50">
                         <img src="images/product/pet-bed-red.jpg" alt="Red Pet Bed" width="100%">
                     </div>
-                    <div class="col-4">
+                    <div class="col-4 opacity-50">
                         <img src="images/product/pet-bed-green.jpg" alt="Green pet bed" width="100%">
                     </div>
-                    <div class="col-4">
+                    <div class="col-4 opacity-50">
                         <img src="images/product/pet-bed-yellow.jpg" alt="Yellow pet bed" width="100%">
                     </div>
                 </div>
@@ -407,7 +421,7 @@
                         Contoured shape provides ergonomic support for your pet.
                     </li>
                     <li>
-                        Burgundy and charcoal layers offer a modern look.
+                        Layers design offers a modern look.
                     </li>
                     <li>
                         Reinforced black piping adds extra edge durability.
@@ -449,6 +463,10 @@
                 <div>
                     <input class="btn btn_green btn_cta col-1" type="submit" value="Add to cart">
                 </div>
+
+                <div class="caption">
+                    Categories: Bed, Accessories
+                </div>
             </div>
         </div>
     </section>
@@ -466,19 +484,19 @@
                     <div class="footer_title text-white">Shop by Categories
                     </div>
                     <div class="footer_menu-item direction-col">
-                        <a href="https://www.google.com/">Dog food</a>
-                        <a href="https://www.google.com/">Cat food</a>
-                        <a href="https://www.google.com/">Accessories</a>
+                        <a href="/web/dog-food.html">Dog food</a>
+                        <a href="/web/dog-food.html">Cat food</a>
+                        <a href="/web/dog-food.html">Accessories</a>
                     </div>
                 </div>
 
                 <div class="footer_menu-m col-4 col-2-t col-1-m">
                     <div class="footer_title text-white">Useful links</div>
                     <div class="footer_menu-item direction-col">
-                        <a href="https://www.google.com/">My account</a>
-                        <a href="https://www.google.com/">Orders</a>
-                        <a href="https://www.google.com/">Checkout</a>
-                        <a href="https://www.google.com/">Cart</a>
+                        <a href="/web/cart.html">My account</a>
+                        <a href="/web/cart.html">Orders</a>
+                        <a href="/web/cart.html">Checkout</a>
+                        <a href="/web/cart.html">Cart</a>
                     </div>
 
                 </div>
@@ -493,10 +511,10 @@
 
 
             <div class="footer_menu-navbar content-center ">
-                <a href="https://www.google.com">Home</a>
-                <a href="https://www.google.com">Shop</a>
-                <a href="https://www.google.com">About</a>
-                <a href="https://www.google.com">Contact</a>
+                <a href="/web/index.html">Home</a>
+                <a href="/web/shop.html">Shop</a>
+                <a href="/web/about.html">About</a>
+                <a href="/web/contact.html">Contact</a>
             </div>
 
             <div class="footer_menu-navbar content-center">

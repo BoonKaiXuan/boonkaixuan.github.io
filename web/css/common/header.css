@@ -37,6 +37,7 @@ nav .has-submenu i {
 nav .submenu {
     opacity: 0;
     position: absolute;
+    pointer-events: none;
 }
 
 nav .submenu>a {
@@ -53,6 +54,7 @@ nav .submenu>a {
 nav .has-submenu:hover .submenu {
     opacity: 1;
     transition: all 0.3s ease;
+    pointer-events: auto;
 }
 
 nav .submenu>a:hover {
@@ -170,6 +172,7 @@ input[type=text]:focus,
         opacity: 1;
         visibility: visible;
         transition: all 0.5s ease;
+        z-index: 1001;
     }
 
     nav .menu-item>a,
