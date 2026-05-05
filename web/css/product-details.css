@@ -10,6 +10,11 @@
 
 .star-rating {
     background-color: var(--color-light-grey);
+    padding: 0 10px;
+}
+
+.star-rating i {
+    font-size: 10px;
 }
 
 .star-review {
@@ -42,4 +47,16 @@
 
 .user-images {
     width: 60px;
+}
+
+@media screen and (max-width:1350px) {
+    .star-rating {
+        width: calc(50% - calc(var(--gap) / 2));
+    }
+}
+
+@media screen and (max-width:640px) {
+    .star-rating {
+        width: 100%;
+    }
 }
