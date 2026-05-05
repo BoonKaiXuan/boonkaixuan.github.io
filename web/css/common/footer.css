@@ -53,12 +53,9 @@
         text-align: center;
     }
 
-}
-
-@media screen and (max-width:880px) {
-
-    .footer_menu-m {
+    .footer_menu-t {
         justify-content: center;
         text-align: center;
     }
+
 }
