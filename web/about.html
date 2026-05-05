@@ -21,106 +21,92 @@
 </head>
 
 <body>
-    <header>
-        <div class="divider">
-            <div class="max-width-1440 header_topbar row-flex gap-20 align-items-center">
-                <div class="logo-l col-4 col-2-t col-1-m start_fade-in">
-                    <a href="/web/index.html">
-                        <img class="vertical-center" src="images/furever-friends-logo-big.svg"
-                            alt="Furever Friends Logo" height="36">
-                    </a>
-                </div>
+    <!--Header-->
+    <div class="divider">
+        <div class="max-width-1440 header_topbar row-flex gap-20 align-items-center">
+            <div class="logo-l col-4 col-2-t col-1-m start_fade-in">
+                <a href="/web/index.html">
+                    <img class="vertical-center" src="images/furever-friends-logo-big.svg" alt="Furever Friends Logo"
+                        height="36">
+                </a>
+            </div>
 
-                <div class="search col-4 col-2-t col-1-m start_fade-in">
-                    <i class="fa-solid fa-magnifying-glass" style="color: #000000;"></i>
-                    <input type="text" placeholder="Search..." />
-                </div>
+            <div class="search col-4 col-2-t col-1-m start_fade-in">
+                <i class="fa-solid fa-magnifying-glass" style="color: #000000;"></i>
+                <input type="text" placeholder="Search..." />
+            </div>
 
-                <div class="topbar_contact text-center col-4 col-2-t col-1-m start_fade-in">
-                    <span class="text-bold">Questions?</span> Call us: (+60)147895478
-                </div>
+            <div class="topbar_contact text-center col-4 col-2-t col-1-m start_fade-in">
+                <span class="text-bold">Questions?</span> Call us: <a href="tel:+60147895478">(+60)147895478</a>
+            </div>
 
-                <div class="topbar_icons row-flex align-items-center col-4 col-2-t col-1-m start_fade-in">
-                    <div>
-                        <a href="/web/cart.html">
-                            <span class="topbar_icon material-symbols-outlined vertical-center">
-                                local_mall
-                            </span>
-                        </a>
-                    </div>
-                    <div>
-                        <a href="https://www.google.com">
-                            <i class="topbar_icon fa-regular fa-user"></i>
-                        </a>
-                    </div>
-                </div>
+            <div class="topbar_icon row-flex col-4 col-2-t col-1-m start_fade-in">
+                <a href="/web/cart.html">
+                    <span class="material-symbols-outlined vertical-center">
+                        local_mall
+                    </span>
+                </a>
             </div>
         </div>
+    </div>
 
-        <div class="header_midbar row-flex align-items-center">
-            <nav id="mobile-menu" class="row-flex gap-40 align-items-center start_fade-in">
-                <div class="menu-item">
-                    <a href="/web/index.html">Home</a>
-                </div>
-                <div class="menu-item has-submenu">
-                    <a href="/web/shop.html">Shop
-                        <i id="submenu-toggle" class="fa-solid fa-chevron-down"></i>
-                    </a>
-                    <div id="submenu" class="submenu">
-                        <a href="/web/dog-food.html">Dog Food</a>
-                    </div>
-                </div>
-                <div class="menu-item">
-                    <a href="/web/about.html">About</a>
-                </div>
-                <div class="menu-item">
-                    <a href="/web/contact.html">Contact</a>
-                </div>
-            </nav>
-
-            <div class="midbar_icons start_fade-in">
-                <div>
-                    <a href="/web/cart.html">
-                        <span class="midbar_icon material-symbols-outlined vertical-center">
-                            local_mall
-                        </span>
-                    </a>
-                </div>
-                <div>
-                    <a href="https://www.google.com">
-                        <i class="midbar_icon fa-regular fa-user"></i>
-                    </a>
+    <div class="header_midbar row-flex align-items-center">
+        <nav id="mobile-menu" class="row-flex gap-40 align-items-center start_fade-in">
+            <div class="menu-item">
+                <a href="/web/index.html">Home</a>
+            </div>
+            <div class="menu-item has-submenu">
+                <a href="/web/shop.html">Shop
+                    <i id="submenu-toggle" class="fa-solid fa-chevron-down"></i>
+                </a>
+                <div id="submenu" class="submenu">
+                    <a href="/web/dog-food.html">Dog Food</a>
                 </div>
             </div>
-
-            <div class="menu-toggle start_fade-in">
-                <i id="menu-toggle" class="fa-solid fa-bars"></i>
+            <div class="menu-item">
+                <a href="/web/about.html">About</a>
             </div>
+            <div class="menu-item">
+                <a href="/web/contact.html">Contact</a>
+            </div>
+        </nav>
+
+        <div class="midbar_icon start_fade-in">
+            <a href="/web/cart.html">
+                <span class="material-symbols-outlined vertical-center">
+                    local_mall
+                </span>
+            </a>
         </div>
 
-        <div class="bg-paws bg-dark-green">
-            <div class="max-width-1440 header_bottombar row-flex gap-0 align-items-center">
-                <div class="col-3 content-center start_fade-in">
-                    <div class="icon icon-inline-20">
-                        <img src="images/icon_map.png" alt="Map Icon" width="100%">
-                    </div>
-                    <span class="text-bold">Free shipping</span> &nbsp;over RM100
+        <div class="menu-toggle start_fade-in">
+            <i id="menu-toggle" class="fa-solid fa-bars"></i>
+        </div>
+    </div>
+
+    <div class="bg-paws bg-dark-green">
+        <div class="max-width-1440 header_bottombar row-flex gap-0 align-items-center">
+            <div class="col-3 content-center start_fade-in">
+                <div class="icon-inline-20">
+                    <img src="images/icon_map.png" alt="Map Icon" width="100%">
                 </div>
-                <div class="col-3 content-center bottombar_item start_fade-in">
-                    <div class="icon icon-inline-20">
-                        <img src="images/icon_discount.png" alt="Discount Icon" width="100%">
-                    </div>
-                    <span class="text-bold">10% Off</span>&nbsp;First Order
+                <span class="text-bold">Free shipping</span> &nbsp;over RM100
+            </div>
+            <div class="col-3 content-center bottombar_item start_fade-in">
+                <div class="icon-inline-20">
+                    <img src="images/icon_discount.png" alt="Discount Icon" width="100%">
                 </div>
-                <div class="col-3 content-center bottombar_item start_fade-in">
-                    <div class="icon icon-inline-20">
-                        <img src="images/icon_track-order.png" alt="Track Order Icon" width="100%">
-                    </div>
-                    <span class="text-bold">Track</span>&nbsp;Your Order
+                <span class="text-bold">10% Off</span>&nbsp;First Order
+            </div>
+            <div class="col-3 content-center bottombar_item start_fade-in">
+                <div class="icon-inline-20">
+                    <img src="images/icon_track-order.png" alt="Track Order Icon" width="100%">
                 </div>
+                <span class="text-bold">Track</span>&nbsp;Your Order
             </div>
         </div>
-    </header>
+    </div>
+    <!--Header-->
 
     <div class="banner bg-img bg-img-gradient" style="--bg:url(/web/images/banner_about.jpg);">
         <div class="max-width-1440 start_fade-in">
@@ -302,16 +288,32 @@
         </div>
     </section>
 
+    <!--Footer-->
     <div class="bg-dark-green">
         <div class="footer max-width-1440">
             <div class="footer_top-section gap-40 row-flex">
-                <div class="footer_logo-t direction-col col-4 col-1-t ">
-                    <div><img src="images/logo_white.png" alt="logo" width="auto" height="70px"></div>
+                <div class="footer_logo-t col-4 col-1-t">
+                    <div>
+                        <img src="images/logo_white.png" alt="logo" width="auto" height="70px">
+                    </div>
 
-                    123 Jalan Impian,<br>
-                    58000 WP Kuala Lumpur<br>info@fureverfriends.com<br>Call us: (+60) 147895478
+                    <div>
+                        123 Jalan Impian,<br>
+                        58000 WP Kuala Lumpur
+                    </div>
+
+                    <div>
+                        <a href="mailto:info@fureverfriends.com">info@fureverfriends.com
+                        </a>
+                    </div>
+
+                    <div>
+                        Call us: <a href="tel:+60147895478">(+60)147895478
+                        </a>
+                    </div>
+
                 </div>
-                <div class="footer_menu-m col-4 col-2-t col-1-m">
+                <div class="footer_menu-t col-4 col-2-t col-1-m">
                     <div class="footer_title text-white">Shop by Categories
                     </div>
                     <div class="footer_menu-item direction-col">
@@ -321,7 +323,7 @@
                     </div>
                 </div>
 
-                <div class="footer_menu-m col-4 col-2-t col-1-m">
+                <div class="footer_menu-t col-4 col-2-t col-1-m">
                     <div class="footer_title text-white">Useful links</div>
                     <div class="footer_menu-item direction-col">
                         <a href="/web/cart.html">My account</a>
@@ -334,12 +336,11 @@
                 <div class="subscribe-form col-4 col-1-t bg-paws">
                     <div class="footer_title text-white">Subscribe to our newsletter</div>
                     <div class="direction-col">
-                        <input class="form text-field_no-borderline" type="text" placeholder="Insert your email...*">
-                        <button class="btn btn_cta"><a href="https://google.com">Subscribe</a></button>
+                        <input class="form text-field_no-borderline" type="email" placeholder="Insert your email...*">
+                        <input class="btn btn_cta" type="submit" value="Subscribe">
                     </div>
                 </div>
             </div>
-
 
             <div class="footer_menu-navbar content-center ">
                 <a href="/web/index.html">Home</a>
@@ -349,16 +350,16 @@
             </div>
 
             <div class="footer_menu-navbar content-center">
-                <a href="https://www.google.com">
+                <a href="https://www.facebook.com/">
                     <i class="fa-brands fa-facebook-f"></i>
                 </a>
-                <a href="https://www.google.com">
+                <a href="https://x.com/">
                     <i class="fa-brands fa-x-twitter"></i>
                 </a>
-                <a href="https://www.google.com">
+                <a href="https://www.instagram.com/?hl=en">
                     <i class="fa-brands fa-instagram"></i>
                 </a>
-                <a href="https://www.google.com">
+                <a href="https://www.youtube.com/">
                     <i class="fa-brands fa-youtube"></i>
                 </a>
             </div>
