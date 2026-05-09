@@ -25,16 +25,12 @@
     height: 50px;
     border-left: var(--color-text-field-with-border-borderline-default);
     border-radius: 60%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     pointer-events: none;
 }
 
 /*contact,review,comment,insert your email*/
 .text-field_no-borderline {
     background-color: var(--color-txtfield-no-border-bg);
-    outline: none;
 }
 
 .text-field_no-borderline::placeholder,
