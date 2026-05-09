@@ -18,6 +18,10 @@
     border: var(--color-card-with-border-borderline-hover);
 }
 
+.card_with-border:hover a {
+    color: inherit;
+}
+
 /*on sale products*/
 .card_dark-green {
     background-color: var(--color-card-dark-green-bg-default);
