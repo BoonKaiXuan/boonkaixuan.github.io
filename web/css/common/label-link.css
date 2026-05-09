@@ -28,4 +28,5 @@
 /*---Link---*/
 a:hover {
     color: var(--color-light-green);
+    transition: all 0.35s ease;
 }
