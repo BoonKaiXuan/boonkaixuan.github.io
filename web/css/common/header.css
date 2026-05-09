@@ -61,6 +61,7 @@ nav .menu-item:hover>i {
     transition: all 0.3s ease;
 }
 
+
 nav .has-submenu i {
     margin-left: var(--gap-xs);
 }
