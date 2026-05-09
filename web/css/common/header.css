@@ -21,11 +21,6 @@
     padding: 13px;
 }
 
-input[type=text]:focus,
-.textarea:focus {
-    outline: none;
-}
-
 .topbar_icon {
     justify-content: flex-end;
 }

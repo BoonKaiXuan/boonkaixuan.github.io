@@ -38,7 +38,7 @@
 }
 
 .bg-paws {
-    background-image: url(../../images/paws-bg.png);
+    background-image: url(/web/images/paws-bg.png);
     background-position: center top;
     background-repeat: repeat-x;
 }

@@ -24,11 +24,3 @@
     color: var(--color-label-font);
     background-color: var(--color-label-bg);
 }
-
-.relative {
-    position: relative;
-}
-
-.absolute {
-    position: absolute;
-}
