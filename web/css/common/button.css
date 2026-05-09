@@ -28,6 +28,10 @@ input[type="submit"] {
     transition: all 0.5s ease;
 }
 
+.btn:hover a {
+    color: inherit;
+}
+
 .btn_white {
     background-color: var(--color-button--white-bg-default);
 }
