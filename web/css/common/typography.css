@@ -112,6 +112,7 @@ h6 {
 .caption {
     font-size: var(--font-size-caption-page);
     letter-spacing: var(--letter-spacing-medium);
+    line-height: var(--font-line-height-170);
 }
 
 .single-product-title {
