@@ -152,6 +152,8 @@ h6 {
         --h3-font-size: 17px;
         --h5-font-size: 18px;
         --h6-font-size: 14px;
+
+        --font-size-footer-title: 20px;
     }
 
 }
