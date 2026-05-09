@@ -11,6 +11,11 @@ input {
     font-family: inherit;
 }
 
+input[type=text]:focus,
+.textarea:focus {
+    outline: none;
+}
+
 a {
     color: inherit;
 }
