@@ -2,8 +2,8 @@
     color: var(--color-light-green);
 }
 
-.brand-logo:hover {
-    color: var(---color-light-green-50);
+.brand-logo a:hover {
+    color: var(--color-light-green-50);
 }
 
 .faq-title {
