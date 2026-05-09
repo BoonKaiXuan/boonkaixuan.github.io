@@ -2,6 +2,11 @@
     padding: var(--padding-card);
 }
 
+.card:hover {
+    transform: perspective(1000px) scale(1.03);
+    transition: all .35s ease;
+}
+
 .card_with-border {
     background-color: var(--color-card-with-border-bg-default);
     border: var(--color-card-with-border-borderline-default);
@@ -11,8 +16,6 @@
 .card_with-border:hover {
     background: var(--color-card-with-border-bg-hover);
     border: var(--color-card-with-border-borderline-hover);
-    transform: perspective(1000px) scale(1.03);
-    transition: all .35s ease;
 }
 
 /*on sale products*/
@@ -23,7 +26,6 @@
 .card_dark-green:hover,
 .card_mid-green:hover {
     filter: var(--card-filter-hover);
-    box-shadow: var(--card-box-shadow-hover);
 }
 
 .card_mid-green {
@@ -32,6 +34,4 @@
 
 .card_with-shadow:hover {
     box-shadow: var(--card-box-shadow-hover);
-    transform: perspective(1000px) scale(1.03);
-    transition: all .35s ease;
 }
