@@ -48,14 +48,10 @@
 }
 
 @media screen and (max-width:1100px) {
-    .footer_logo-t {
-        justify-content: center;
-        text-align: center;
-    }
 
+    .footer_logo-t,
     .footer_menu-t {
         justify-content: center;
         text-align: center;
     }
-
 }
