@@ -33,10 +33,14 @@
     background-color: var(--color-txtfield-no-border-bg);
 }
 
-.text-field_no-borderline::placeholder,
+.text-fieldss_no-borderline::placeholder,
 .text-field_with-borderline::placeholder,
 select:invalid {
     color: var(--color-txtfield-with-border-font-default);
+}
+
+select option {
+    color: var(--color-dark-blue);
 }
 
 /*add to cart*/
