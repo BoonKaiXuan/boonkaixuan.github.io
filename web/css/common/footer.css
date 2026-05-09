@@ -5,11 +5,10 @@
 
 .footer_title {
     font-family: var(--font-heading-serif);
-    font-size: var(--h5-font-size);
+    font-size: var(--font-size-footer-title);
 }
 
-
-.footer_top-section {
+s .footer_top-section {
     padding-bottom: 60px;
     border-bottom: var(--color-light-green-50) 2px solid;
 }
