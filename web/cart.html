@@ -14,7 +14,7 @@
     <link rel="stylesheet" a href="css/common/card.css">
     <link rel="stylesheet" a href="css/common/form-element.css">
     <link rel="stylesheet" a href="css/common/image.css">
-    <link rel="stylesheet" a href="css/common/label-icon.css">
+    <link rel="stylesheet" a href="css/common/label-link.css">
     <link rel="stylesheet" a href="css/cart.css">
     <script src="https://kit.fontawesome.com/1619a0e9db.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
@@ -209,8 +209,8 @@
             <div class="direction-col">
                 <input class="form text-field_with-borderline" type="text" placeholder="Malaysia" readonly>
                 <input class=" form text-field_with-borderline" type="text" placeholder="Address" required>
-                <div class="select-wrap">
-                    <select class="form text-field_with-borderline" name="state" id="state">
+                <div class="relative">
+                    <select class="form text-field_with-borderline select-wrap col-1" name="state" id="state" required>
                         <option value="" disabled selected>State</option>
                         <option value="Johor">Johor</option>
                         <option value="Kedah">Kedah</option>
@@ -226,7 +226,7 @@
                         <option value="Sabah">Sabah</option>
                         <option value="Sarawak">Sarawak</option>
                     </select>
-                    <div class="select-circle">
+                    <div class="select-circle content-center">
                         <i class="fa-solid fa-angle-down"></i>
                     </div>
 
@@ -242,7 +242,7 @@
         </div>
 
         <div class="width-30 col-1-t">
-            <div class="bg-img card cart_summary" style="--bg:url(/web/images/bull-dog-on-couch.jpg);">
+            <div class="bg-img cart_summary" style="--bg:url(/web/images/bull-dog-on-couch.jpg);">
                 <h5>
                     Cart total: 3 items
                 </h5>
@@ -288,7 +288,7 @@
                     </a>
                 </div>
             </div>
-            <div class="card coupon">
+            <div class="coupon">
                 <div>
                     <h5>Got a coupon? Use it here.</h5>
                 </div>
@@ -377,7 +377,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-2 col-1-t card">
+            <div class="col-2 col-1-t">
                 <h3 class="text-light-green text-bold">Cloud-Comfort Dual-Layer Pet Bed</h3>
                 <p class="text-light-green">RM40.00</p>
 

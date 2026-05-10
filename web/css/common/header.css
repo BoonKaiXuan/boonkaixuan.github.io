@@ -30,10 +30,6 @@
     color: var(--color-black);
 }
 
-.topbar_icon:hover,
-.midbar_icon:hover {
-    color: var(--color-light-green);
-}
 
 .header_midbar {
     padding: 0px 30px;
@@ -60,6 +56,7 @@ nav .menu-item:hover>i {
     color: var(--color-menu-font-dark-hover);
     transition: all 0.3s ease;
 }
+
 
 nav .has-submenu i {
     margin-left: var(--gap-xs);

@@ -6,7 +6,6 @@ const subMenu = document.getElementById("submenu");
 
 const dropDown = document.getElementById("submenu-toggle");
 
-const stickyHeader = document.querySelectorAll("header_midbar");
 
 toggleButton.addEventListener(
     "click", () => {
@@ -30,8 +29,7 @@ toggleButton.addEventListener(
                 duration: 0.3,
             });
         }
-    }
-)
+    });
 
 
 dropDown.addEventListener(
@@ -52,5 +50,4 @@ dropDown.addEventListener(
 
             dropDown.classList.replace('fa-chevron-up', 'fa-chevron-down');
         }
-    }
-)
+    });

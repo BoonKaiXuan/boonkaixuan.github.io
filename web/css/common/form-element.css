@@ -23,7 +23,7 @@
 
     width: 40px;
     height: 50px;
-    border-left: var(--color-text-field-with-border-borderline-default);
+    border-left: 1px solid #cccccc;
     border-radius: 60%;
     pointer-events: none;
 }
@@ -33,10 +33,14 @@
     background-color: var(--color-txtfield-no-border-bg);
 }
 
-.text-field_no-borderline::placeholder,
+.text-fieldss_no-borderline::placeholder,
 .text-field_with-borderline::placeholder,
 select:invalid {
     color: var(--color-txtfield-with-border-font-default);
+}
+
+select option {
+    color: var(--color-dark-blue);
 }
 
 /*add to cart*/

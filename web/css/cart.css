@@ -68,7 +68,6 @@ body {
 
 .cart_summary {
     margin-bottom: 40px;
-    padding: 35px;
     color: var(--color-white);
     background-image: linear-gradient(rgba(0, 0, 0, 0.5)), var(--bg);
 }
@@ -95,6 +94,11 @@ body {
 
 .coupon {
     background-color: #fbfaf8;
+}
+
+.coupon,
+.cart_summary {
+    padding: 35px;
 }
 
 .coupon>div>input::placeholder {

@@ -24,3 +24,9 @@
     color: var(--color-label-font);
     background-color: var(--color-label-bg);
 }
+
+/*---Link---*/
+a:hover {
+    color: var(--color-light-green);
+    transition: all 0.35s ease;
+}
