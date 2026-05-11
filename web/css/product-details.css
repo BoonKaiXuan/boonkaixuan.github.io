@@ -1,8 +1,3 @@
-.add-to-cart-details {
-    padding: 40px;
-    margin: 0 35px 20px 35px;
-}
-
 .more-product-details {
     background-color: var(--color-seashell);
     padding: 70px 70px 50px
@@ -22,7 +17,7 @@
 }
 
 .product-details {
-    margin: 0px 0px 20px;
+    margin: 20px 0px 20px;
 }
 
 .review,
