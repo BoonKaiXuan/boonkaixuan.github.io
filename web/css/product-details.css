@@ -50,6 +50,12 @@
     }
 }
 
+@media screen and (max-width:860px) {
+    .user-images {
+        display: none;
+    }
+}
+
 @media screen and (max-width:640px) {
     .star-rating {
         width: 100%;
